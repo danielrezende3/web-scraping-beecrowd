@@ -1,0 +1,100 @@
+ano,tipo,questao,tags
+2015,contest,A,Greedy Number Manipulation
+2015,contest,B,Graph Theory Flow
+2015,contest,C,Mathematics Combinatorics
+2015,contest,D,Sorting
+2015,contest,E,Dynamic Programming
+2015,contest,F,Geometry Convex Hull
+2015,contest,G,String Processing
+2015,contest,H,Graph Theory MST
+2015,contest,I,Computational Geometry
+2015,contest,J,Bitwise Operations
+2015,contest,K,Greedy Scheduling
+2016,contest,A,Greedy Partitioning
+2016,contest,B,Graph Theory Connectivity
+2016,contest,C,Geometry Convex Hull
+2016,contest,D,Graph Theory Shortest Path
+2016,contest,E,Mathematics Algebra
+2016,contest,F,Graph Theory Tree Traversal
+2016,contest,G,String Manipulation
+2016,contest,H,Mathematics Game Theory
+2016,contest,I,Graph Theory Bipartite Matching
+2016,contest,J,Brute Force
+2016,contest,K,Bitwise Manipulation
+2017,contest,A,Dynamic Programming Partitioning
+2017,contest,B,Graph Theory Minimum Cut
+2017,contest,C,Mathematics Probability
+2017,contest,D,Combinatorics
+2017,contest,E,Graph Theory Shortest Path
+2017,contest,F,Graph Theory Flow
+2017,contest,G,Sorting and Searching
+2017,contest,H,Computational Geometry Convex Hull
+2017,contest,I,Graph Theory Eulerian Path
+2017,contest,J,Greedy Task Scheduling
+2017,contest,K,Mathematics Modular Arithmetic
+2018,contest,A,Geometry Symmetry
+2018,contest,B,Graph Theory MST
+2018,contest,C,Greedy Scheduling
+2018,contest,D,Graph Theory Pathfinding
+2018,contest,E,Mathematics Number Theory
+2018,contest,F,Bit Manipulation
+2018,contest,G,Graph Theory Maximum Flow
+2018,contest,H,Mathematics Floating Point
+2018,contest,I,Combinatorics Counting
+2018,contest,J,Recursion
+2018,contest,K,Sorting
+2019,contest,A,Graph Theory Maximum Flow
+2019,contest,B,Computational Geometry Convex Hull
+2019,contest,C,Mathematics Algebra
+2019,contest,D,Greedy String Matching
+2019,contest,E,Graph Theory MST
+2019,contest,F,Graph Theory Minimum Cut
+2019,contest,G,Graph Theory Network Flow
+2019,contest,H,Greedy Packing
+2019,contest,I,Mathematics Exponentiation
+2019,contest,J,Graph Theory Pathfinding
+2019,contest,K,Dynamic Programming Optimization
+2020,contest,A,Dynamic Programming State Optimization
+2020,contest,B,Graph Theory Shortest Path
+2020,contest,C,Mathematics Game Theory
+2020,contest,D,Bitwise XOR
+2020,contest,E,Computational Geometry
+2020,contest,F,String Processing
+2020,contest,G,Graph Theory Eulerian Circuit
+2020,contest,H,Graph Theory Tree Algorithms
+2020,contest,I,Combinatorics
+2020,contest,J,Mathematics Probability
+2020,contest,K,Greedy Approximation
+2021,contest,A,Geometry Convex Hull
+2021,contest,B,Graph Theory MST
+2021,contest,C,Dynamic Programming Subset Sum
+2021,contest,D,Mathematics Probability
+2021,contest,E,Graph Theory Bipartite Matching
+2021,contest,F,Sorting
+2021,contest,G,Computational Geometry Intersection
+2021,contest,H,Greedy Scheduling
+2021,contest,I,Mathematics Modular Arithmetic
+2021,contest,J,Graph Theory Tree Traversal
+2021,contest,K,Brute Force
+2022,contest,A,Greedy Graph Coloring
+2022,contest,B,Graph Theory Pathfinding
+2022,contest,C,Mathematics Modular Arithmetic
+2022,contest,D,Graph Theory Shortest Path
+2022,contest,E,Graph Theory Tree Traversal
+2022,contest,F,Bit Manipulation
+2022,contest,G,Mathematics Floating Point
+2022,contest,H,Computational Geometry
+2022,contest,I,Sorting
+2022,contest,J,Graph Theory Bipartite Graph
+2022,contest,K,Greedy Resource Allocation
+2023,contest,A,Graph Theory Bipartite Matching
+2023,contest,B,Mathematics Probability
+2023,contest,C,Greedy Task Scheduling
+2023,contest,D,Graph Theory MST
+2023,contest,E,String Processing
+2023,contest,F,Graph Theory Tree Algorithms
+2023,contest,G,Dynamic Programming
+2023,contest,H,Mathematics Combinatorics
+2023,contest,I,Graph Theory Eulerian Path
+2023,contest,J,Greedy Optimization
+2023,contest,K,Graph Theory Maximum Flow
