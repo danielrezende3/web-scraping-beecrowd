@@ -1,0 +1,56 @@
+<div class="problem">
+<div class="description">
+<p>The ACM (All Can Meet) club was created with the purpose of attracting people of all ages, with the idea that the people could sit together and share their life experience, to the beneï¬t of all. But as it happened, the club became such a huge success that it was practically impossible to gather all its members at the same place and time. The club then decided to split its members into smaller âsectionsâ. In order to make sure that sections are âniceâ, the director of the club decided to impose the following requirements:</p>
+<p>A. all members of the same age should be in the same section,</p>
+<p>B. all members should be part of exactly one section,</p>
+<p>C. in each section, the maximum number of people with the same age should not be more than <b>R</b> times the minimum number of people with the same age, where <b>R</b> is a rational number between 1.0 and 2.0. The number <b>R</b> is called the splitting factor of the club.</p>
+<p>The last condition makes sure that there is no relatively small-age group which might feel uncomfortable in the section. For instance, let denote by [<b>N</b>, <b>M</b>] a group with <b>N</b> members who are <b>M</b>-years old. Then in section {[10, 50], [6, 45], [70, 12], [43, 23]} the maximum number of people with the same age is 70, the minimum number of people with the same age is 6. If <b>R</b> = 2.0, then we say this section does not satisfy the requirement (<b>C</b>) since 70/6 &gt; 2.0. However, we can split this section into two smaller sections, namely {[10, 50],[6, 45]} and {[70, 12], [43, 23]}, which satisfy all the requirements.</p>
+<p>Given the splitting factor <b>R</b> and a list of the members of the club, you must write a program to ï¬nd the minimum number of sections satisfying the three requirements above.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>Your program should process several test cases. The ï¬rst line of a test case contains an integer <b>K</b> and a rational <b>R</b>. <b>K</b> represents the number of different ages in the club (1 â¤ <b>K</b> â¤ 120), and <b>R</b> represents the splitting factor set by the club director (1.0 â¤ <b>R</b> â¤ 2.0). The next <b>K</b> lines describe the group members, each line containing two integers <b>N</b> and <b>M</b>, indicating that there are <b>N</b> members who are <b>M</b>-years old in the club (1 â¤ <b>N</b> â¤ 10000 and 1 â¤ <b>M</b> â¤ 120). The end of input is indicated by a line with <b>K</b> = 0 and <b>R</b> = 0.0.</p>
+<p>The input values will be such that the eventual error in the internal binary representation of <b>R</b> will not affect the result.</p>
+<p><i>The input must be read from standard input.</i></p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each instance of the problem you should output a single line, containing the minimum number of groups satisfying the three requirements above.</p>
+<p><i>The output must be written to standard output.</i></p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                5 1.7<br/>
+                                100 7<br/>
+                                18 10<br/>
+                                11 17<br/>
+                                567 25<br/>
+                                62 34<br/>
+                                3 1.0<br/>
+                                12 18<br/>
+                                107 11<br/>
+                                250 57<br/>
+                                0 0.0
+                            </p>
+</td>
+<td>
+<p>
+                                3<br/>
+                                3
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">ACM/ICPC South America Contest 2003.</p>
+</div>

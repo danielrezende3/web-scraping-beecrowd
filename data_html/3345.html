@@ -1,0 +1,54 @@
+<div class="problem">
+<div class="description">
+<p>Ferdinacci is a somewhat different boy. On his computer he keeps a single file with all the prime numbers from <strong>1</strong> to a million (<strong>10â¶</strong>).</p>
+<p>Among one of his hobbies, he usually spends hours and hours enjoying the beauty of prime numbers. He has looked at this list so long that he believes he has memorized it. To test his memory, damn Ferdinacci decided to apply the following test:</p>
+<ul>
+<li>Choose an interval [<strong>L</strong>, <strong>R</strong>] within the file limits</li>
+<li>Choose a <strong>K</strong> value</li>
+<li>Find out which is the <strong>Kth</strong> prime within the chosen range</li>
+</ul>
+<p>
+                    Ferdinacci intends to guess this "<strong>Kth</strong>" number based solely on his memory, but an algorithm is needed to check if he got the right guess.<br/>
+                    To test memory for real, he plans to repeat the test <strong>Q</strong> times.
+                </p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>In the first line, the integer <strong>Q</strong> is passed, representing the number of tests that Ferdinacci will do. In the next <strong>Q</strong> rows there will be three integers <strong>L</strong>, <strong>R</strong> and <strong>K</strong> in each row.</p>
+<p>The restrictions for the values are as follows:</p>
+<ul>
+<li><span class="math-tex">\(1 \leq \textbf{Q} \leq 10^5\)</span></li>
+<li><span class="math-tex">\(1 \leq \textbf{L} \leq \textbf{R} \leq 10^6\)</span></li>
+<li><span class="math-tex">\(1 \leq \textbf{K} \leq 10^6\)</span></li>
+</ul>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each Ferdinacci test it is necessary to print an integer representing the "<strong>Kth</strong>" prime of the interval [<strong>L</strong>, <strong>R</strong>] (<strong>limits included</strong>).</p>
+<p>If the "<strong>Kth</strong>" prime is outside the range [<strong>L</strong>, <strong>R</strong>] (<strong>limits included</strong>) it must print <strong>-1</strong>.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>2</p>
+<p>1 1000000 78498</p>
+<p>1 10 5</p>
+</td>
+<td>
+<p>999983</p>
+<p>-1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer">Maratona BRUTE Codecon JetBrains 2021</p>
+</div>

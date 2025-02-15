@@ -1,0 +1,61 @@
+<div class="problem">
+<div class="description">
+<p>The pyramids are very frequent structures on ancient civilizations all over the world. The most famous, the Egypt ones, were built more than 2000 years before Crist's passage on Earth. Other famous pyramids are the ones from Mexico and Central America, linked to the Mayan and Aztec civilizations.</p>
+<p>Little known, however, are the pyramids built on the Ural mountains, near the city of Ekaterinburg. These pyramids date back to the early Christian era, and is believed to have been built by Mongolian peoples, who invaded the Europe through the Ural mountains, coming from Asia. Unlike the other known pyramids, these had triangular base. Thus, these pyramids had 4 triangular faces. Many of these pyramids were built on columns, allowing non-parallel to ground constructions and even exposing the pyramid's base.</p>
+<p>That was very important, because the faces of the pyramid were painted with figures representing ancient gods, mythological figures, planets and other celestial bodies and so on. Thus, at some point in the city, a citizen could see one or more faces of the pyramid. This was important to the local religion, and find a house whose window glimpsed the best faces of the pyramids was much appreciated at the time.</p>
+<p>Your task is, given the positions on space of a pyramid's vertices, and the position on space of an observer, determine which faces of the pyramid are visible to him, considering that there is no obstacle between the observer and the pyramid.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input is composed by various instances and ends with end of file (EOF).</p>
+<p>Each instance consists of 5 lines. Each line contains three integers, separated by spaces, and represent the coordinates of the points <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong> and <strong>X</strong>, respectivelly, where <strong>X</strong> is the position of the observer and the other points are the vertices of the pyramid.</p>
+<p>All points provided have integer coordinates between -100 and 100.</p>
+<p>The points <strong>A</strong>, <strong>B</strong>, <strong>C</strong> and <strong>D</strong> are not coplanar.</p>
+<p>All points provided are distinct.</p>
+<p>The point <strong>X</strong> neither belong to the interior of the pyramid nor to any face of it.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each instance, print a line containing 4 characters. The first character must be <em>S</em>if the observer sees the face of the pyramid that is oposite to vertex A, and <em>N</em> otherwise. Analogously for the second, third and fourth characters, but relative to the vertices <strong>B</strong>, <strong>C</strong> and <strong>D</strong> respectivelly.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                0 0 0<br/>
+                                1 0 0<br/>
+                                0 1 0<br/>
+                                0 0 1<br/>
+                                1 1 1<br/>
+                                0 0 0<br/>
+                                1 0 0<br/>
+                                0 1 0<br/>
+                                0 0 1<br/>
+                                -1 -1 -1<br/>
+                                0 0 0<br/>
+                                1 0 0<br/>
+                                0 1 0<br/>
+                                0 0 1<br/>
+                                1 1 0
+                            </p>
+</td>
+<td>
+<p>
+                                SNNN<br/>
+                                NSSS<br/>
+                                SNNN
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">XVII Maratona de ProgramaÃ§Ã£o IME-USP, 2013</p>
+</div>

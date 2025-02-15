@@ -1,0 +1,55 @@
+<div class="problem">
+<div class="description">
+<p>China is a major producer of food, but also huge consumer. Chinese researchers discover that in certain moments of their history the agricultural production was higher than consumption, and at other times this situation was reversed. Worried with the future of the great nation, they started to collect data about the plantation area, the quantity of workers e the agricultural production. To better investing their resources , now they want to make a forecast about the production of the country.</p>
+<p>The data set that the researchers collect is composed by triples (Xi, Yi, Zi), where Xi representes the area of plantation, Yi the quantity of workers and Zi the agriculture production. As this production is directly linked with the other data collected, they decided to estimate the future production using a linear function a1+a2x+a3y, that minimizes the sum of the square errors</p>
+<p style="text-align: center"><img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1819.png"/></p>
+<p>where n is the total of triples availables. Thus they will be capable to better plan the production and the consume of the next years. Your goal is to calculate the desired linear function.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input consistes of many instances. For each input instance is given one integer number 3 â¤ <strong>n</strong> â¤ 1000 indicating how much triples was obtained in the data collection. In each one of the next lines is given a triple <strong>X<sub>i</sub></strong>, <strong>Y<sub>i</sub></strong> and <strong>Z<sub>i</sub></strong> as acreage (thousand acres), the number of workers involved (given in thousands), and agricultural production (given in tonnes of food), respectively. The input file ends when <strong>n</strong> = 0 is found. Assume that there is no linear relationship between the number of workers and the acreage, then, there is no constants Î±,Î² such that, for every i, X<sub>i</sub>= Î±y<sub>i</sub> + Î². Assume also that 0 â¤ <strong>X</strong><sub>i</sub>,<strong>Y</strong><sub>i</sub>,<strong>Z</strong><sub>i</sub> â¤ 1000 and that all data values are integers.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>
+                    For each instance solved, you may print a identifier Instance <strong>h</strong> where <strong>h </strong>is a integer number, sequential and growing from 1. On the next line, you may print 3 numbers<strong> a<sub>1</sub></strong>,<strong> a<sub>2</sub></strong> and<strong> a<sub>3</sub></strong>, representing the quotients of the requested linear function. These numbers need to be represented in three decimal places.
+                </p>
+<p>A blank line shoud divide the output of each instance</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>3</p>
+<p>1 0 0</p>
+<p>5 1 1</p>
+<p>3 2 2</p>
+<p>5</p>
+<p>1 3 2</p>
+<p>3 7 3</p>
+<p>5 10 4</p>
+<p>7 400 5</p>
+<p>9 4 6</p>
+<p>0</p>
+</td>
+<td>
+<p>Instancia 1</p>
+<p>0.000 0.000 1.000</p>
+<br/>
+<p>Instancia 2</p>
+<p>1.500 0.500 0.000</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">VIII Maratona de ProgramaÃ§Ã£o IME-USP 2004.</p>
+</div>

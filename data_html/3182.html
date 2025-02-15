@@ -1,0 +1,60 @@
+<div class="problem">
+<div class="description">
+<p>As you didnât show up to the yearly general meeting of the Nordic Club of Pin Collectors, you were unanimously elected to organize this years excursion to Pin City. You are free to choose from a number of weekends this autumn, and have to find a suitable hotel to stay at, preferably as cheap as possible.</p>
+<p>You have some constraints: The total cost of the trip must be within budget, of course. All participants must stay at the same hotel, to avoid last years catastrophe, where some members got lost in the city, never being seen again.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line of input consists of four integers: <strong>N </strong>(1 â¤ <strong>N </strong>â¤ 200), the number of participants, <strong>B </strong>(1 â¤ <strong>B </strong>â¤ 500000), the budget, <strong>H </strong>(1 â¤ <strong>H </strong>â¤ 18), the number of hotels to consider, and <strong>W </strong>(1 â¤ <strong>W </strong>â¤ 13), the number of weeks you can choose between. Then follow two lines for each of the <strong>H </strong>hotels. The first gives <strong>P </strong>(1 â¤ <strong>P</strong> â¤ 10000), the price for one person staying the weekend at the hotel. The second contains <strong>W </strong>integers, <strong>A </strong>(0 â¤ <strong>A </strong>â¤ 1000), giving the number of available beds for each weekend at the hotel.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Output the minimum cost of the stay for your group, or âstay homeâ if nothing can be found within the budget.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                3 1000 2 3<br/>
+                                200<br/>
+                                0 2 2<br/>
+                                300<br/>
+                                27 3 20
+                            </p>
+</td>
+<td>
+<p>900</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                5 2000 2 4<br/>
+                                300<br/>
+                                4 3 0 4<br/>
+                                450<br/>
+                                7 8 0 13
+                            </p>
+</td>
+<td>
+<p>stay home</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Nordic Collegiate Programming Contest 2008</p>
+</div>

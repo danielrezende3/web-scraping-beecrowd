@@ -1,0 +1,61 @@
+<div class="problem">
+<div class="description">
+<p>Natives from the tiny island of Tookutoo are keen on mathematics, and teach their children to play several math-oriented games. A popular puzzle in Tookutoo is played with ceramic slabs like the ones shown in the figure below.</p>
+<p class="center"><img alt="" src="https://resources.beecrowd.com/gallery/images/novos/Child%20Play.png" style="width: 394px; height: 159px"/></p>
+<p>As it can be seen in the figure above, slabs are similar to dominoes, being divided in two parts; in each part an integer value is imprinted. The slabs above have values [2, 1], [6, 3] and [3, 1]. Note that a slab [a, b] can also be written as [b, a].</p>
+<p>The puzzle starts with a player receiving a set of slabs chosen randomly from a large and varied pool. Using the given set of slabs, the player has to find an arrangement in which the slabs are put side by side on the table in such a way that the sum of values on the upper side is equal to the sum of values on the lower side. For example, for the set in the figure above, a correct arrangement is</p>
+<p>
+                    1 6 1<br/>
+                    2 3 3
+                </p>
+<p>If it is not possible to find an arrangement using all the slabs chosen, the player may discard one of them, but the value of the sum in the arrangement must be the highest possible. Besides, if more than one slab can be discarded while leaving the same sum, the player must discard the slab [a, b] such that a â¤ b and a is the least possible value considering all possible slabs to be discarded. You must write a program that, given a set of slabs, tries to find an arrangement that satisfies the conditions of the puzzle, discarding one slab if necessary.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    Your program should process several test cases. The first line of a test case contains a single integer <strong>N</strong>, the number of slabs in the test (0 â¤ <strong>N</strong> â¤ 400). Each of the following <strong>N</strong> lines contains two integers <strong>X<sub>i</sub></strong> and <strong>Y<sub>i</sub></strong> describing a slab that was given to the player (0 â¤ <strong>X<sub>i</sub></strong> â¤ 1000 and 0 â¤ <strong>Y<sub>i</sub></strong> â¤ 1000) The value <strong>N</strong> = 0 indicates the end of input.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case your program must produce one line describing the result. If it is not possible to find an arrangement, print the word 'impossible'. If it is possible to find an arrangement, print its sum and the description of the discarded slab (if any). If you had do discard a slab, describe it in the form 'discard X Y', where <strong>X</strong> â¤ <strong>Y</strong>; otherwise print 'discard none'.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                4<br/>
+                                1 4<br/>
+                                2 9<br/>
+                                2 1<br/>
+                                0 4<br/>
+                                2<br/>
+                                8 1<br/>
+                                9 4<br/>
+                                3<br/>
+                                6 3<br/>
+                                1 2<br/>
+                                3 1<br/>
+                                0
+                            </p>
+</td>
+<td>
+<p>
+                                10 discard 1 2<br/>
+                                impossible<br/>
+                                8 discard none
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">ACM/ICPC South America Contest 2003.</p>
+</div>

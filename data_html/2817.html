@@ -1,0 +1,82 @@
+<div class="problem">
+<div class="description">
+<p>One of the consequences of the truck drivers strike was the lack of gasoline across the country. In Santa Rita do SapucaÃ­, a city in the south of Minas Gerais, it was no different. Hundreds of cars and motorcycles lined up at the last station with gasoline available to fill their tanks before it drained, it looked like a zombie apocalypse movie scene.</p>
+<p>The station has <strong>N</strong> bombs and in each of them there is a row in a straight line with <strong>M</strong> veÃ­culos (carros ou motos). vehicles (cars or motorcycles). Bellow, there's an illustration of a station with 4 bombs and a row of 2 vehicles per bomb.</p>
+<center>
+<img alt="" src="https://resources.beecrowd.com/gallery/images/contests/posto_do_darlan.png"/>
+</center>
+<p>Darlan, owner of the station, limited the amount of gasoline that each car could fuel in 25 liters and each bike in 12 liters. Since all vehicles owners in queues were afraid they would never be able to refuel, they would certainly put the maximum gasoline allowed by Darlan.</p>
+<p>The local TV station team was live with their drone filming the long lines of vehicles around Darlanâs station when a viewer asked a somewhat random question: "If we take into account that the rows of cars feature a matrix of <strong>N</strong> lines by <strong>M</strong> columns, what is the largest amount of gasoline that vehicles in a square of size <strong>L</strong> will put? Given that in this square there must be at least one vehicle of each type (car and motorcycle)."</p>
+<p>The TV crew has no idea how to answer this question and needs your help!</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line of the input has two integers <strong>N</strong>, <strong>M (</strong>1 â¤ <strong>N, M </strong>â¤ 1000), representing the number of pumps and the number of vehicles queued in each pump. They follow <strong>N</strong> lines, each containing <strong>M</strong> characters 'C' or 'M' representing a car or a motorcycle, respectively. After this there will be an integer <strong>L (</strong>1 â¤ <strong>L </strong>â¤ 1000), representing the size of the square side that the viewer wishes to know</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Display a single integer, the largest possible amount of gasoline that vehicles in a square <strong>L </strong>will fuel , given that there must be at least one vehicle of each type. If there is no square that characterizes the viewer's doubt, print -1.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>4 2</p>
+<p>CM</p>
+<p>CC</p>
+<p>MM</p>
+<p>CC</p>
+<p>2</p>
+</td>
+<td>
+<p>87</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>2 2</p>
+<p>CC</p>
+<p>CC</p>
+<p>2</p>
+</td>
+<td>
+<p>-1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                3 5<br/>
+                                CMMMC<br/>
+                                MMCMM<br/>
+                                MMMCM<br/>
+                                3
+                            </p>
+</td>
+<td>
+<p>147</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">OBI Warm-up - 2018 Regional Phase</p>
+</div>

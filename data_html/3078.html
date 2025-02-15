@@ -1,0 +1,55 @@
+<div class="problem">
+<div class="description">
+<p>If you went to Goias you've certainly experienced or at least heard about the pequi. The pequi is a typical fruit from the region with some few edible seeds.</p>
+<p>In this year ICPC (InstÃ¢ncia Competitiva do Pequi CampeÃ£o) will take place. The ICPC is a competition to determine the best pequi. To make the competition less obvious and more dynamic, the quality of a pequi with <strong>n</strong> seeds will be determined by a non-linear equation.</p>
+<p>
+                    Define  ââââ<strong><em><span class="math-tex">\(\textbf{b} = \textbf{n} \hspace{1mm} MOD \hspace{1mm} 257 \)</span></em></strong>,  <em><strong><span class="math-tex">\(\textbf{c} = \textbf{n} \hspace{1mm} MOD \hspace{1mm} 193\)</span></strong></em>  and  <strong><span class="math-tex">\(\textbf{d} = \sqrt[22]{\textbf{b}^{16}}*\textbf{b}^{3\over11} - \textbf{b} + 4 \)</span></strong>, the equation that determines the quality of the pequi is given by  <span class="math-tex">\(\textbf{x}^{\textbf{d}} + \textbf{bx}^2 + \textbf{c} = 0 \).</span>
+</p>
+<p>Based on the number of roots of the built equation, a pequi can receive one of the following grades of quality:</p>
+<ul>
+<li>"So o ouro", case the built equation has no real roots.</li>
+<li>"Bom", case the equation has only a real root;</li>
+<li>"Regular", case the equation has more than one real root.</li>
+</ul>
+<p>Your task is given the quantity of seeds to discover the degree of quality of a pequi.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input consist of several test cases. Each test case has a single line with an integer <strong>n</strong> (0 â¤ <strong>n</strong> â¤ 10<sup>5</sup>), the quantity of seeds of the pequi.<br/>
+                    The last test case contains <strong>n</strong> = -1 and must not be processed.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case print on a separate line the degree of quality of the pequi without quotation marks ("So o ouro", "Bom" or "Regular").</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                0<br/>
+                                1<br/>
+                                -1
+                            </p>
+</td>
+<td>
+<p>
+                                Bom<br/>
+                                So o ouro
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer">PUC GoiÃ¡s Marathon #1</p>
+</div>

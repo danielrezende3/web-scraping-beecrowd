@@ -1,0 +1,49 @@
+<div class="problem">
+<div class="description">
+<p>Christmas is comming, and Santa needs to evaluate how well each kid behave along the year, in order to define how many gifts each one of them are going to receive this year. The avaliation works in very strange way:</p>
+<p>First, the Santa's assistants, capable of observing all the kids in the world, will assign to each kid an integer number <strong>N</strong>. Then, the number of gifts a kid receives is equal to <strong>N-D</strong>, where <strong>D</strong> is the greatest divisor of <strong>N</strong>, differente than <strong>N</strong>.</p>
+<p>
+                    Planing to cheat in the distribution of the gifts to bennefit of some kids, a group of assistants decided to change the process. In the new version, the value <strong>N</strong> is subdivided int <strong>Q</strong> "parts", each being <strong>ni </strong>(1 &lt; <strong>n<sub>i</sub></strong>)<strong>,</strong> in a way that <strong>N = Î£n<sub>i</sub></strong>, (1 â¤ <strong>i</strong> â¤ <strong>Q</strong>), and the number of gifts is calculated individually for each of these parts. The total number of gifts a kid receives in this new aproach is equal to the sum of the number of gifts for all the values <strong>n<sub>i</sub></strong>.
+                </p>
+<p>Your task is, given the avaliation <strong>N</strong> for each kid, help the assistants to perform this division in order to maximize the number of gifts each kid receives. Note that the assistants are free to define the number of parts <strong>Q</strong>, as well as the value of each of the individual parts, as long as they add up to <strong>N</strong>.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>Input consists of the value <strong>N</strong> for a number of kids. (1 &lt; <strong>N</strong> â¤ 10<sup>10</sup>)</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each kid, print the maximum number of gifts that this kid can receive, considering the choice for the value of <strong>Q</strong> and the subdivision are done in an optimal way.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                2<br/>
+                                4<br/>
+                                33<br/>
+                                10000000000
+                            </p>
+</td>
+<td>
+<p>
+                                1<br/>
+                                2<br/>
+                                31<br/>
+                                9999999998
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer">Contest de Natal 2016.</p>
+</div>

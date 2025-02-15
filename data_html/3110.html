@@ -1,0 +1,71 @@
+<div class="problem">
+<div class="description">
+<p>Xorshift random number generators are a class of pseudorandom number generators that were discovered by George Marsaglia. They have a particularly efficient implementation without using excessively sparse polynomials. They generate the next number in their sequence by repeatedly taking the exclusive or of a number with a bit-shifted version of itself. This makes them extremely fast on modern computer architectures.</p>
+<p>
+                    In an attempt to create its own encryption, Farcos converts a message into an array of 64-bit integers and applies exclusive or to each element <strong>E<sub>i</sub></strong> with <strong>K<sub>i</sub></strong>-th element of an Xorshift sequence that uses <strong>S</strong> as the seed. In other words, a <strong>E</strong> array was created such that:
+                </p>
+<p><img alt="UOJ_3110_E_a" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_3110_E_a.png" style="height: 80px; margin-left: 0px; margin-top: 0px; width: 314px"/></p>
+<p>An this:</p>
+<p><img alt="UOJ_3110_E_b" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_3110_E_b.png" style="height: 311px; margin-left: 0px; margin-top: 0px; width: 390px"/></p>
+<p>The code snippets shown are implemented in c++.</p>
+<p>Provided arrays <strong>E</strong>, <strong>K</strong>, and seed <strong>S</strong>, your task is to decipher the original array <strong>D</strong>.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line of input contains five integers: <strong>N</strong> (0 &lt; <strong>N</strong> â¤ 10<sup>2</sup>), the number of elements in the arrays; <strong>S</strong> (0 &lt; <strong>S</strong> &lt; 2<sup>64</sup>), the seed to Xorshift; <strong>A</strong>, <strong>B</strong> and <strong>C</strong> (0 &lt; <strong>A</strong>, <strong>B</strong>, <strong>C</strong> &lt; 64), the Xorshift parameters shown in the code.</p>
+<p>
+                    The second line of input has <strong>N</strong> integers <strong>E<sub>i</sub></strong> (0 &lt; <strong>E<sub>i</sub></strong> &lt; 2<sup>64</sup>) separated by a blank space.
+                </p>
+<p>
+                    The third line of input has <strong>N</strong> integers <strong>K<sub>i</sub></strong> (0 &lt; <strong>K<sub>i</sub></strong> &lt; 2<sup>64</sup>) separated by a blank space.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>
+                    The output consists of a single line containing <strong>N</strong> integers <strong>D<sub>i</sub></strong> separated by a blank space and representing the deciphered array.
+                </p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                3 49 63 62 63<br/>
+                                48 49 50<br/>
+                                98 57 22
+                            </p>
+</td>
+<td>
+<p>1 2 3</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                4 1 1 2 3<br/>
+                                31 80255 345 7119<br/>
+                                1 4 2 3
+                            </p>
+</td>
+<td>
+<p>4 31396 79 1947</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer"></p>
+</div>

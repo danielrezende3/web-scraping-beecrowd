@@ -1,0 +1,58 @@
+<div class="problem">
+<div class="description">
+<p>
+                    We are definitely not going to bother you with another generic story when Alice finds about an array or<br/>
+                    when Alice and Bob play some stupid game. This time youâll get a simple, plain text.
+                </p>
+<p>
+                    First, let us define several things. We define function <strong>F</strong> on the array <strong>A</strong> such that <strong>F</strong>(<strong>i</strong>, 1) = <strong>A</strong>[<strong>i</strong>] and<br/>
+                    F (i, m) = A[F (<strong>i</strong>, <strong>m</strong> â 1)] for <strong>m</strong> &gt; 1. In other words, value <strong>F</strong> (<strong>i</strong>, <strong>m</strong>) represents composition <strong>A</strong>[...<strong>A</strong>[<strong>i</strong>]]<br/>
+                    applied <strong>m</strong> times.
+                </p>
+<p>You are given an array of length <strong>N</strong> with non-negative integers. You are expected to give an answer on <strong>Q</strong> queries. Each query consists of two numbers â <strong>m</strong> and <strong>y</strong>. For each query determine how many <strong>x</strong> exist such that <strong>F</strong>(<strong>x</strong>, <strong>m</strong>) = <strong>y</strong>.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line contains one integer <strong>N</strong> (1 â¤ <strong>N</strong> â¤ 2 Â· 10<sup>5</sup> ) â the size of the array <strong>A</strong>. The next line contains <strong>N</strong> non-negative integers â the array <strong>A</strong> itself (1 â¤ <strong>Ai</strong> â¤ <strong>N</strong> ). The next line contains one integer <strong>Q</strong> (1 â¤ <strong>Q</strong> â¤ 10<sup>5</sup> ) â the number of queries. Each of the next <strong>Q</strong> lines contain two integers m and <strong>y</strong> (1 â¤ <strong>m</strong> â¤ 10<sup>18</sup> , 1 â¤ <strong>y</strong> â¤ <strong>N</strong> ).</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Output exactly <strong>Q</strong> lines with a single integer in each that represent the solution. Output the solutions in the order the queries were asked in.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                10<br/>
+                                2 3 1 5 6 4 2 10 7 7<br/>
+                                5<br/>
+                                10 1<br/>
+                                5 7<br/>
+                                10 6<br/>
+                                1 1<br/>
+                                10 8
+                            </p>
+</td>
+<td>
+<p>
+                                3<br/>
+                                0<br/>
+                                1<br/>
+                                1<br/>
+                                0
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer">Bubble Cup 2019</p>
+</div>

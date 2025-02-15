@@ -1,0 +1,57 @@
+<div class="problem">
+<div class="description">
+<p>Write a program to transform an array A[1], A[2],..., A[n] according to m instructions. Each instruction (L, R, v, p) means: First, calculate how many numbers from A[L] to A[R] (inclusive) are strictly less than v, call this answer k. Then, change the value of A[p] to u*k/(R - L + 1), here we use integer division (i.e. ignoring fractional part).</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line of input contains three integer <strong>n</strong>, <strong>m</strong>, <strong>u</strong> ( 1 â¤ <strong>n</strong> â¤ 300,000, 1 â¤ <strong>m</strong> â¤ 50,000, 1 â¤<strong> u</strong> â¤ 1,000,000,000). Each of the next <strong>n</strong> lines contains an integer <strong>A</strong>[i](1 â¤ <strong>A</strong>[i] â¤<strong> u</strong>). Each of the next <strong>m</strong> lines contains an instruction consisting of four integers <strong>L</strong>, <strong>R</strong>, <strong>v</strong>, <strong>p</strong> ( 1 â¤ <strong>L</strong> â¤ <strong>R</strong> â¤ <strong>n</strong>, 1 â¤<strong> v</strong> â¤ <strong>u</strong>, 1 â¤ <strong>p</strong> â¤ <strong>n</strong>).</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Print <strong>n</strong> lines, one for each integer, the final array.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                10 1 11<br/>
+                                1<br/>
+                                2<br/>
+                                3<br/>
+                                4<br/>
+                                5<br/>
+                                6<br/>
+                                7<br/>
+                                8<br/>
+                                9<br/>
+                                10<br/>
+                                2 8 6 10
+                            </p>
+</td>
+<td>
+<p>
+                                1<br/>
+                                2<br/>
+                                3<br/>
+                                4<br/>
+                                5<br/>
+                                6<br/>
+                                7<br/>
+                                8<br/>
+                                9<br/>
+                                6
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Explanation: There is only one instruction: L = 2, R = 8, v = 6, p = 10. There are 4 numbers (2,3,4,5) less than 6, so k = 4. The new number in A[10] is 11*4/(8 - 2 + 1) = 44/7 = 6. I/O by Neilor.</p>
+</div>

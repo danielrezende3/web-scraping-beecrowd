@@ -1,0 +1,63 @@
+<div class="problem">
+<div class="description">
+<p>In this particular problem, The Unreal Tournament is a tournament, which consists of only two teams. Let these two teams be Abahoni and Mohamedan. They play in between them not more than 2N - 1 games, the winner being the first team to achieve n victories. You can assume that there are no tied games, the result of each game is independent and for any match there is a constant probability P that team Abahoni will win and hence there is a constant probability Q(Q = 1 - P) that team Mohamedan will win.</p>
+<p>P(i, j) is the probability that team Abahoni will win the series given that they still need i more victories to achieve this, whereas team Mohamedan still need j more victories if they are to win. The P(i, j) can be computed with a function like the following:</p>
+<p>
+<strong>Function P(i, j){<br/>
+                           if i = 0 then return 1<br/>
+                           else if j = 0 then return 0<br/>
+                           else return pP(i-1,j) + qP(i,j-1)<br/>
+                        }</strong>
+</p>
+<p>You will have to write a program that gives the probability of winning for any P, i and j and also gives the number of recursive calls required if the function above is used to get the probability P(i,,j).</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input file contains several sets of input. The first line of a set contains one floating-point number <strong>P</strong>(0 &lt; <strong>P</strong> &lt; 1), and an integer <strong>N</strong>(0 â¤ <strong>N</strong> &lt; 1001) where <strong>P</strong> is the winning probability of Abahoni and <strong>N</strong> is the number queries to follow. Each of the next <strong>N</strong> lines contains two integers <strong>i</strong>(0 â¤ <strong>i</strong> â¤ 1000) and <strong>j</strong>(0 â¤ <strong>j</strong> â¤ 1000). Input is terminated by a set, which has zero as the value of <strong>N</strong>. This set should not be processed.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each query you should print two lines. The first line contains the value of <strong>P</strong>(i, j) with five digits after the decimal and the second line contains a round number which is the number of recursive calls needed if the function mentioned above was used to determine the value of <strong>P</strong>(i, j). If the value of <strong>P</strong>(i, j) is undefined you should print -1 as its value with similar formatting. A blank line should be printed between the outputs of two consecutive sets.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                0.5 3<br/>
+                                1 1<br/>
+                                2 2<br/>
+                                3 3<br/>
+                                0.5 2<br/>
+                                10 3<br/>
+                                10 2<br/>
+                                0.7 0
+                            </p>
+</td>
+<td>
+<p>
+                                0.50000<br/>
+                                2<br/>
+                                0.50000<br/>
+                                10<br/>
+                                0.50000<br/>
+                                38<br/>
+<br/>
+                                0.01929<br/>
+                                570<br/>
+                                0.00586<br/>
+                                130
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer"></p>
+</div>

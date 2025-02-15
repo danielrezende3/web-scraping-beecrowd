@@ -1,0 +1,71 @@
+<div class="problem">
+<div class="description">
+<p>Last weekend you and your friends went to visit the local farmerâs market at the town square. As you were standing around in a circle talking, you couldnât help overhearing two of your friends musing over what sounded like an interesting problem: They were considering the number of ways in which you could all shake hands, such that everyone in the circle simultaneously shaked hands with one other person, but where no arms crossed each other.</p>
+<p>
+                    After a few secondsâ thought you decided to join your two friends, to share (with them) the solution to their problem. âIf we are <strong>2n</strong> personsâ, you said, âpick any particular person, and let that person shake hands with somebody. That person will have to leave an even number of people on each side of the person with whom he/she shakes hands. Of the remaining <strong>n</strong> â 1 pairs of people, he/she can leave zero on the right and <strong>n</strong> â 1 pairs on the left, 1 on the right and <strong>n</strong> â 2 pairs on the left, and so on. The pairs remaining on the right and left can independently choose any of the possible non-crossing handshake patterns, so the count <strong>C<sub>n</sub></strong> for <strong>n</strong> pairs of people is given by:
+                </p>
+<img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_3270_A.png"/>
+<p>
+                    which, together with the fact that <strong>C<sub>0</sub></strong> = <strong>C<sub>1</sub></strong> = 1, is just the definition of the Catalan numbers.â By consulting your handy combinatorics book, you find out that there is a much more efficient formula for calculating <strong>C<sub>n</sub></strong>, namely:
+                </p>
+<img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_3270_B.png"/>
+<p>After a collective groan from the group, your particularly cheeky friend Val called out âWell, since we are at the town square, why donât you try to square your Catalan numbers!â. This was met with much rejoicing, while you started to think about how to square the Catalan sequence. . .</p>
+</div>
+<h2>Task</h2>
+<div class="task">
+<p>
+                    Let <strong>C<sub>n</sub></strong> be the <strong>n</strong>th Catalan number as defined above. By regarding the sequence (<strong>C<sub>n</sub></strong>) <strong>n</strong>â¥0 of Catalan numbers, we can define a sequence (<strong>S<sub>n</sub></strong>) <strong>n</strong>â¥0 , corresponding to âsquaring the Catalan sequenceâ, by considering the Cauchy product, or discrete convolution, of (<strong>C<sub>n</sub></strong>) <strong>n</strong>â¥0 with itself, i.e.,
+                </p>
+<img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_3270_C.png"/>
+<p>
+                    Your task is to write a program for calculating the number <strong>S<sub>n</sub></strong>.
+                </p>
+<p>
+                    To see why (<strong>S<sub>n</sub></strong>) <strong>n</strong>â¥0 could be said to correspond to the square of the Catalan sequence we could look at Cauchy products of power series. Suppose that <strong>p(x) = Î£<sup>â</sup><sub>n=0</sub> a<sub>n</sub>x<sup>n</sup></strong> and <strong>q(x) = Î£<sup>â</sup><sub>n=0</sub> b<sub>n</sub>x<sup>n</sup></strong>, then <strong>p(x)*q(x) = Î£<sup>â</sup><sub>n=0</sub> c<sub>n</sub>x<sup>n</sup></strong> where <strong>c<sub>n</sub> = Î£<sup>n</sup><sub>k=0</sub> a<sub>k</sub>b<sub>n-k</sub></strong>.
+                </p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input contains one line containing one non-negative integer: <strong>n</strong>, with 0 â¤ <strong>n</strong> â¤ 5000.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>
+                    Output a line containing <strong>S<sub>n</sub></strong>.
+                </p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>0</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>59</p>
+</td>
+<td>
+<p>1583850964596120042686772779038896</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">NCPC - Nordic Collegiate Programming Contest 2014</p>
+</div>

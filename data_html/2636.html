@@ -1,0 +1,44 @@
+<div class="problem">
+<div class="description">
+<p>Pedro, like many other undergraduates, was fascinated by the beauty and sophistication of cryptography. He began to read historical references, to study the main algorithms and to search for articles and news that approached the subject in the most different aspects.</p>
+<p>However, the large volume of information gained in a short period of time has led to some questions and fears. Worried about quantum computing, which in theory would cripple RSA encryption, and motivated by the history of the DES algorithm, which had a more secure evolution called 3DES, he decided to propose a more secure version of RSA, called 3-RSA.</p>
+<p>In 3-RSA, the module n, composed in the original algorithm by two distinct prime numbers, would now consist of 3 distinctly odd primes! Pedro was right that this modification would bring greater difficulty in breaking the algorithm, since the attackers now would have to find 3 factors of n, not only 2.</p>
+<p>Knowing that in cryptography, sometimes less is more, and willing to show to the motivated and well-intentioned Peter that the proposed modification actually weakens the RSA, factor the n module of the 3-RSA algorithm, showing its three prime factors.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input consists of a series of test cases. Each test is represented by a single line, contains the integer <strong>n</strong> (105 â¤<strong> n</strong> â¤ 10<sup>18</sup>), which represents the module of the 3-RSA algorithm. The input ends with the value <strong>n</strong> = 0, which should not be processed.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case a line containing the message <em>ân = p x q x râ</em> should be printed, where <strong>p</strong>, <strong>q</strong>, <strong>r</strong> are the prime factors of <strong>n</strong>, with 3 â¤ <strong>p</strong> x <strong>q</strong> x <strong>r</strong>.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>105</p>
+<p>231</p>
+<p>7163</p>
+<p>89348965057411</p>
+<p>0</p>
+</td>
+<td>
+<p>105 = 3 x 5 x 7</p>
+<p>231 = 3 x 7 x 11</p>
+<p>7163 = 13 x 19 x 29</p>
+<p>89348965057411 = 17393 x 51437 x 99871</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer">Maratona de ProgramaÃ§Ã£o UnB/CIC 2015.</p>
+</div>

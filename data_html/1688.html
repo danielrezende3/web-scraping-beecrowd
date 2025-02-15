@@ -1,0 +1,49 @@
+<div class="problem">
+<div class="description">
+<p>During his last visit to planet Tatooine, Han Solo was captured by Jabba, the Hutt's mercenaries and was taken to his palace. Jabba, knowing that Solo was still not able to pay his debts, proposed a deal. Both would to play a game of Intergalactic Nim, and if Han won, he would be clear of his debts, otherwise, his debt would double.</p>
+<p>Intergalactic Nim is a variation of the well known game of Nim, where stones are arranged in columns and on each turn a player must remove one or more stones from one of the columns. The player that is unable to make a move is considered the loser. On Intergalactic Nim one of the players (in this case Jabba) picks a number N and the stones are arranged in N columns, with the i-eth column having i stones (First column with 1 stone, second column with 2 stones, and so on).</p>
+<p>Having great knowledge in these kinds of games, and knowing that who makes the first move (in this case Jabba) is more likely to win the game, Han proposed a little change to the game. He would be able to pick three integers A, B and K and add K stones to every column between columns A and B (inclusive). Jabba accepted the proposal but added a limitation, Jabba's counselor would consider Q possible operations of this type and Solo would have to apply each of these operations independently to the original game. Since Han is not accompanied by his fellow friend Chewbacca (that usually helps him in these situations), he asked you to help him beat Jabba.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input consists of several test cases and ends with <strong>EOF</strong>.</p>
+<p>
+                    The first line of a test case consists of two integers <strong>N</strong> (<strong>1</strong> &lt;= <strong>N</strong> &lt;= <strong>10<sup>18</sup></strong>) and <strong>Q</strong> (<strong>Q</strong> &lt;= <strong>10<sup>5</sup></strong>), the number picked by Jabba, and the number of operations suggested by the counselor.
+                </p>
+<p>
+                    The next <strong>Q</strong> lines consist in <strong>3</strong> integers <strong>A</strong>, <strong>B</strong> (<strong>1</strong> &lt; = <strong>A</strong> &lt;= <strong>B</strong> &lt;= <strong>N</strong>) and <strong>K</strong> (<strong>-A</strong> &lt;= <strong>K</strong> &lt;= <strong>10<sup>18</sup></strong>) describing each operation selected by the counselor.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case, the output consists of <strong>Q</strong> lines containing the winner of the game (considering both players play optimally) for each one of the operations suggested.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>8 3</p>
+<p>4 6 5</p>
+<p>3 6 -2</p>
+<p>1 1 8</p>
+</td>
+<td>
+<p>JABBA</p>
+<p>JABBA</p>
+<p>HAN</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">
+                The operations selected by the counselor are independent.<br/>
+                Contest Road to Fortaleza II 2014
+            </p>
+</div>

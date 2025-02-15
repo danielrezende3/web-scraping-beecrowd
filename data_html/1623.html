@@ -1,0 +1,45 @@
+<div class="problem">
+<div class="description">
+<p>Germanium an intergalactic warrior and conqueror of planets has trouble speaking when he gets nervous, he gets a little stutter. So, words like WANT, he speaks WWANT, GO, he speaks GGO and so on.</p>
+<p>Annoyed by this, Germanium decided that all new conquest of a new planet he would invent a new language. Given an alphabet, where there is no character repetition, for example, QABCDEFG, all of the new language words begin with the letter Q twice. In this case, the word QQABCDEFG be valid.</p>
+<p>You reviewed the case, and made the suggestion that the characters to be repeated can occur in any part of the new word since they are always in the same order and together. In the example given, ABCDEFGQQ would be valid as well.</p>
+<p>The Warrior beloved Germanium liked his idea and asked you to calculate how many words these new languages ââwill. But if the language has a very large number of words he wants to discard this language.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>There will be several test cases. Each test case starts with two integers <strong>N</strong> and <strong>Q</strong> (1 &lt; <strong>N</strong> â¤ 100000, 1 â¤ <strong>Q</strong> &lt;<strong>N</strong>), indicating the size of the alphabet and the number of characters of the alphabet that will be considered in the repetition that can occur in anywhere in the word, respectively. The second line consists of a integer <strong>T</strong> (1 â¤ 10<sup>5000</sup>) indicating the maximum number of words allowed by the language.</p>
+<p>The latter test case is indicated when <strong>N</strong> = <strong>Q</strong> = 0, which should not be processed.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case, print a line containing an integer indicating the number of distinct words that have this new language. And print "descartado" if the word count exceeds the value of <strong>T</strong>.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>4 1</p>
+<p>100</p>
+<p>5 2</p>
+<p>30</p>
+<p>6 3</p>
+<p>10</p>
+<p>0 0</p>
+</td>
+<td>
+<p>24</p>
+<p>24</p>
+<p>descartado</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">XIV Contest Algar Telecom 2014</p>
+</div>

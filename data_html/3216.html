@@ -1,0 +1,63 @@
+<div class="problem">
+<div class="description">
+<p>A test for allergy is conducted over the course of several days, and consists of exposing you to different substances (so called allergens). The goal is to decide exactly which of the allergens you are allergic to. Each allergen has a live duration <strong>D</strong> measured in whole days, indicating exactly how many days you will suffer from an allergic reaction if you are allergic to that particular substance. An allergic reaction starts to show almost immediately after you have been exposed to an allergen which you are allergic to. The test scheme has two action points per day:</p>
+<p>                I At 8 oâclock each morning, at most one of the allergens is applied to your body.</p>
+<p>                II At 8 oâclock each evening, you are examined for allergic reactions.</p>
+<p>Thus an allergen with live duration <strong>D</strong> will affect exactly <strong>D</strong> allergic reaction examinations.</p>
+<p>Of course, if you have two or more active allergens in your body at the time of an observed reaction, you cannot tell from that information only, which of the substances you are allergic to.</p>
+<p>You want to find the shortest possible test scheme given the durations of the allergens you want to test. Furthermore, to allow simple large scale application the test scheme must be non-adaptive, i.e. the scheme should be fixed in advance. Thus you may not choose when to apply an allergen based on the outcome of previous allergic reaction examinations.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line of the input contains a single integer <strong>K</strong> (1 â¤ <strong>K</strong> â¤ 20) specifying the number of allergens being tested for. Then follow <strong>K</strong> lines each containing an integer <strong>D</strong> (1 â¤ <strong>D</strong> â¤ 7) specifying the live duration of each allergen.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>The number of days of the shortest conclusive non-adaptive test scheme.</p>
+<p>
+                        <em>A scheme ends the morning when you no longer have active allergens in your body, thus a test scheme for a single allergen with live duration <strong>D </strong>takes <strong>D </strong>days.</em>
+</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>3</p>
+<p>2</p>
+<p>2</p>
+<p>2</p>
+</td>
+<td>
+<p>5</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>5</p>
+<p>1</p>
+<p>4</p>
+<p>2</p>
+<p>5</p>
+<p>2</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Nordic Collegiate Programming Contest 2009</p>
+</div>

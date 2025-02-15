@@ -1,0 +1,42 @@
+<div class="problem">
+<div class="description">
+<p>You can see a (4x4) grid below. Can you tell me how many squares and rectangles are hidden there? You can assume that squares are not rectangles. Perhaps one can count it by hand but can you count it for a (100x100) grid or a (10000x10000) grid. Can you do it for higher dimensions? That is can you count how many cubes or boxes of different size are there in a (10x10x10) sized cube or how many hyper-cubes or hyper-boxes of different size are there in a four-dimensional (5x5x5x5) sized hypercube. Remember that your program needs to be very efficient. You can assume that squares are not rectangles, cubes are not boxes and hyper-cubes are not hyper-boxes. </p>
+<p class="center"><img alt="" src="https://resources.beecrowd.com/gallery/images/promocao/cubos.png"/></p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input contains one integer <strong>N</strong> (0 â¤ <strong>N</strong> â¤ 100) in each line, which is the length of one side of the grid or cube or hypercube. As for the example above the value of <strong>N</strong> is 4. There may be as many as 100 lines of input.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each line of input, output six integers <strong>S2, R2, S3, R3, S4, R4</strong> in a single line where <strong>S2</strong> means the number of squares inside the <strong>(NxN)</strong> two-dimensional grid, <strong>R2</strong> means the number of rectangles inside the <strong>(NxN)</strong> two-dimensional grid. <strong>S3, R3, S4, R4</strong> have the same meaning but in higher dimensions as described before.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                1<br/>
+                                2<br/>
+                                3
+                            </p>
+</td>
+<td>
+<p>
+                                1 0 1 0 1 0<br/>
+                                5 4 9 18 17 64<br/>
+                                14 22 36 180 98 1198
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">âA bus was running at full speed and suddenly the driver stopped it. As a result a passenger fell down from his seat and began scolding Newton as Newton invented inertia of motion.â</p>
+</div>

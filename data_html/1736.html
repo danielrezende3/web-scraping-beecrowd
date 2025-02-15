@@ -1,0 +1,51 @@
+<div class="problem">
+<div class="description">
+<p>A tree (i.e. a connected graph without cycles) with vertices numbered by the integers 1, 2, ..., <strong>n</strong> is given. The "PrÃ¼fer" code of such a tree is built as follows: the leaf (a vertex that is incident to only one edge) with the minimal number is taken. This leaf, together with its incident edge is removed from the graph, while the number of the vertex that was adjacent to the leaf is written down. In the obtained graph, this procedure is repeated, until there is only one vertex left (which, by the way, always has number <strong>n</strong>). The written down sequence of <strong>n-1</strong> numbers is called the PrÃ¼fer code of the tree.</p>
+<p>Your task is, to reconstruct a tree, given its PrÃ¼fer code. The tree should be denoted by a word of the language specified by the following grammar:</p>
+<p class="code">
+                    T ::= "(" N S ")"<br/>
+                    S ::= " " T S<br/>
+                        | empty<br/>
+                    N ::= number
+                </p>
+<p>That is, trees have parentheses around them, and a number denoting the identifier of the root vertex, followed by arbitrarily many (maybe none) subtrees separated by a single space character. As an example, take a look at the tree in the figure below which is denoted in the first line of the sample output.</p>
+<p>Note that, according to the definition given above, the root of a tree may be a leaf as well. It is only for the ease of denotation that we designate some vertex to be the root. Usually, what we are dealing here with is called an "unrooted tree".</p>
+<p class="center"><img alt="" src="https://resources.beecrowd.com/gallery/images/promocao/decode%20the%20tree.gif" style="height: 222px; width: 222px"/></p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input contains several test cases. Each test case specifies the PrÃ¼fer code of a tree on one line. You will find <strong>n-1</strong> numbers separated by a single space. Input is terminated by EOF. You may assume that 1 â¤ <strong>n</strong> â¤ 50.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case generate a single line containing the corresponding tree, denoted as described above. Note that, in general, there are many ways to denote such a tree: choose your favorite one.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                5 2 5 2 6 2 8<br/>
+                                2 3<br/>
+                                2 1 6 2 6
+                            </p>
+</td>
+<td>
+<p>
+                                (8 (2 (3) (5 (1) (4)) (6 (7))))<br/>
+                                (3 (2 (1)))<br/>
+                                (6 (1 (4)) (2 (3) (5)))
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">University of Ulm local Contest 2001/2002.</p>
+</div>

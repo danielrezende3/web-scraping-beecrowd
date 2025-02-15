@@ -1,0 +1,109 @@
+<div class="problem">
+<div class="description">
+<p>One of the trials of the Triwizard Tournament will be a football match, and <em>Chapecoense</em> has been training hard to face Hogwarts players. The Chapecoense Football Association (in Portuguese: <em>AssociaÃ§Ã£o Chapecoense de Futebol</em>, or shortly ACF, or simply <em>Chapecoense</em>) is the football team of the city of ChapecÃ³. Founded in 1973, the team nowadays plays among the best teams of Brazil, and it is not some freak teenagers of hat and broomstick that are going to frighten our brave warriors, even though we all have been shocked when the Goblet of Fire chose our muggle players to participate of the Triwizard Tournament. As we have previously mentioned, the history of the team begins in 1973 whenâ¦</p>
+<p>We interrupt this text for the transmission of an urgent message of the Minister of Magic.</p>
+<table id="carta">
+<tbody>
+<tr>
+<td>
+<p>
+                                    Good afternoon, muggle ladies and gentlemen! Cursed be the day in which Dolores Umbridge has left the prison. Now, she lives to piss me off with those Math problems. And she knows I'm not good at these things. So, can you write a program to help me? The problem is: she says to me an integer <strong>N</strong> and asks me to tell how many divisors <strong>N</strong> has and to keep this <strong>N</strong> in my head. So far so good. I'm not that stupid and I don't need help in this part. But then she keeps saying to me some prime numbers and, for each prime <strong>p</strong> she says, I'm supposed to multiply <strong>p</strong> by <strong>N</strong>, updating the value of <strong>N</strong> in my head, and, as if it were not enough, I still have to tell her how many divisors this new <strong>N</strong> has which are composed only by prime factors less than <strong>p</strong>. For example, if I have kept in my head <strong>N</strong> = 630 and she says <strong>p</strong> =
+                                    5, I must update <strong>N</strong> to 3150 and say 6, for the only divisors of 3150 composed only by prime factors less than 5 are: 1, 2, 3, 6, 9 and 18. But the number <strong>N</strong> grows very quickly, and I don't want to lose the game to her. Please do something!
+                                </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input consists of at least 2 and at most 10<sup>5</sup> lines. The first line consists of the single integer <strong>N</strong> (2 â¤ <strong>N</strong> â¤ 10<sup>12</sup>). Each one of the next lines consist of a single prime number <strong>p</strong> (2 â¤ <strong>p</strong> â¤ 10<sup>7</sup>). The integers are given in the input in the order that Dolores Umbridge says them. The input ends in end of file.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each prime number <strong>p</strong> said by Dolores Umbridge, print a line consisting only of the answer that the Minister of Magic was supposed to give her. As the answer can be a very large number, print only the remainder that is left when the answer is divided by 10<sup>9</sup> + 7.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                630<br/>
+                                5<br/>
+                                7<br/>
+                                2<br/>
+                                3<br/>
+                                11
+                            </p>
+</td>
+<td>
+<p>
+                                6<br/>
+                                18<br/>
+                                1<br/>
+                                3<br/>
+                                108
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                2<br/>
+                                3<br/>
+                                5<br/>
+                                7<br/>
+                                11
+                            </p>
+</td>
+<td>
+<p>
+                                2<br/>
+                                4<br/>
+                                8<br/>
+                                16
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                2<br/>
+                                2<br/>
+                                2<br/>
+                                2<br/>
+                                3
+                            </p>
+</td>
+<td>
+<p>
+                                1<br/>
+                                1<br/>
+                                1<br/>
+                                5
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">4Âº Maratona UFFS</p>
+</div>

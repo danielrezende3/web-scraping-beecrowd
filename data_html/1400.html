@@ -1,0 +1,145 @@
+<div class="problem">
+<div class="description">
+<p>There are n people standing in a line, playing a famous game called "counting". When the game begins, the leftmost person says "1" loudly, then the second person (people are numbered 1 to n from left to right) says "2" loudly. This is followed by the 3rd person saying "3" and the 4th person say "4", and so on. When the n-th person (i.e. the rightmost person) said "n" loudly, the next turn goes to his immediate left person (i.e. the (n - 1)-th person), who should say "n + 1" loudly, then the (n - 2)-th person should say "n + 2" loudly. After the leftmost person spoke again, the counting goes right again. There is a catch, though (otherwise, the game would be very boring!): if a person should say a number who is a multiple of 7, or its decimal representation contains the digit 7, he should clap instead! The following tables shows us the counting process for n = 4 ('X' represents a clap). When the 3rd person claps for the 4th time, he's actually counting 35.</p>
+<table id="game">
+<tbody>
+<tr>
+<td>Person</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>X</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Person</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>X</td>
+<td>15</td>
+<td>16</td>
+<td>X</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Person</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>19</td>
+<td>20</td>
+<td>X</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Person</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>X</td>
+<td>29</td>
+<td>30</td>
+<td>31</td>
+<td>32</td>
+<td>33</td>
+<td>34</td>
+<td>X</td>
+<td>36</td>
+</tr>
+</tbody>
+</table>
+<p>Given n, m and k, your task is to find out, when the m-th person claps for the k-th time, what is the actual number being counted.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>There will be at most 100 test cases in the input. Each test case contains three integers <strong>n</strong>, <strong>m</strong> and <strong>k</strong> ( 2 â¤<strong> n</strong> â¤ 100, 1 â¤ <strong>m</strong> â¤ <strong>n</strong>, 1 â¤ <strong>k</strong> 100) in a single line. The last test case is followed by a line with <strong>n</strong> = <strong>m</strong> = <strong>k</strong> = 0, which should not be processed.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each line, print the actual number being counted, when the <strong>m</strong>-th person claps for the <strong>k</strong>-th time. If this can never happen, print '-1'.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                4 3 1<br/>
+                                4 3 2<br/>
+                                4 3 3<br/>
+                                4 3 4<br/>
+                                0 0 0
+                            </p>
+</td>
+<td>
+<p>
+                                17<br/>
+                                21<br/>
+                                27<br/>
+                                35
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">The Seventh Hunan Collegiate Programming Contest. Special Thanks: Yiming Li &amp; Jane Alam Jan. I/O by UOJ.</p>
+</div>

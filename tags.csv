@@ -1,0 +1,144 @@
+id_number,tag
+1028,gcd number-theory
+1093,probability simulation
+1138,digit-counting combinatorics
+1161,factorial arithmetic
+1163,projectile trigonometry
+1169,exponentiation geometric-progression
+1170,logarithm iteration
+1193,base-conversion number-systems
+1198,arithmetic absolute-difference
+1199,base-conversion number-systems
+1202,fibonacci modular-arithmetic
+1212,digit-arithmetic simulation
+1213,number-theory modular-arithmetic
+1214,average statistics arithmetic
+1219,geometry heron circle
+1220,arithmetic money-splitting
+1221,prime-testing number-theory
+1230,numerical-integration interpolation
+1232,group-theory permutation
+1233,combinatorics number-theory
+1240,modular-arithmetic digit-matching
+1247,relative-motion geometry
+1264,divisibility number-systems
+1279,divisibility leap-year
+1289,probability geometric-series
+1297,integration binary-search
+1304,simulation time-calculation
+1306,combinatorics greedy
+1307,string-gcd
+1308,triangular-numbers
+1309,string-formatting
+1323,combinatorics sum-of-squares
+1324,physics geometry simulation
+1338,number-theory square-free
+1346,subset-sum combinatorics
+1347,graph shortest-path
+1352,combinatorics probability
+1353,combinatorics dp
+1371,number-theory
+1376,simulation grid
+1380,recurrence fast-exponentiation
+1381,combinatorics stars-and-bars
+1390,number-systems simulation
+1392,binary-search simulation
+1393,combinatorics Fibonacci
+1398,modular-arithmetic big-integers
+1399,segment-tree range-query
+1400,simulation digit-check
+1422,recurrence matrix-exponentiation
+1433,dp partition greedy
+1434,simulation
+1436,median sorting
+1444,simulation tournament
+1450,dp box-stacking
+1457,factorial number-theory
+1481,computational-geometry simulation
+1484,backtracking dfs combinatorics
+1488,number-theory brute-force
+1492,bit-counting math
+1501,factorial number-theory logarithm
+1505,simulation cycle
+1512,inclusion-exclusion math
+1526,greedy simulation math
+1531,fibonacci modular-arithmetic
+1537,combinatorics permutations
+1544,number-theory combinatorics
+1554,geometry simulation
+1555,arithmetic evaluation
+1563,probability number-theory
+1567,combinatorics geometry
+1568,number-theory consecutive-sum
+1570,algebra equations
+1572,recursion dp probability
+1580,combinatorics modular_arithmetic
+1582,number_theory geometry gcd
+1585,geometry
+1620,computational_geometry
+1623,combinatorics
+1624,dynamic_programming knapsack
+1625,computational_geometry closest_pair
+1626,number_theory factorial
+1630,geometry gcd
+1634,probability combinatorics
+1635,arithmetic floating_point
+1641,geometry
+1644,group_theory permutations
+1647,recurrence summation
+1650,combinatorics geometry
+1656,combinatorics number_theory
+1658,group_theory
+1660,simulation modular_arithmetic
+1662,algebra matrix
+1674,simulation fractions number_theory
+1688,game_theory combinatorics
+1694,combinatorics primes
+1697,number_theory greedy
+1703,combinatorics probability
+1705,number_theory
+1729,arithmetic
+1734,prefix_sums
+1735,combinatorics trees
+1736,combinatorics trees
+1745,number_theory
+1754,arithmetic
+1756,probability
+1760,geometry fractals
+1761,trigonometry
+1776,number_theory perfect_square
+1785,number_theory
+1801,arithmetic
+1807,exponentiation
+1812,scheduling
+1815,markov_chain
+1819,linear_regression
+1829,logarithms
+1830,linear_equations
+1831,crt
+1839,combinatorics
+1841,number_theory divisors
+1869,number_conversion
+1872,palindromes
+1909,number_theory lcm
+1921,combinatorics geometry
+1926,number_theory primes sieve
+1946,probability binomial
+1949,linear_algebra lfsr gf2
+1967,arithmetic table_calculation
+1968,number_theory divisors combinatorics
+1990,statistics balanced_sets
+1992,dynamic_programming tournament
+1995,dynamic_programming tournament
+1999,diophantine combinatorics number_theory
+2001,recurrence linear_recurrence
+2007,computational_geometry point_in_polygon
+2033,financial_math arithmetic
+2034,number_theory base_conversion combinatorics
+2044,arithmetic modulo
+2063,number_theory lcm graph
+2066,number_theory digit_manipulation combinatorics
+2068,probability geometric_probability
+2069,number_theory gcd
+2076,combinatorics inclusion_exclusion number_theory
+2084,arithmetic percentages

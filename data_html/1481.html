@@ -1,0 +1,56 @@
+<div class="problem">
+<div class="description">
+<p>Zing Zhu owns an island that is a piece of flat land. Everyday, when the tide rises, the island is flooded by sea water. After much thinking and asking advice from members of his family, Zing Zhu decided to set up an oyster farm in the island. Zing Zhu uses a sophisticated system of plastic watertight modular fences to control the areas that will be flooded and the areas that will not be flooded during the rise of the tide. The fences used by Zing Zhu are either horizontal or vertical and come in strips that have different lengths and heights. Two fences can intersect in at most one point, not necessarily in their ends.</p>
+<p style="text-align: center"><img alt="" src="https://resources.beecrowd.com/gallery/images/novos/Zing%20Zhu%E2%80%99s%20Oyster%20Farm.png" style="width: 575px; height: 190px"/>â</p>
+<p>Picture 1 (left): Map of fence strips installed in the farm, showing fence strip heights in centimeters.</p>
+<p>Picture 2 (right): Non-flooded areas (shown in white) if the tide rises 110 centimeters.</p>
+<p>You have been contacted by Zing Zhu to calculate, given the height the tide will reach and the position and height of all fence strips, the total area of land which will not be flooded during the high tide. You may assume that the widths of fence strips are so thin compared to the size of the land that, for the purpose of calculating the total area, fence strips may be considered as having widths equal to zero.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input contains several test cases. The first line of a test case contains an integer <strong>N</strong> indicating the number of fence strips in the island (1 â¤ <strong>N</strong> â¤ 2000). Each of the next <strong>N</strong> lines contains five integers <strong>X</strong><sub>1</sub>, <strong>Y</strong><sub>1</sub>, <strong>X</strong><sub>2</sub>, <strong>Y</strong><sub>2</sub> and <strong>H</strong>, representing respectively the start point of the strip (<strong>X</strong><sub>1</sub>,<strong>Y</strong><sub>1</sub>), the end point of the strip (<strong>X</strong><sub>2</sub>,<strong>Y</strong><sub>2</sub>) and the strip height (<strong>H</strong>). The last line of a test case contains an integer <strong>W</strong> representing the tide height. Coordinates are given in meters, heights in centimeters. Furthermore, <strong>X</strong><sub>1</sub> = <strong>X</strong><sub>2</sub> or <strong>Y</strong><sub>1</sub> = <strong>Y</strong><sub>2</sub> (but not both); â500 â¤ <strong>X</strong><sub>1</sub>,<strong>Y</strong><sub>1</sub>,<strong>X</strong><sub>2</sub>,<strong>Y</strong><sub>2</sub> â¤ 500; and 1 â¤ <strong>W</strong>, <strong>H</strong> â¤ 1000. The end of input is indicated by <strong>N</strong> = 0.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case in the input your program must produce one line of output, containing one integer representing the total area (in m<sup>2</sup>) of the land which will not be flooded.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                4<br/>
+                                -20 20 20 20 200<br/>
+                                20 20 20 -20 200<br/>
+                                0 0 0 20 100<br/>
+                                -10 0 20 0 200<br/>
+                                100<br/>
+                                4<br/>
+                                -20 20 20 20 200<br/>
+                                20 20 20 -20 200<br/>
+                                0 0 0 20 100<br/>
+                                -10 0 20 0 200<br/>
+                                101<br/>
+                                0
+                            </p>
+</td>
+<td>
+<p>
+                                400<br/>
+                                0
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">ACM/ICPC South America Contest 2004.</p>
+</div>

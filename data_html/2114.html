@@ -1,0 +1,110 @@
+<div class="problem">
+<div class="description">
+<p>Poker is played with a traditional deck of 52 cards (13 values in 4 suits). The values on the cards, in ascending order, are: <em>2</em>, <em>3</em>,â¦, <em>10</em>, <em>Jack</em>, <em>Queen</em>, <em>King</em>, <em>Ace</em>. Given a round of a poker game with two players, your job is to determine the winner.</p>
+<p>Each player has two card of their own and there are five cards common to both players on the table. The player with the best hand of five cards among his own two and the five on the table wins. A card from the table can be used by both players at the same time and the player hand can be obtained by ignoring the two cards of their own and using the five cards common to both of them.</p>
+<p>In order to compare two hands, you have to check which hands they match on the list below. If a hand matches more than one type, you must choose the most valuable one. If two hands match a same type, you apply the tiebreaker rule specific to this type.</p>
+<p>The list of hands, sorted from the least valuable to the most valuable, and their respective tiebreaker criteria is:</p>
+<ul>
+<li><em>High card</em>: any hand that does not matches any other hand. The tiebreaker rule is to compare the five cards one by one, from the most valuable to the least, until a hand presents a card with more value than the other.</li>
+<li><em>One pair</em>: two cards of the same type. The tiebreaker rule is similar to the high cardâs rule, only that you compare first the pair and then the other cards.</li>
+<li><em>Two pairs</em>: two pairs. The tiebreaker rule is similar to the high cardâs rule. You first compare the most valuable pair, then the least valuable pair and then the remaining card.</li>
+<li><em>Three of a kind</em>: three cards of the same value. The tiebreaker rule is similar to the one pairâs rule.</li>
+<li><em>Straight</em>: five cards sequence of consecutive values. In this case, the Ace can take the value of both the least valuable card (before the 2) or of the most valuable (after the king). The tiebreaker rule is done by the most valuable card on the straight. Note that the Ace is the least valuable card if it appears before the 2.</li>
+<li><em>Flush</em>: five cards of the same suit. The tiebreaker rule is the same of the high cardâs rule.</li>
+<li><em>Full House</em>: a three of a kind and a pair. The tiebreaker rule is done by comparing first the values of the three of a kind. If the tie remains, the pair values must be compared.</li>
+<li><em>Four of a kind</em>: four cards with the same value. The tiebreaker rule is comparing the values of the four of a kind and then the remaining card.</li>
+<li><em>Straight Flush</em>: Straight and Flush simultaneously. The tiebreaker rule is the same of the straightâs rule.</li>
+</ul>
+<p>Note that it is possible for a tie to remains even after the tiebreaker rules are applied. The cards suits are only to be considered to define a flush, and are not be taken in account in any tiebreaker rule.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input has several instances and ends with an end of file (EOF).</p>
+<p>Each instance is composed of three lines. The two first lines contain the description of two cards each one, separated by a blank space. The first line corresponds to the cards of the first player while the second line corresponds to the cards of the second player. The third line contains the description of the five cards on the table, also separated by blank space.</p>
+<p></p>
+<table style="margin-left: auto; margin-right: auto; text-align: center; max-width: 200px">
+<tbody>
+<tr>
+<td>Character</td>
+<td>Card</td>
+</tr>
+<tr>
+<td>'2'- '9'</td>
+<td>2 - 9</td>
+</tr>
+<tr>
+<td>'T'</td>
+<td>10</td>
+</tr>
+<tr>
+<td>'J'</td>
+<td>Jack</td>
+</tr>
+<tr>
+<td>'Q'</td>
+<td>Queen</td>
+</tr>
+<tr>
+<td>'K'</td>
+<td>King</td>
+</tr>
+<tr>
+<td>'A'</td>
+<td>Ace</td>
+</tr>
+<tr>
+<td>'e'</td>
+<td>Spades</td>
+</tr>
+<tr>
+<td>'c'</td>
+<td>Hearts</td>
+</tr>
+<tr>
+<td>'o'</td>
+<td>Diamonds</td>
+</tr>
+<tr>
+<td>'p'</td>
+<td>Clubs</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>The description of a card is given by two characters, the first indicating the value of the card and the second its suit, according to the input sample.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each instance, print a line containing a single integer. Print 1 if the first player wins the instance, print 2 if the second player wins or print 0 if there is a tie, even after the tiebreaker rules are applied.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>Te Je</p>
+<p>Tp Jp</p>
+<p>Qe Qp Ke Kp Ae</p>
+<p>Ae 7o</p>
+<p>Ac 8e</p>
+<p>Ap Ao 9e Jc Kp</p>
+<p>Ae 7o</p>
+<p>Ac 8e</p>
+<p>Ap Ao 6e 3c Kp</p>
+</td>
+<td>
+<p>1</p>
+<p>0</p>
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">XVII Maratona de ProgramaÃ§Ã£o IME-USP, 2013</p>
+</div>

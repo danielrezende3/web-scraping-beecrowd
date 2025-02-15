@@ -1,0 +1,46 @@
+<div class="problem">
+<div class="description">
+<p>After asking for a square ball to his mother, Kiko did not receive just one, but several birthday balls! Kikos loves to drop multiple balls at once on the ground and keep watching them bounce. As the balls have size, weight and are made of different materials, the bounce time from one to another is variable. In this problem we will assume that every ball bounces infinitely according to its bouncing time.</p>
+<p>Kiko released at the same time <strong>N</strong> balls and realized that depending on the bounce time of the balls, in a few moments, all the balls bounce at the same time, and he loved it!</p>
+<p>Given the bounce time in seconds of the <strong>N</strong> balls that Kiko choose and a time <strong>T</strong>, which is the second that Kiko wants all the balls bounce together, your task is to find the lowest bounce time for another ball so all the N + 1 balls, when they are released together, all of them will bounce at the same time for the first time exactly in the second <strong>T</strong>.</p>
+<p>The bouncing time that you will choose canât be identical to any previously chosen by Kiko and should be greater than 1.</p>
+<p>Bounce time is the difference of the time that the ball touch the ground twice in succession. If a ball has bounce time = 4, we will consider that it will bounce at seconds 4, 8, 12, 16...</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>There will be several test cases. The first line of each case begins with two integers <strong>N</strong> (1 â¤ <strong>N</strong> â¤ 100) and <strong>T</strong> (1 â¤ <strong>T</strong> â¤ 10<sup>5</sup>) representing the amount of balls that Kiko has and the second that Kiko want to see the N+1 bouncing at the same time for the first time. On the next line, <strong>N</strong> integers in the range <strong>[1, T]</strong> follows, representing the bounce time of each ball.</p>
+<p>The input ends with <strong>N</strong> = <strong>T</strong> = 0, which should not be processed.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each case, output the bounce time of the ball that you choose, or "impossivel" if there doesnât exist a ball that will satisfy Kikoâs whishes.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>2 12</p>
+<p>2 4</p>
+<p>2 20</p>
+<p>3 2</p>
+<p>3 100</p>
+<p>4 5 20</p>
+<p>0 0</p>
+</td>
+<td>
+<p>3</p>
+<p>impossivel</p>
+<p>25</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Codando na Vila - 2015</p>
+</div>

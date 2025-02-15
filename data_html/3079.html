@@ -1,0 +1,90 @@
+<div class="problem">
+<div class="description">
+<p>After many complaints on city hall, residents of a specific street will finally have their houses illuminated. To make it possible will be necessary to build a pole network on this street obeying the following constraints:</p>
+<ul>
+<li>
+<p>
+                            any two adjacent poles have a distance <strong><em>k </em></strong>between them;
+                        </p>
+</li>
+<li>
+<p>there should be at least one pole in front of each house.</p>
+</li>
+</ul>
+<p>
+                    The street has <strong><em>N</em></strong> houses and is considered a strait line. A house is represented by a segment of the street and a pole is said to be in front of this house if it is inside this segment. The <strong><em>i</em></strong>-th house means the segment between <em><strong>A<sub>i</sub></strong></em>  and <em><strong>A<sub>i</sub></strong></em><sub>+1</sub> - 1, inclusive, where 1 â¤ <strong><em>i</em></strong> &lt; <strong><em>N</em></strong>, and the last house means the segment between <strong><em>A<sub>N</sub></em></strong> and <strong><em>M</em></strong>, inclusive.
+                </p>
+<p>
+                    The city mayor intends to minimize the number of poles that should be installed by maximizing the distance <strong><em>k</em></strong>. Write a program that finds the biggest distance <strong><em>k</em></strong> that satisfies the above constraints.
+                </p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The first line of the input contains two integers  <strong><em>N</em></strong> and <em><strong>M</strong></em> (2 â¤ <strong><em>N</em></strong> â¤ 10<sup>3</sup>,<sup> </sup>2 â¤ <strong><em>M</em></strong> â¤ 10<sup>5</sup>), which describes the number of houses and the length of the street, respectively. The second line contains <strong><em>N</em></strong> integers <strong><em>A<sub>i</sub></em></strong>  (0 â¤ <em><strong>A<sub>i</sub></strong></em> &lt; <strong><em>M</em></strong>; <strong><em>A<sub>i</sub></em></strong>  &lt; <em><strong>A<sub>i</sub></strong></em><sub>+1</sub> for all 1 â¤ <strong><em>i</em></strong> &lt; <strong><em>N</em></strong>), which represents the coordinates of the beginning of each house in the street. It is guaranteed that <strong><em>A<sub>1</sub></em></strong> = 0.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>
+                    The output contains just one line with an integer <em><strong>k</strong></em>, that means the biggest possible distance between two adjacent poles obeying the above constraints.
+                </p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                3 26<br/>
+                                0 12 15
+                            </p>
+</td>
+<td>
+<p>13</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                5 20<br/>
+                                0 4 8 9 12
+                            </p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                6 121<br/>
+                                0 29 46 55 81 114
+                            </p>
+</td>
+<td>
+<p>23</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">PUC GoiÃ¡s Marathon #1</p>
+</div>

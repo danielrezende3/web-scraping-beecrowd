@@ -1,0 +1,53 @@
+<div class="problem">
+<div class="description">
+<p>Consider <em>n</em> points on a unit circle with numbers <em>k = 0, 1, ..., n-1</em>. Initially point <em>k</em> makes an angle of <em>360 Â· k / n</em> degrees to the x-axis, measured in counter-clockwise direction. We are going to perform two different kind of operations on that set of points:</p>
+<ul>
+<li>rotation by <em>360 / n</em> degrees in clockwise direction</li>
+<li>reflection with respect to the x-axis</li>
+</ul>
+<p>The following picture shows an example of these operations:</p>
+<p class="center"><img alt="" src="https://resources.beecrowd.com/gallery/images/promocao/dihedral%20groups.png"/></p>
+<p>Given a sequence of operations, we are interested in the shortest sequence of operations which gives the same result, i.e., the position of every single point is the same after performing either of those sequences of operations.</p>
+<p>The sequence is given as a string consisting of the characters 'r' and 'm' which represent clockwise rotation and reflection respectively ("to the right" and "mirror"). Multiple consecutive occurrences of the same character are collected into the representation &lt;character&gt;&lt;number&gt;, and for convenience this will also be done for single occurrences. So "rrmrrrrrrrrrrrr" will be abbreviated to "r2 m1 r12". The representations of different operations are always separated by a single space.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input file consists of several test cases. Each test case starts with a line containing <strong>n</strong> (3 â¤ <strong>n</strong> â¤ 10<sup>8</sup>), the number of points. The second line of each test case consists of an abbreviated sequence of operations as described above. All numbers will be positive and less than 10<sup>8</sup>. There will be no empty line in the input file, and no line will contain more than 100000 characters. The last test case is followed by a line containing 0.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case print one line containing the abbreviated format of the sequence with the minimum number of operations which results in the same configuration of points as the input sequence. In case of multiple optimal solutions, print any solution.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                4<br/>
+                                r2<br/>
+                                100<br/>
+                                m1 r100 m1<br/>
+                                54<br/>
+                                r218 m3 r1<br/>
+                                0
+                            </p>
+</td>
+<td>
+<p>
+                                r2<br/>
+<br/>
+                                r1 m1
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Univeristy of Ulm Local Contest 2006/2007</p>
+</div>

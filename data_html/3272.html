@@ -1,0 +1,60 @@
+<div class="problem">
+<div class="description">
+<p>For the grand opening of the algorithmic games in NlogNsglow, a row of tower blocks is set to be demolished in a grand demonstration of renewal. Originally the plan was to accomplish this with controlled explosions, one for each tower block, but time constraints now require a hastier solution.</p>
+<p>To help you remove the blocks more rapidly you have been given the use of a Universal Kinetic / Incandescent Energy Particle Cannon (UKIEPC). On a single charge, this cutting-edge contraption can remove either all of the floors in a single tower block, or all the <strong>x</strong>-th floors in all the blocks simultaneously, for userâs choice of the floor number <strong>x</strong>. In the latter case, the blocks that are less than <strong>x</strong> floors high are left untouched, while for blocks having more than <strong>x</strong> floors, all the floors above the removed <strong>x</strong>-th one fall down by one level.</p>
+</div>
+<h2>Task</h2>
+<div>
+<p>Given the number of floors of all towers, output the minimum number of charges needed to eliminate all floors of all blocks.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The first line of input contains the number of blocks <strong>n</strong>, where 2 â¤ <strong>n</strong> â¤ 100000. The second line contains <strong>n</strong> consecutive block heights <strong>h<sub>i</sub></strong> for <strong>i</strong> = 1, 2, . . . , <strong>n</strong>, where 1 â¤ <strong>h<sub>i</sub></strong> â¤ 1000000.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Output one line containing one integer: the minimum number of charges needed to tear down all the blocks.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                6<br/>
+                                2 1 8 8 2 3
+                            </p>
+</td>
+<td>
+<p>5</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                5<br/>
+                                1 1 1 1 10
+                            </p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">NCPC - Nordic Collegiate Programming Contest 2014</p>
+</div>

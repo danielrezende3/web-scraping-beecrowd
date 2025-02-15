@@ -1,0 +1,78 @@
+<div class="problem">
+<div class="description">
+<p>Jaap is playing darts at the local pub with a group of friends. His darts throwing skills are not that great, so he just tries to aim at the center of the dartboard. His mathematical skills are better though, and he wonders what is his expected score for one dart.</p>
+<p>After a while Jaap estimates that his darts hit the dartboard (or often miss it) with a probability distribution that depends only on the radius <strong>r</strong> from the center of the board, and has the Gaussian form (This implies that the total probability is never larger than one).</p>
+<img alt="dartboard-a" src="https://resources.beecrowd.com/gallery/images/problems/dartboard-a.png"/>
+<p>That is, the probability of hitting a small surface area â<strong>x</strong>Â·â<strong>y</strong> at a distance <strong>r</strong> from the center is given by f(<strong>r</strong>)â<strong>x</strong>Â·â<strong>y</strong>. Here <strong>Ï</strong> denotes the standard deviation, and Jaap found out that this depends strongly on how many beers he has had.</p>
+<p>For those not familiar with the game of darts, a dartboard is depicted below. The score for hitting each of the regions of the dartboard is as follows:</p>
+<ul>
+<li>the inner bullâs eye is worth 50 points;</li>
+<li>the bull annulus is 25 points;</li>
+<li>each pie has worth of the respective number 1 up to 20, but</li>
+<li>the inner triple ring has triple the worth of the pie, while</li>
+<li>the outer double ring has double the worth.</li>
+</ul>
+<p>Finally, if the dart lands outside the double ring, the score is zero. Note that the pies of all numbers have equal area.</p>
+<img alt="dartboard-b" src="https://resources.beecrowd.com/gallery/images/problems/dartboard-b.png"/>
+<p>Figure J.1: A standard dartboard (from Wikimedia, CC BY-SA 3.0 licensed by Tijmen Stam).</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line contains 6 floating point numbers of strictly increasing size: the radii of the bullâs eye, bull, inner and outer triple ring, and inner and outer double ring, all in centimeters. The second line contains the standard deviation Ï in centimeters as a floating point number. All floating point numbers are in the range [10â»Â³ , 100].</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Print the expected score of one dart for Jaap as a floating point number on a single line. The answer must have nine decimal places.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>1.27 3.1 10.9 11.7 16.2 17.0</p>
+<p>17.0</p>
+</td>
+<td>
+<p>5.266210658</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>1.27 3.1 10.9 11.7 16.2 17.0</p>
+<p>0.5</p>
+</td>
+<td>
+<p>49.00690019</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>0.1 0.2 0.3 0.4 99.9 100</p>
+<p>20</p>
+</td>
+<td>
+<p>10.50283655</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Nordic Collegiate Programming Contest 2013</p>
+</div>

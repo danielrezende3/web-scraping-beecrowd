@@ -1,0 +1,54 @@
+<div class="problem">
+<div class="description">
+<p>The city of ChapecÃ³, in the west of the brazilian state of Santa Catarina, is where are located the governance of the Federal University of Southern Border and one of the 6 <em>campi</em> of the university. In the next August 25, the 98<sup>th</sup> anniversary of the city shall be celebrated, and the city councilmen are already making the preparations for the party. The goal of this party, besides the anniversary celebration, is to raise funds to the construction of the new city Council's building, which is going to be a Chamber of Secrets, where the city councilmen will be able to vote more peacefully the increases of the bus fare without being so disturbed by the students.</p>
+<p>The Chamber of Secrets is going to be a real maze, so eventual invaders will not exit so easily. But the architects are not sure about the plan and want to make some changes in the project. In order to make the work easier, they have projected the entire plan of the building over a grid of square units, so that each square unit would be either fully wall or free space, as in the figure below.</p>
+<p class="center">
+<img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1839_a.jpg" style="width: 271px; height: 200px"/>
+</p>
+<p>Willing to attack the problem in a more restricted manner, the architects have even picked up some regions of the plan so they could study each region isolated. Now, they want to know what is the number of possibilities they have to rearrange the square units of wall of each region only inside the region itself. For example, for the region highlighted in the figure above, there are 5 possibilities, which we illustrate in the figure below.</p>
+<p class="center"><img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1839_b.jpg" style="width: 650px; height: 68px"/></p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The first line of the input tells the dimensions <strong>N</strong> and <strong>M</strong> (1 â¤ <strong>N</strong>, <strong>M</strong> â¤ 50) of the plan in square units, which represent respectively the number of lines and the number of columns of the grid, and the <strong>N</strong> following lines describe the grid, so that free square units are represented by the character â.â and wall square units by the character â#â. Each one of the remaining lines of the input consists of four integers <strong>x<sub>A</sub></strong>, <strong>y<sub>A</sub></strong>, <strong>x<sub>B</sub></strong> and <strong>y<sub>B</sub></strong> (1 â¤ <strong>x<sub>A</sub></strong> &lt; <strong>x<sub>B</sub></strong> â¤ <strong>N</strong>, 1 â¤ <strong>y<sub>A</sub></strong> &lt; <strong>y<sub>B</sub></strong> â¤ <strong>M</strong>), which define a region by the up-leftmost point (<strong>x<sub>A</sub></strong>, <strong>y<sub>A</sub></strong>) and by the down-rightmost point (<strong>x<sub>B</sub></strong>, <strong>y<sub>B</sub></strong>) of the regions. The input ends in end of file.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each region described in the input, print a line containing singly the number of possibilities the architects have to rearrange the square unities of wall of the region only inside the region itself. As the number of possibilities can be very large, print only the remainder that is left when this number is divided by 10<sup>9</sup> + 7.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                4 6<br/>
+                                #...#.<br/>
+                                ..#.#.<br/>
+                                ##....<br/>
+                                ......<br/>
+                                2 2 3 3<br/>
+                                3 3 4 6<br/>
+                                1 1 4 6
+                            </p>
+</td>
+<td>
+<p>
+                                5<br/>
+                                0<br/>
+                                134595
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">4Âº Maratona UFFS</p>
+</div>

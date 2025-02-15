@@ -1,0 +1,92 @@
+<div class="problem">
+<div class="description">
+<p>Some students of the Federal University of ViÃ§osa walk in the campus wearing a red shirt with the sentence: "This shirt is blue if you run fast enough". Tereu, one of the fastests students of the college, was shocked by the sentence written on the shirt and asked his teacher how the shirt could change its color. The professor said that an object can reflect the light in diffrent wavelengths and each wavelength is related to a color in the visible light, thus, let <span class="math-tex">\(\lambda\) be this wavelength, the color will the determinated according with the following list:</span></p>
+<ul>
+<li>
+<span class="math-tex">\(\lambda\) <span class="math-tex">\(&lt;\) <span class="math-tex">\(400 nm\): invisivel (invisible)</span></span></span>
+</li>
+<li>
+<span class="math-tex">\(400 nm\) <span class="math-tex">\(\leq\) <span class="math-tex">\(\lambda \) <span class="math-tex">\(&lt;\) <span class="math-tex">\(425 nm\): violeta (violet)</span></span></span></span></span>
+</li>
+<li>
+<span class="math-tex">\(425 nm\) <span class="math-tex">\(\leq\) <span class="math-tex">\(\lambda \) <span class="math-tex">\(&lt;\) <span class="math-tex">\(445 nm\): anil (indigo)</span></span></span></span></span>
+</li>
+<li>
+<span class="math-tex">\(445 nm\) <span class="math-tex">\(\leq\) <span class="math-tex">\(\lambda \) <span class="math-tex">\(&lt;\) <span class="math-tex">\(500 nm\): azul (blue)</span></span></span></span></span>
+</li>
+<li>
+<span class="math-tex">\(500 nm\) <span class="math-tex">\(\leq\) <span class="math-tex">\(\lambda \) <span class="math-tex">\(&lt;\) <span class="math-tex">\(575 nm\): verde (green)</span></span></span></span></span>
+</li>
+<li>
+<span class="math-tex">\(575 nm\) <span class="math-tex">\(\leq\) <span class="math-tex">\(\lambda \) <span class="math-tex">\(&lt;\) <span class="math-tex">\(585 nm\): amarelo (yellow)</span></span></span></span></span>
+</li>
+<li>
+<span class="math-tex">\(585 nm\) <span class="math-tex">\(\leq\) <span class="math-tex">\(\lambda \) <span class="math-tex">\(&lt;\) <span class="math-tex">\(620 nm\): laranja (orange)</span></span></span></span></span>
+</li>
+<li>
+<span class="math-tex">\(620 nm\) <span class="math-tex">\(\leq\) <span class="math-tex">\(\lambda \) <span class="math-tex">\(&lt;\) <span class="math-tex">\(750 nm\): vermelho (red)</span></span></span></span></span>
+</li>
+<li>
+<span class="math-tex">\(\lambda \geq\) <span class="math-tex">\(750 nm\): invisivel (invisible)</span></span>
+</li>
+</ul>
+<p>The words between the parentheses are the translates of the colors in portuguese, but it cannot be printed on the output, which has to present the words in portuguese.</p>
+<p>
+                    The change of the color happens because when an observer moves, it sees a wavelength <span class="math-tex">\(\lambda'\), which is diffrent from the <span class="math-tex">\(\lambda\) real one. This phenomenon is called "Doppler Effect" and it's matematically explained by the formula (it works when we consider positive the velocity when the observer approaches the source):</span></span>
+</p>
+<p style="text-align: center"><span class="math-tex">\({\lambda' - \lambda\over\lambda} = \sqrt{c - v\over{c + v}} -1 \)</span></p>
+<p>
+<span class="math-tex">\(v\) is the speed of the observer and <span class="math-tex">\(c\) is the speed of light in the vacuum.</span></span>
+</p>
+<p>
+                    The shirt is red and it reflects the light in the wavelength <span class="math-tex">\(\lambda = 700 nm\), the speed of light in the vacuum is <span class="math-tex">\(c = 3\times10^8 m/s\).</span></span>
+</p>
+<p>
+                    Tereu would see the shirt in a wavelenght <span class="math-tex">\(\lambda' = 495 nm\), that is, blue, if he reached a speed close of <span class="math-tex">\(10^8 m/s\). He knows he is not able to reach this velocity, then, he wants you to create a program which returns the color he would see if he was in a speed <strong>V</strong>.</span></span>
+</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input has only a integer number  <strong>V </strong>(<span class="math-tex">\(-3\times10^8 &lt; \) <strong>V </strong><span class="math-tex">\(&lt; 3\times10^8\)), which represents the speed of Tereu in m/s.</span></span>
+</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>The output has to have the color of the shirt observed by Tereu when he runs in the velocity of the input. The color must be written in portuguese as it is in the list of the wavelengths in the visible spectrum.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>100000000</p>
+</td>
+<td>
+<p>azul</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>0</p>
+</td>
+<td>
+<p>vermelho</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer"></p>
+</div>

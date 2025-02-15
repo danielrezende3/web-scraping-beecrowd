@@ -1,0 +1,48 @@
+<div class="problem">
+<div class="description">
+<p>Assume you have a square of size n that is divided into nÃn positions just as a checkerboard. Two positions (x<sub>1</sub>,y<sub>1</sub>) and (x<sub>2</sub>,y<sub>2</sub>), where 1 â¤ x<sub>1</sub>,y<sub>1</sub>,x<sub>2</sub>,y<sub>2</sub> â¤ n, are called "independent" if they occupy different rows and different columns, that is, x<sub>1</sub>â x<sub>2</sub> and y<sub>1</sub>â y<sub>2</sub>. More generally, n positions are called independent if they are pairwise independent. It follows that there are n! different ways to choose n independent positions.</p>
+<p>Assume further that a number is written in each position of such an nÃn square. This square is called "homogeneous" if the sum of the numbers written in n independent positions is the same, no matter how the positions are chosen. Write a program to determine if a given square is homogeneous!</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input contains several test cases.</p>
+<p>The first line of each test case contains an integer <strong>n</strong> (1 â¤ <strong>n</strong> â¤ 1000). Each of the next <strong>n</strong> lines contains <strong>n</strong> numbers, separated by exactly one space character. Each number is an integer from the interval [-1000000,1000000].</p>
+<p>The last test case is followed by a zero.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case output whether the specified square is homogeneous or not. Adhere to the format shown in the sample output.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                2<br/>
+                                1 2<br/>
+                                3 4<br/>
+                                3<br/>
+                                1 3 4<br/>
+                                8 6 -2<br/>
+                                -3 4 0<br/>
+                                0
+                            </p>
+</td>
+<td>
+<p>
+                                homogeneous<br/>
+                                not homogeneous
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Univeristy of Ulm Local Contest 2006/2007</p>
+</div>

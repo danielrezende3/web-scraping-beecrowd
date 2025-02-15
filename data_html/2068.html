@@ -1,0 +1,51 @@
+<div class="problem">
+<div class="description">
+<p>Taynder is a very popular app. This app is used to meet new people, have relationships and set up dates. It was on Taynder that Mel and Tob met.</p>
+<p>Mel and Tob already chatted for more than 40 minutes, so they think it's time to know each other in person, they set up a date in the city main square. The only problem is that they didn't define a exact time to the meeting, they only know the time interval that they are supposed to meet, but they don't know when the other will arrive. So who gets there first waits a predefined time, but if no one arrives the person goes home to meet someone else in Taynder.</p>
+<p>An example: if Mel and Tob will meet in the real interval [16h, 17h] with maximum wait time equals to 15 minutes, it means that Mel and Tob can arrive at any time between 16h and 17h (including 16h and 17h), and who gets there first, in the time x for instance, will wait for the other person in the time interval defined by [x, x + 15].</p>
+<p>Your work is to write a program that, given the time interval of the meeting and the maximum wait time, determines the probability that they'll meet.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>Each test case is an unique line with 3 integers: <strong>t1</strong>, <strong>t2</strong>, <strong>N</strong>.</p>
+<p><strong>t1</strong>and <strong>t2</strong> represent the real time interval in hours such that <strong>t2</strong> &gt; <strong>t1</strong> and 1 â¤ <strong>t1</strong>, <strong>t2</strong> â¤ 10â¶, <strong>N</strong> represents the maximum wait time in minutes such that 1 â¤ <strong>N</strong> â¤ (<strong>t2</strong>-<strong>t1</strong>)*60.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>The output must be the probability of the date happens in the format <strong>a</strong>/<strong>b</strong>, such that <strong>a</strong>/<strong>b</strong> is an irreducible fraction.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>1 2 15</p>
+</td>
+<td>
+<p>7/16</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>1 2 60</p>
+</td>
+<td>
+<p>1/1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Aquecimento para a OBI 2016</p>
+</div>

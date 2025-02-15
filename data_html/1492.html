@@ -1,0 +1,44 @@
+<div class="problem">
+<div class="description">
+<p>Carl is right now the happiest child in the world: he has just learned this morning what the binary system is. He learned, for instance, that the binary representation of a positive integer k is a string a<sub>n</sub>a<sub>nâ1</sub> Â· Â· Â· a<sub>1</sub>a<sub>0</sub> where each a<sub>i</sub> is a binary digit 0 or 1, starting with a<sub>n</sub> = 1, and such that k= Î£<sup>n</sup><sub>i=0</sub> a<sub>i</sub> Ã 2<sub>i</sub>. It is really nice to see him turning decimal numbers into binary numbers, and then adding and even multiplying them.</p>
+<p>Caesar is Carlâs older brother, and he just canât stand to see his little brother so happy. So he has prepared a challenge: âLook Carl, I have an easy question for you: I will give you two integers A and B, and you have to tell me how many 1âs there are in the binary representation of all the integers from A to B, inclusive. Get readyâ. Carl agreed to the challenge.</p>
+<p>After a few minutes, he came back with a list of the binary representation of all the integers from 1 to 100. âCaesar, Iâm readyâ. Caesar smiled and said: âWell, let me see, I chooseA = 10<sup>15</sup> and B = 10<sup>16</sup>. Your list will not be usefulâ</p>
+<p>Carl hates loosing to his brother so he needs a better solution fast. Can you help him?</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input consists of many test cases and ends with EOF. Each test case consist in a single line that contains two integers<strong> A</strong> and <strong>B </strong>(1 â¤ <strong>A</strong> â¤ <strong>B</strong> â¤ 10<sup>16</sup>).</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case, print a line with an integer representing the total number of digits 1 in the binary representation of all the integers from <strong>A</strong> to <strong>B</strong>, inclusive.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                1000000000000000 10000000000000000<br/>
+                                2 12<br/>
+                                9007199254740992 9007199254740992
+                            </p>
+</td>
+<td>
+<p>
+                                239502115812196372<br/>
+                                21<br/>
+                                1
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">ACM/ICPC South America Contest 2013.</p>
+</div>

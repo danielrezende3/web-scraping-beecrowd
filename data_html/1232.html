@@ -1,0 +1,67 @@
+<div class="problem">
+<div class="description">
+<p>
+                    Probably everyone in this competition knows the Rubikâs Cube, a challenging 3-D puzzle. Each of it six sides is covered with nine labels, each label of a color (blue, yellow, orange, white, green and red). In its initial state, all nine labels on one face have the same color. One ingenious mechanism enables each face to be independently rotated, causing the colors of the labels on the sides to be mixed.<br/>
+<br/>
+                    Each of the faces of the Rubikâs Cube is denoted by a letter: F, B, U, D, L, and R, as illustrated in the figure below.
+                </p>
+<p class="center">
+<br/>
+<img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1232.png" style="width: 221px; height: 200px"/>
+</p>
+<p>
+<br/>
+                    U F D R L B The rotation of a face is called a movement. We describe the movements using the letters that identify the faces:
+                </p>
+<ul>
+<li>a capital letter represents a 90<sup>o</sup> clockwise turn of the corresponding face;</li>
+<li>a lowercase letter represents a 90<sup>o</sup> counterclockwise turn of the corresponding face.</li>
+</ul>
+<p>
+<br/>
+                    For example, F represents a 90<sup>o</sup> clockwise turn of face F; r represents a 90<sup>o</sup> counterclockwise turn of face R. A sequence of movements is denoted by a sequence of letters identifying faces. Thus, rDF represents a 90<sup>o</sup> counterclockwise turn of face R, followed by a 90<sup>o</sup> clockwise turn of face D, followed by a 90<sup>o</sup> clockwise turn of face F.<br/>
+<br/>
+                    An interesting property of the Rubikâs Cube is that any sequence of movements, if applied repeat- edly, causes the cube to return to its original state (the state it had before the first application of the sequence). For example, after four applications of the sequence B the cube returns to its original state.<br/>
+<br/>
+                    You must write a program that, given a sequence of movements, determines the minimum number of complete applications of that sequence to make the cube return to its original state.
+                </p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input contains several test cases. Each test case is described in a single line, which contains the sequence of movements. Note: Each sequence has at least one and at most 80 characters.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case your program must print a single line, containing a single integer, indicating the minimum number of complete applications of the given sequence to make the hub return to its original state.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                Rr<br/>
+                                LLL<br/>
+                                dl<br/>
+                                RUUdBd
+                            </p>
+</td>
+<td>
+<p>
+                                1<br/>
+                                4<br/>
+                                105<br/>
+                                1260
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Maratona de ProgramaÃ§Ã£o da SBC 2012</p>
+</div>

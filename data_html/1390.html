@@ -1,0 +1,54 @@
+<div class="problem">
+<div class="description">
+<p>What do you get if you multiply 6 by 9? The answer, of course, is 42, but only if you do the calculations in base 13.</p>
+<p>Given an integer B â¥ 2, the base B numbering system is a manner of writing integers using only digits between 0 and B - 1, inclusive. In a number written in base B, the rightmost digit has its value multiplied by 1, the second rightmost digit has its value multiplied by B, the third rightmost digit has its value multiplied by B<sup>2</sup>, and so on.</p>
+<p>Some equations are true or false depending on the base they are considered in. The equation 2 + 2 = 4, for instance, is true for any B â¥ 5 - it does not hold in base 4, for instance, since there is no digit '4' in base 4. On the other hand, an equation like 2 + 2 = 5 is never true.</p>
+<p>Write a program that given an equation determines for which bases it holds.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>Each line of the input contains a test case; each test case is an equation of the form "EXPR=EXPR", where both "EXPR" are arithmetic expressions with at most 17 characters.</p>
+<p>All expressions are valid, and contain only the characters '+', '*' and the digits from '0' to '9'. No expressions contain leading plus signs, and no numbers in it have leading zeros.</p>
+<p>The end of input is indicated by a line containing only "=".</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case in the input your program should produce a single line in the output, indicating for which bases the given equation holds.</p>
+<p>If the expression is true for infinitely many bases, print "B+", where B is the first base for which the equation holds.</p>
+<p>If the expression is valid only for a finite set of bases, print them in ascending order, separated by single spaces.</p>
+<p>If the expression is not true in any base, print the character '*'.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                6*9=42<br/>
+                                10000+3*5*334=3*5000+10+0<br/>
+                                2+2=3<br/>
+                                2+2=4<br/>
+                                0*0=0<br/>
+                                =
+                            </p>
+</td>
+<td>
+<p>
+                                13<br/>
+                                6 10<br/>
+                                *<br/>
+                                5+<br/>
+                                2+
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">ACM/ICPC South America Contest 2008.</p>
+</div>

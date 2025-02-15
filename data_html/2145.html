@@ -1,0 +1,54 @@
+<div class="problem">
+<div class="description">
+<p>A natural number loves another number if the sum of its divisors is a divisor of the other number. For example, 9 loves 12, because the sum of the divisors of 9 is 4, which is a divisor of 12. However, 12 doesn't love 9, because 16 (sum of the divisors of 12) is not a divisor of 9. In this case, 9 loves 12 and is unrequited, which makes it a 'friendzoned' number.</p>
+<p>
+                    Nevertheless, there are cases in which the love is requited: when the sum of the divisors of a number is equal to or a divisor of the other number and vice versa. On the other hand, an almost requited love occurs when the sum of the divisors of a number is equal to the sum of the divisors of the other number.<br/>
+                     
+                </p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input contains several test cases. Each test case consists of two integers <strong>N</strong> and <strong>M</strong> (2 â¤ <strong>N</strong>, <strong>M</strong> â¤ 10<sup>9</sup>), being <strong>N</strong> and <strong>M</strong> different numbers. Read input until N = M = 0.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Print the connection between the given numbers, according to the conditions below:</p>
+<p>
+                    1 - If the love is requited, print "Friends and lovers &lt;3";<br/>
+                    2 - If the love is almost requited, print "Almost lovers!";<br/>
+                    3 - If the love is unrequited, print "X friendzoned Y!", in which the sum of the divisors of X is different from the sum of the divisors of Y and X is a multiple of the sum of the divisors of Y (Y loves X) but Y is not a multiple of the sum of the divisors of X (X doesn't love Y);<br/>
+                    4 - If there's no connection, that is, the sum of the divisors of X is different from the sum of the divisors of Y and X is not a multiple of the sum of the divisors of Y and Y is not a multiple of the sum of the divisors of X, print "No connection.".
+                </p>
+<p>Note: In this problem, the sum of the divisors doesn't include the number itself, and in the cases in which the love is requited and also almost requited, prevails the requited love.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>2 14</p>
+<p>6 25</p>
+<p>12 9</p>
+<p>9 12</p>
+<p>7 3</p>
+<p>0 0</p>
+</td>
+<td>
+<p>14 friendzoned 2!</p>
+<p>Almost lovers!</p>
+<p>12 friendzoned 9!</p>
+<p>12 friendzoned 9!</p>
+<p>Friends and lovers &lt;3</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer">Warm-up contest for IFSULDEMINAS' VI OlimpÃ­ada Interna de ProgramaÃ§Ã£o - OLIP 2016</p>
+</div>

@@ -1,0 +1,113 @@
+<div class="problem">
+<div class="description">
+<p>
+                    At the early age of 40, Alice and Bob decided to retire. After more than two decades working as examples for networking protocols, game theoretical books and several other texts, they were tired. To remain active, they decided to get into gardening.<br/>
+<br/>
+                    Alice and Bob planted several vegetable plants in a huge field. After finishing, they realized that their plants needed protection from wild animals, so they decided to build a fence around them. The field is represented as the XY plane, and each vegetable plant as a different point in it. A fence is represented as a polygon in the plane. However, not every polygon is a valid fence. The fence needs to be a single simple polygon with each of its sides parallel to one of the axes. Of course, the polygon should contain all the points representing vegetable plants. A fence too close to the plants or to itself could make it difficult to walk around, so each side of the polygon needs to be away from all plants and all non-adjacent sides.<br/>
+<br/>
+                    Unfortunately, Alice and Bob subcontracted the construction of the fence to a nasty multinational. The company had a lot of lawyers on payroll, but no good fence designers, so they failed to comply to all requirements. They built a fence which is a simple polygon with sides parallel to the axes and whose sides are away from plants and itself. However, they forgot to make the fence contain all the plants!<br/>
+<br/>
+                    Alice and Bob want to assess the extent of the problem. Since not all plants are equally valuable to them, they want to know the total value of the plants that were left outside the fence
+                </p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The first line contains two integers <strong>P</strong> and <strong>V</strong> , representing respectively the number of plants and the number of vertices of the polygonal fence (1 â¤ <strong>P, V</strong> â¤ 10<sup>5</sup> ). Each of the next <strong>P</strong> lines describes a different plant with two integers <strong>Xp</strong> and <strong>Yp</strong>, indicating the coordinates of the plant (â10<sup>9</sup> â¤ <strong>X<sub>p</sub>, Y<sub>p</sub></strong> â¤ 10<sup>9</sup> ). The value of the <strong>p</strong>-th plant in the input is p, for <strong>p</strong> = 1, 2, . . . , <strong>P</strong>. Each of the next V lines describes a vertex of the fence with two integers <strong>Xv</strong> and <strong>Yv</strong>, indicating the coordinates of the vertex (â10<sup>9</sup> â¤ <strong>X<sub>v</sub>, Y<sub>v</sub></strong> â¤ 10<sup>9</sup>). Vertices are given in counter clockwise order. Each of these points is an actual vertex of the polygon, that is, it is not collinear with its two
+                    adjacent vertices. The represented polygon is a simple polygon with each side parallel to an axis. No two plants are in the same position, and no plant lies on a fenceâs side.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Output a line with an integer representing the sum of the values of all the plants that lie outside the fence.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                4 8<br/>
+                                1 2<br/>
+                                1 0<br/>
+                                5 3<br/>
+                                3 4<br/>
+                                0 1<br/>
+                                6 1<br/>
+                                6 4<br/>
+                                4 4<br/>
+                                4 3<br/>
+                                2 3<br/>
+                                2 5<br/>
+                                0 5
+                            </p>
+</td>
+<td>
+<p>6</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                6 12<br/>
+                                6 5<br/>
+                                1 9<br/>
+                                3 6<br/>
+                                3 4<br/>
+                                2 0<br/>
+                                4 4<br/>
+                                5 8<br/>
+                                5 3<br/>
+                                2 3<br/>
+                                2 5<br/>
+                                4 5<br/>
+                                4 7<br/>
+                                0 7<br/>
+                                0 1<br/>
+                                7 1<br/>
+                                7 10<br/>
+                                0 10<br/>
+                                0 8
+                            </p>
+</td>
+<td>
+<p>15</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                1 4<br/>
+                                1 1<br/>
+                                2 0<br/>
+                                2 2<br/>
+                                0 2<br/>
+                                0 0
+                            </p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">ICPC Latin American Regional â 2015</p>
+</div>

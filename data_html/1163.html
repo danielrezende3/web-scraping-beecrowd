@@ -1,0 +1,56 @@
+<div class="problem">
+<div class="description">
+<p>In a far away land there are two cities, Nlogony, home of the Nlogonies, and Ducklogony, home of their neighbors, the Ducknese. These two cities have been at war for some time and now, in a try to win the war, the Ducknese intend to attack Nlogony with a slingshot that fires ducks. However, to avoid mistakes, they asked you to build a program that, given the values of the slingshot's height (<strong>h</strong>), the points where the Nlogony city begins (<strong>p1</strong>) and ends (<strong>p2</strong>), the shooting angle (<strong>Î±</strong>) and the launching speed, calculates if the projectile will hit the target.</p>
+<br/>
+<p class="center">
+<img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1163.jpg" style="text-align: center; width: 674px; height: 319px"/>
+</p>
+<p>
+<br/>
+                    For the calculations, assume that the gravity's acceleration is g=9,80665 and that Ï = 3,14159.
+                </p>
+<h2>Input</h2>
+<div class="input">
+<p>
+                        There are various test cases, where each one starts with 1 floating point value <strong>h</strong>( 1 â¤ <strong>h</strong> â¤ 150) indicating the slingshot's height, containing, in the next line, 2 integer values <strong>p1</strong> and <strong>p2</strong>( 1 â¤ <strong>p1, p2</strong> â¤ 9999) indicating where Nlogony begins and ends, the next line containing 1 integer <strong>n</strong>(1 â¤ <strong>n</strong> â¤ 100) indicating the number of tries that will be made to hit the Nlogony and the <strong>n</strong> following lines containing 2 floating point values indicating the values of the launching's angle <strong>Î±</strong>(1 â¤ <strong>Î±</strong> â¤ 180) and speed <strong>V</strong>(1 â¤ <strong>V </strong>â¤ 150).<br/>
+<br/>
+                        The end of the input file is determined by EOF.
+                    </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each shoot, your program must print a single line in the following format: âX -&gt; DUCKâ for when the duck hits Nlogony or âX -&gt; NUCKâ where the duck doesn't hit Nlogony, where <strong>X</strong> is the maximum distance that the projectile reached until reaching the ground (y = 0). X must be printed with an accuracy of 5 decimal places.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                    2.1<br/>
+                                    368 380<br/>
+                                    3<br/>
+                                    42.3 60<br/>
+                                    30 55<br/>
+                                    44 60.876842
+                                </p>
+</td>
+<td>
+<p>
+                                    367.76208 -&gt; NUCK<br/>
+                                    270.72675 -&gt; NUCK<br/>
+                                    379.83781 -&gt; DUCK
+                                </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Acknowledgments to Ãber JessÃ© da Silva Peretto by the translation.</p>
+</div>
+</div>

@@ -1,0 +1,144 @@
+id_number,question_string,solved_int,level_int,question_link,tag
+1028,Collectable Cards,21926,3,https://judge.beecrowd.com/en/problems/view/1028,gcd number-theory
+1093,Vampires,2617,3,https://judge.beecrowd.com/en/problems/view/1093,probability simulation
+1138,Digits Count,1548,8,https://judge.beecrowd.com/en/problems/view/1138,digit-counting combinatorics
+1161,Factorial Sum,23406,5,https://judge.beecrowd.com/en/problems/view/1161,factorial arithmetic
+1163,Angry Ducks,1968,7,https://judge.beecrowd.com/en/problems/view/1163,projectile trigonometry
+1169,Grains in a Chess Board,9011,4,https://judge.beecrowd.com/en/problems/view/1169,exponentiation geometric-progression
+1170,Blobs,15694,3,https://judge.beecrowd.com/en/problems/view/1170,logarithm iteration
+1193,Base Conversion,5064,3,https://judge.beecrowd.com/en/problems/view/1193,base-conversion number-systems
+1198,Hashmat the Brave Warrior,12372,5,https://judge.beecrowd.com/en/problems/view/1198,arithmetic absolute-difference
+1199,Simple Base Conversion,5631,3,https://judge.beecrowd.com/en/problems/view/1199,base-conversion number-systems
+1202,White Nights Festival,1234,7,https://judge.beecrowd.com/en/problems/view/1202,fibonacci modular-arithmetic
+1212,Primary Arithmetic,7060,8,https://judge.beecrowd.com/en/problems/view/1212,digit-arithmetic simulation
+1213,Ones,3061,5,https://judge.beecrowd.com/en/problems/view/1213,number-theory modular-arithmetic
+1214,Above Average,9543,3,https://judge.beecrowd.com/en/problems/view/1214,average statistics arithmetic
+1219,Colourful Flowers,2787,5,https://judge.beecrowd.com/en/problems/view/1219,geometry heron circle
+1220,The Trip,1185,7,https://judge.beecrowd.com/en/problems/view/1220,arithmetic money-splitting
+1221,Fast Prime Number,14732,6,https://judge.beecrowd.com/en/problems/view/1221,prime-testing number-theory
+1230,Integral,74,10,https://judge.beecrowd.com/en/problems/view/1230,numerical-integration interpolation
+1232,Rubik Cycle,342,7,https://judge.beecrowd.com/en/problems/view/1232,group-theory permutation
+1233,Star,1214,6,https://judge.beecrowd.com/en/problems/view/1233,combinatorics number-theory
+1240,Fit or Dont Fit I,9916,2,https://judge.beecrowd.com/en/problems/view/1240,modular-arithmetic digit-matching
+1247,Coast Guard,5075,2,https://judge.beecrowd.com/en/problems/view/1247,relative-motion geometry
+1264,An Easy Problem!,536,7,https://judge.beecrowd.com/en/problems/view/1264,divisibility number-systems
+1279,Leap Year or Not Leap Year and …,3728,6,https://judge.beecrowd.com/en/problems/view/1279,divisibility leap-year
+1289,What is the Probability?,456,7,https://judge.beecrowd.com/en/problems/view/1289,probability geometric-series
+1297,Environment Protection,264,10,https://judge.beecrowd.com/en/problems/view/1297,integration binary-search
+1304,Average Speed,965,6,https://judge.beecrowd.com/en/problems/view/1304,simulation time-calculation
+1306,Numbering Roads,2155,3,https://judge.beecrowd.com/en/problems/view/1306,combinatorics greedy
+1307,All You Need Is Love,2363,4,https://judge.beecrowd.com/en/problems/view/1307,string-gcd
+1308,Etruscan Warriors Never Play Chess,2595,5,https://judge.beecrowd.com/en/problems/view/1308,triangular-numbers
+1309,Monetary Formatting,2921,4,https://judge.beecrowd.com/en/problems/view/1309,string-formatting
+1323,Feynman,8016,1,https://judge.beecrowd.com/en/problems/view/1323,combinatorics sum-of-squares
+1324,Higgs Boson,44,10,https://judge.beecrowd.com/en/problems/view/1324,physics geometry simulation
+1338,It-Miha,157,9,https://judge.beecrowd.com/en/problems/view/1338,number-theory square-free
+1346,Child Play,47,10,https://judge.beecrowd.com/en/problems/view/1346,subset-sum combinatorics
+1347,Kryptonite Mine,37,10,https://judge.beecrowd.com/en/problems/view/1347,graph shortest-path
+1352,Square Lottery,68,8,https://judge.beecrowd.com/en/problems/view/1352,combinatorics probability
+1353,Super Poker,34,5,https://judge.beecrowd.com/en/problems/view/1353,combinatorics dp
+1371,Close the Doors!,2518,3,https://judge.beecrowd.com/en/problems/view/1371,number-theory
+1376,Brothers,277,6,https://judge.beecrowd.com/en/problems/view/1376,simulation grid
+1380,Bacilli Population Growth,480,8,https://judge.beecrowd.com/en/problems/view/1380,recurrence fast-exponentiation
+1381,Diophantine Equations,596,7,https://judge.beecrowd.com/en/problems/view/1381,combinatorics stars-and-bars
+1390,Bases,49,9,https://judge.beecrowd.com/en/problems/view/1390,number-systems simulation
+1392,Electric Bill,253,6,https://judge.beecrowd.com/en/problems/view/1392,binary-search simulation
+1393,Hexagonal Tiles,3013,2,https://judge.beecrowd.com/en/problems/view/1393,combinatorics Fibonacci
+1398,Ocean Deep! Make it Shallow!!,978,6,https://judge.beecrowd.com/en/problems/view/1398,modular-arithmetic big-integers
+1399,Array Transformer,371,9,https://judge.beecrowd.com/en/problems/view/1399,segment-tree range-query
+1400,Counting Game,756,5,https://judge.beecrowd.com/en/problems/view/1400,simulation digit-check
+1422,Bacteria,165,9,https://judge.beecrowd.com/en/problems/view/1422,recurrence matrix-exponentiation
+1433,The Splitting Club,86,10,https://judge.beecrowd.com/en/problems/view/1433,dp partition greedy
+1434,Roman Patrollers,58,7,https://judge.beecrowd.com/en/problems/view/1434,simulation
+1436,Brick Game,7000,2,https://judge.beecrowd.com/en/problems/view/1436,median sorting
+1444,Drakes' Racing,1006,4,https://judge.beecrowd.com/en/problems/view/1444,simulation tournament
+1450,Ramesses' Games,74,9,https://judge.beecrowd.com/en/problems/view/1450,dp box-stacking
+1457,Oracle of Alexandria,3474,1,https://judge.beecrowd.com/en/problems/view/1457,factorial number-theory
+1481,Zing Zhu’s Oyster Farm,59,10,https://judge.beecrowd.com/en/problems/view/1481,computational-geometry simulation
+1484,Type & Add,132,7,https://judge.beecrowd.com/en/problems/view/1484,backtracking dfs combinatorics
+1488,Magic Numbers?,188,7,https://judge.beecrowd.com/en/problems/view/1488,number-theory brute-force
+1492,Counting Ones,924,5,https://judge.beecrowd.com/en/problems/view/1492,bit-counting math
+1501,How Many Zeros and How Many Digits?,251,9,https://judge.beecrowd.com/en/problems/view/1501,factorial number-theory logarithm
+1505,Curo Factories,50,10,https://judge.beecrowd.com/en/problems/view/1505,simulation cycle
+1512,Tiles,2064,5,https://judge.beecrowd.com/en/problems/view/1512,inclusion-exclusion math
+1526,Transporting Snacks,17,5,https://judge.beecrowd.com/en/problems/view/1526,greedy simulation math
+1531,Fibonacci Again!,529,10,https://judge.beecrowd.com/en/problems/view/1531,fibonacci modular-arithmetic
+1537,Bank Line,988,4,https://judge.beecrowd.com/en/problems/view/1537,combinatorics permutations
+1544,The Last Non-zero Digit,466,8,https://judge.beecrowd.com/en/problems/view/1544,number-theory combinatorics
+1554,N.1 Continuous,1985,5,https://judge.beecrowd.com/en/problems/view/1554,geometry simulation
+1555,Functions,16849,1,https://judge.beecrowd.com/en/problems/view/1555,arithmetic evaluation
+1563,The Big Problem,148,10,https://judge.beecrowd.com/en/problems/view/1563,probability number-theory
+1567,(2/3/4)-D Sqr/Rects/Cubes/Boxes?,255,5,https://judge.beecrowd.com/en/problems/view/1567,combinatorics geometry
+1568,{sum+=i++} to Reach N,466,10,https://judge.beecrowd.com/en/problems/view/1568,number-theory consecutive-sum
+1570,A Day in Math-Land,168,10,https://judge.beecrowd.com/en/problems/view/1570,algebra equations
+1572,The Unreal Tournament,46,10,https://judge.beecrowd.com/en/problems/view/1572,recursion dp probability
+1580,Quid Est Veritas? Est Vir Qui Adest!,857,6,https://judge.beecrowd.com/en/problems/view/1580,combinatorics modular_arithmetic
+1582,The Pythagorean Theorem,3510,5,https://judge.beecrowd.com/en/problems/view/1582,number_theory geometry gcd
+1585,Making Kites,6363,1,https://judge.beecrowd.com/en/problems/view/1585,geometry
+1620,Delaunay Triangulation,1707,4,https://judge.beecrowd.com/en/problems/view/1620,computational_geometry
+1623,The Language,249,9,https://judge.beecrowd.com/en/problems/view/1623,combinatorics
+1624,Promotion,808,4,https://judge.beecrowd.com/en/problems/view/1624,dynamic_programming knapsack
+1625,Robocopy,2,5,https://judge.beecrowd.com/en/problems/view/1625,computational_geometry closest_pair
+1626,The Incredible Chapecoense Pizza Contest,107,10,https://judge.beecrowd.com/en/problems/view/1626,number_theory factorial
+1630,Stakes,1548,1,https://judge.beecrowd.com/en/problems/view/1630,geometry gcd
+1634,Another Lottery,220,5,https://judge.beecrowd.com/en/problems/view/1634,probability combinatorics
+1635,Ballot Evaluation,169,9,https://judge.beecrowd.com/en/problems/view/1635,arithmetic floating_point
+1641,Alfredo's Pizza Restaurant,1351,3,https://judge.beecrowd.com/en/problems/view/1641,geometry
+1644,Decode the Strings,136,9,https://judge.beecrowd.com/en/problems/view/1644,group_theory permutations
+1647,A Game with Marbles,783,3,https://judge.beecrowd.com/en/problems/view/1647,recurrence summation
+1650,Black and White Painting,475,3,https://judge.beecrowd.com/en/problems/view/1650,combinatorics geometry
+1656,Halloween Treats,184,8,https://judge.beecrowd.com/en/problems/view/1656,combinatorics number_theory
+1658,Dihedral Groups,32,7,https://judge.beecrowd.com/en/problems/view/1658,group_theory
+1660,Flavius Josephus Reloaded,138,7,https://judge.beecrowd.com/en/problems/view/1660,simulation modular_arithmetic
+1662,Homogeneous Squares,44,7,https://judge.beecrowd.com/en/problems/view/1662,algebra matrix
+1674,Fractran,15,5,https://judge.beecrowd.com/en/problems/view/1674,simulation fractions number_theory
+1688,Intergalactic Nim,52,7,https://judge.beecrowd.com/en/problems/view/1688,game_theory combinatorics
+1694,Lottery,348,8,https://judge.beecrowd.com/en/problems/view/1694,combinatorics primes
+1697,Jaida and Multiply Game,642,9,https://judge.beecrowd.com/en/problems/view/1697,number_theory greedy
+1703,Jumping Stones,54,10,https://judge.beecrowd.com/en/problems/view/1703,combinatorics probability
+1705,Binary Lover,205,10,https://judge.beecrowd.com/en/problems/view/1705,number_theory
+1729,Average is not Fast Enough!,253,6,https://judge.beecrowd.com/en/problems/view/1729,arithmetic
+1734,Bound Found,18,5,https://judge.beecrowd.com/en/problems/view/1734,prefix_sums
+1735,Code the Tree,170,6,https://judge.beecrowd.com/en/problems/view/1735,combinatorics trees
+1736,Decode the Tree,42,9,https://judge.beecrowd.com/en/problems/view/1736,combinatorics trees
+1745,Counting Substhreengs,396,6,https://judge.beecrowd.com/en/problems/view/1745,number_theory
+1754,The Time Room,444,6,https://judge.beecrowd.com/en/problems/view/1754,arithmetic
+1756,Genetic Algorithm,213,4,https://judge.beecrowd.com/en/problems/view/1756,probability
+1760,Koch Snowflake,1438,2,https://judge.beecrowd.com/en/problems/view/1760,geometry fractals
+1761,Christmas Decorations,1704,1,https://judge.beecrowd.com/en/problems/view/1761,trigonometry
+1776,Prom,301,9,https://judge.beecrowd.com/en/problems/view/1776,number_theory perfect_square
+1785,Kaprekar,802,3,https://judge.beecrowd.com/en/problems/view/1785,number_theory
+1801,Playing with Numbers,233,8,https://judge.beecrowd.com/en/problems/view/1801,arithmetic
+1807,"Trinomial Triangle, the Revenge",1467,5,https://judge.beecrowd.com/en/problems/view/1807,exponentiation
+1812,A Cluster to Avoid Floods,2,5,https://judge.beecrowd.com/en/problems/view/1812,scheduling
+1815,Drunk People?,130,8,https://judge.beecrowd.com/en/problems/view/1815,markov_chain
+1819,Estimating Production,7,5,https://judge.beecrowd.com/en/problems/view/1819,linear_regression
+1829,Biggest Number Game,727,7,https://judge.beecrowd.com/en/problems/view/1829,logarithms
+1830,Boxes of Chocolates,126,9,https://judge.beecrowd.com/en/problems/view/1830,linear_equations
+1831,Hard Day At Work,195,9,https://judge.beecrowd.com/en/problems/view/1831,crt
+1839,The Chamber of Secrets,264,7,https://judge.beecrowd.com/en/problems/view/1839,combinatorics
+1841,The Goblet of Fire,114,10,https://judge.beecrowd.com/en/problems/view/1841,number_theory divisors
+1869,Base 32,1546,5,https://judge.beecrowd.com/en/problems/view/1869,number_conversion
+1872,Palindrome Double,78,10,https://judge.beecrowd.com/en/problems/view/1872,palindromes
+1909,Help Kiko,514,7,https://judge.beecrowd.com/en/problems/view/1909,number_theory lcm
+1921,Guilherme and His Kites,6787,3,https://judge.beecrowd.com/en/problems/view/1921,combinatorics geometry
+1926,Marianne and The Twin Cousins,814,8,https://judge.beecrowd.com/en/problems/view/1926,number_theory primes sieve
+1946,Pyramid of Fortune,283,5,https://judge.beecrowd.com/en/problems/view/1946,probability binomial
+1949,Shift Register,28,10,https://judge.beecrowd.com/en/problems/view/1949,linear_algebra lfsr gf2
+1967,The Final Frontier,741,6,https://judge.beecrowd.com/en/problems/view/1967,arithmetic table_calculation
+1968,The Undiscovered Country,80,10,https://judge.beecrowd.com/en/problems/view/1968,number_theory divisors combinatorics
+1990,Equilibrium,83,9,https://judge.beecrowd.com/en/problems/view/1990,statistics balanced_sets
+1992,Gaining Time,3,5,https://judge.beecrowd.com/en/problems/view/1992,dynamic_programming tournament
+1995,"Game, Set and Match",0,5,https://judge.beecrowd.com/en/problems/view/1995,dynamic_programming tournament
+1999,Ball of Reconciliation,227,4,https://judge.beecrowd.com/en/problems/view/1999,diophantine combinatorics number_theory
+2001,Bile,72,10,https://judge.beecrowd.com/en/problems/view/2001,recurrence linear_recurrence
+2007,Fence the Vegetables Fail,163,9,https://judge.beecrowd.com/en/problems/view/2007,computational_geometry point_in_polygon
+2033,Interest on Loan,431,6,https://judge.beecrowd.com/en/problems/view/2033,financial_math arithmetic
+2034,Cantor,26,7,https://judge.beecrowd.com/en/problems/view/2034,number_theory base_conversion combinatorics
+2044,In Debt,958,1,https://judge.beecrowd.com/en/problems/view/2044,arithmetic modulo
+2063,Hunting Digletts,663,4,https://judge.beecrowd.com/en/problems/view/2063,number_theory lcm graph
+2066,melborP A,299,3,https://judge.beecrowd.com/en/problems/view/2066,number_theory digit_manipulation combinatorics
+2068,Setting up a Date,145,6,https://judge.beecrowd.com/en/problems/view/2068,probability geometric_probability
+2069,Inês Venezuela's Square Table,195,7,https://judge.beecrowd.com/en/problems/view/2069,number_theory gcd
+2076,Great Allocation of Commodities,74,9,https://judge.beecrowd.com/en/problems/view/2076,combinatorics inclusion_exclusion number_theory
+2084,Elections,845,6,https://judge.beecrowd.com/en/problems/view/2084,arithmetic percentages

@@ -1,0 +1,41 @@
+<div class="problem">
+<div class="description">
+<p>Lucas has a lot of tokens with integer values ââstamped on them. He started playing with tokens containing only values ââ3 and 7 and realized that he could collect tokens to make a total of 3, 6, 7, 9, 10, 12,13, 14, etc., but could not form sets whose sum was 4 , 5, 8 or 11. He wondered if 11 would be the largest sum for which such sets could not be formed. Well, the german mathematician Frobenius had already solved this problem for 2 types of values ââand 11 is really the right answer for this case. Given the value tokens <strong>a</strong> and <strong>b</strong>, this problem can only be solved when <strong>MDC (a, b) = 1</strong> and the largest sum that cannot be obtained is given by     <strong>a * b-(a+b)</strong>. But the problem is still open when you have more than two types of values. Write a program to help Lucas find the largest sum that can't be obtained using up to 10 different token types.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input consists of many tests. The first line contains the number of test cases, an integer <strong>n (1 â¤ n â¤ 20)</strong>,  The next n lines contain, each one, a test case. The first integer int each line, <strong>q (2 â¤ q â¤ 10)</strong>, indicates how many different kinds of tokens exist. This number is followed by <strong>q</strong> integers <strong>p<sub>i </sub>( 2 â¤  p<sub>i</sub>  â¤ 1000)</strong>, the values of the tokens.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case print, in one line, the maximum sum that can not be obtained with the kinds of tokens given. If this value is unlimited or greater than 1,000,000, print -1.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>3</p>
+<p>2 3 7</p>
+<p>3 46 66 78</p>
+<p>2 995 997</p>
+</td>
+<td>
+<p>11</p>
+<p>-1</p>
+<p>990023</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer"></p>
+</div>

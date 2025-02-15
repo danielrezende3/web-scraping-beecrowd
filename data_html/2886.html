@@ -1,0 +1,59 @@
+<div class="problem">
+<div class="description">
+<p><img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_2886.png" style="float: right; height: 300px; width: 300px"/></p>
+<p>Neste estranho sistema planetÃ¡rio, <strong>N</strong> planetas seguem Ã³rbitas circulares ao redor de uma estrela que estÃ¡ nas coordenadas (0, 0) do sistema. A estrela estÃ¡ estritamente contida no interior de todos os cÃ­rculos que definem as Ã³rbitas, mas o centro dessas Ã³rbitas nÃ£o estÃ¡ necessariamente nas coordenadas (0, 0). As Ã³rbitas circulares estÃ£o em posiÃ§Ã£o geral: se duas Ã³rbitas se interceptam, entÃ£o elas se interceptam em dois pontos distintos; alÃ©m disso, trÃªs Ã³rbitas nÃ£o se interceptam em um ponto comum.</p>
+<p>O cientista JoÃ£o Kepler estÃ¡ interessado em testar uma nova teoria e, para isso, pediu sua ajuda para computar o nÃºmero de pontos de interseÃ§Ã£o entre as Ã³rbitas, caso esse nÃºmero seja menor que ou igual a 2<strong>N</strong>. Caso contrÃ¡rio, precisamos apenas saber que o nÃºmero Ã© maior do que 2<strong>N</strong>.</p>
+</div>
+<h2>Entrada</h2>
+<div class="input">
+<p>A primeira linha da entrada contÃ©m um inteiro <strong>N</strong> (2 â¤ <strong>N</strong> â¤ 150000), representando o nÃºmero de Ã³rbitas. Cada uma das <strong>N</strong> linhas seguintes contÃ©m trÃªs nÃºmeros reais, com exatamente 3 dÃ­gitos decimais, <strong>X</strong>, <strong>Y</strong> (â25.0 â¤ <strong>X</strong>, <strong>Y</strong> â¤ 25.0) e <strong>R</strong> (1.0 â¤ <strong>R</strong> â¤ 200000.0), definindo as coordenadas do centro e o raio das Ã³rbitas.</p>
+</div>
+<h2>SaÃ­da</h2>
+<div class="output">
+<p>Imprima uma linha contendo um inteiro, representando o nÃºmero de pontos de interseÃ§Ã£o entre as Ã³rbitas, se esse nÃºmero for menor ou igual a 2<strong>N</strong>. Caso contrÃ¡rio, imprima âgreaterâ.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Exemplos de Entrada</td>
+<td>Exemplos de SaÃ­da</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>6</p>
+<p>0.000 1.000 4.000</p>
+<p>0.000 0.000 10.500</p>
+<p>4.000 0.000 6.000</p>
+<p>1.000 1.000 1.750</p>
+<p>-1.000 -1.000 8.000</p>
+<p>2.000 -2.000 4.000</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>4</p>
+<p>-1.000 -1.000 3.000</p>
+<p>1.000 -1.000 3.001</p>
+<p>-3.004 3.003 5.002</p>
+<p>1.000 1.000 3.005</p>
+</td>
+<td>
+<p>greater</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Maratona de ProgramaÃ§Ã£o da SBC 2018</p>
+</div>

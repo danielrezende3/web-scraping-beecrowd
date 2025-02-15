@@ -1,0 +1,50 @@
+<div class="problem">
+<div class="description">
+<p>I have a set of super poker cards, consisting of an infinite number of cards. For each positive integer <b>P</b>, there are exactly four cards whose value is <b>P</b>: Spade(<b>S</b>), Heart(<b>H</b>), Club(<b>C</b>) and Diamond(<b>D</b>). There are no cards of other values.</p>
+<p>Given two positive integers <b>N</b> and <b>K</b>, how many ways can you pick up at most <b>K</b> cards whose values sum to <b>N</b>? For example, if <b>N</b> = 15 and <b>K</b> = 3, one way is 3<b>H</b> + 4<b>S</b> + 8<b>H</b>, shown below:</p>
+<p class="center">
+<img alt="" src="https://resources.beecrowd.com/gallery/images/novos/Super%20Poker.png" style="width: 555px; height: 251px"/>
+</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>There will be at most 20 test cases, each with two integers <b>N</b> and <b>K</b> (1 â¤ <b>N</b> â¤ 10<sup>9</sup>, 1 â¤ <b>K</b> â¤ 10). The input is terminated by <b>N</b> = <b>K</b> = 0.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case, print the number of ways, modulo 1,000,000,009.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                2 1<br/>
+                                2 2<br/>
+                                2 3<br/>
+                                50 5<br/>
+                                635645644 8<br/>
+                                0 0
+                            </p>
+</td>
+<td>
+<p>
+                                4<br/>
+                                10<br/>
+                                10<br/>
+                                1823966<br/>
+                                231863432
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">The Seventh Hunan Collegiate Programming Contest. Special Thanks: Jane Alam Jan. I/o by Neilor.</p>
+</div>

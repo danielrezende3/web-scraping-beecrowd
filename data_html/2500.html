@@ -1,0 +1,57 @@
+<div class="problem">
+<div class="description">
+<p>William recently learned some properties of the bit to bit operator xor (represented by the operator '^' in C language ). He realized that he can do many interesting algorithms with it: Find lonely elements in a sequence, exchange values ââwithout auxiliary variable, encryption and many others. Then he began to experiment and decided to name an operation using xor with its name, the w-xor. The w-xor operation is performed on a sequence of values. Example: it is an <strong>S</strong>={a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, a<sub>4</sub>}, applying w-xor over the sequence <strong>S</strong> once is equivalent to:</p>
+<p style="text-align: center">a<sub>1</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub></p>
+<p style="text-align: center">a<sub>2</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub></p>
+<p style="text-align: center">a<sub>3</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub></p>
+<p style="text-align: center">a<sub>4</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub></p>
+<p style="text-align: center">a<sub>1</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub></p>
+<p>If <strong>S</strong>={a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, a<sub>4</sub>, a<sub>5</sub>} then applying w-xor over <strong>S</strong> once is:</p>
+<p style="text-align: center">a<sub>1</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+<p style="text-align: center">a<sub>2</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+<p style="text-align: center">a<sub>3</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+<p style="text-align: center">a<sub>4</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+<p style="text-align: center">a<sub>5</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+<p style="text-align: center">
+                    a<sub>1</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub><br/>
+                     
+                </p>
+<p>Given a sequence <strong>S</strong> and applying w-xor <strong>M</strong> times over it, you would know what the value of the <strong>K</strong>-th position?</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input consists of several test cases. Each test case begins with three integers 2 â¤ <strong>N</strong> â¤ 10<sup>3</sup>, 1 â¤ <strong>M</strong> â¤ 10<sup>6</sup>  and 1 â¤ <strong>K</strong> â¤ <strong>N</strong> representing the number of elements of the sequence, the number of w-xor operations applied and the position of the value to be found (note that the first position is 1), respectively. On the next line, there will be <strong>N</strong> integer values ââ-10<sup>9</sup> â¤ <strong>A</strong><sub><strong>i</strong></sub> â¤ 10<sup>9</sup>. The entry ends when <strong>N=M=K=0</strong>.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>The output consists of one line per test case containing the value of the <strong>K</strong>-th position of the sequence after applied <strong>M</strong> times the w-xor on it.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>4 2 2</p>
+<p>7 3 9 3</p>
+<p>5 3 2</p>
+<p>5 4 3 2 1</p>
+<p>0 0 0</p>
+</td>
+<td>
+<p>3</p>
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer"></p>
+</div>

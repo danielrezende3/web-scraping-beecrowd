@@ -1,0 +1,66 @@
+<div class="problem">
+<div class="description">
+<p>Substrings are strings formed by choosing a subset of contiguous characters from a string. This is well known. A little more obscure is the definition of substhreengs. A substhreeng is a substring which complies to the following additional requirements:</p>
+<p>1. It is non-empty, and composed entirely of base 10 digits.</p>
+<p>2. Interpreted in base 10 (allowing extra leading zeros), the resulting integer is a multiple of 3.</p>
+<p>For instance, the string â130a303â contains 9 substhreengs: the substhreeng â3â three times, the substhreengs â30â and â0â twice each, and the substhreengs â303â and â03â once each. The substring â30a3â is not a substhreeng because it is not composed entirely of base 10 digits, while the substring â13â is not a substhreeng because 13 is not a multiple of 3.</p>
+<p>Notice that two substhreengs are considered different if they are different in length or start at a different position, even if the selected characters are the same.</p>
+<p>Given a string, you are asked to count the number of substhreengs it contains.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input consists of a single line that contains a non-empty string <strong>S</strong> of at most 10<sup> 6</sup> characters. Each character of <strong>S</strong> is either a digit or a lowercase letter.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Output a line with an integer representing the number of substhreengs contained in <strong>S</strong>.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>130a303</p>
+</td>
+<td>
+<p>9</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>0000000000</p>
+</td>
+<td>
+<p>55</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>icpc2014regional</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">ACM/ICPC Latin America Contest 2014.</p>
+</div>

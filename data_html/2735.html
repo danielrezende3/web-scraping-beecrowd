@@ -1,0 +1,51 @@
+<div class="problem">
+<div class="description">
+<p>Nina got <strong>N</strong> distinct<strong> </strong>numbers from 0 to N-1 for Christmas. She realized that those numbers can be used to form a permutation: an array of size <strong>N</strong> in which all numbers from 0 to N-1 appears once. She then remembered that she had kept a very special permutation of size <strong>N </strong>in her drawer, and she could use it to play with her new blocks. She came up with the following game:</p>
+<p>
+                    At day 0, she will arrange the numbers in such a way that 0 is the fist one, 1 the second, and so on, until<strong> N-1</strong>, forming the array  <strong>V<sub>0</sub></strong>. At day x, she will arrange the numbers to form the array <strong>V<sub>x</sub></strong>, in which <strong>V<sub>x</sub><sub> </sub>[ i ] = V<sub>x</sub><sub>-1 </sub>[ P [ i ] ]</strong>, P being Nina's special permutation.
+                </p>
+<p>
+                    Her sister Nani got really jealous and decided to question Nina's knowledge about her permutation with questions of the following type: given two numbers <strong>J</strong> e <strong>K</strong>, what is the smallest number <strong>Y </strong>such that <strong>V<sub>Y</sub> [ ( J + K ) % N ] = J </strong>?
+                </p>
+<p>Help Nina with her sister's questions.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line of input contains the number <strong>t </strong>(<strong>t</strong>=10) of test cases.</p>
+<p>Each case starts with a line containing a number <strong>N </strong>(0&lt;=<strong>N</strong>&lt;=10<sup>5</sup>): the number of blocks Nina got for Christmas. <strong>N </strong>distinct integers ranging from 0 to N-1 follow.</p>
+<p>The next line will contain an integer <strong>Q</strong> (1&lt;=<strong>Q</strong>&lt;=10<sup>5</sup>): the number of questions Nani will ask, followed by <strong>Q</strong> lines, each containing two integers <strong>J</strong> and <strong>K </strong>(0&lt;=<strong>J,K</strong>&lt;<strong>N</strong>).</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each question, print the answer. If it does not exist, print -1.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>1</p>
+<p>5</p>
+<p>2 0 1 4 3</p>
+<p>3</p>
+<p>0 2</p>
+<p>2 0</p>
+<p>2 1</p>
+</td>
+<td>
+<p>2</p>
+<p>0</p>
+<p>-1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer">Made By Women Contest 2018</p>
+</div>

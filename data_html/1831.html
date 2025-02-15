@@ -1,0 +1,53 @@
+<div class="problem">
+<div class="description">
+<p>JosÃ© works selling oranges. He has a team of employees that packs the oranges in sacks for sale and distribution. Each sack has the same number of oranges.</p>
+<p>He hired new employees to match the raise in production. In the first day, the newcomers packed 5 oranges in each sack, and 2 oranges remained unpacked. The team didn't know that the number of oranges per sack was changed to 7: the work was redone, and the repacked sacks now have 7 oranges each. In the end 3 oranges were left unpacked.</p>
+<p>JosÃ© checked the sacks before sending them to the trucks and noted that the employees forgot the New Year promotion where each sack must contain 9 oranges. Once again the work was redone, and this time there were no leftovers.</p>
+<p>After the trucks departure the team of workers realized that one more mistake was made: nobody counted the total of oranges packed nor the number of sacks sent! Before telling JosÃ© the new mistake, one of them suggested that is possible deduce the missing information using only the known facts.</p>
+<p>Can you write a software that helps the workers in this hard working day?</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input consist of a series of test cases. Each test case is composed by three lines. Each line informs the number of unpacked oranges <b>r<sub>i</sub></b> (0 â¤ <b>r<sub>i</sub></b> &lt; <b>L<sub>i</sub></b>) and the number of oranges per sack <b>L<sub>i</sub></b> (2 â¤ <b>L<sub>i</sub></b> â¤ 1000), separated by a single space, with <b>i</b> = 1, 2, 3. You may assume that <b>L<sub>i</sub></b> and <b>r<sub>i</sub></b> are co-prime integers (there isn't other positive common divisor between <b>L<sub>1</sub>, L<sub>2</sub>, L<sub>3</sub></b> than one).
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each case the following message must be printed: "Caso #<b>t</b>: <b>N</b> laranja(s)", where <b>t</b> is the test case number (the counting starts with one) and <b>N</b> is the total of oranges. If there are more than one solution to the problem, you must choose the smallest positive integer solution.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>2 5</p>
+<p>3 7</p>
+<p>0 9</p>
+<p>0 10</p>
+<p>0 17</p>
+<p>0 23</p>
+<p>1 3</p>
+<p>1 4</p>
+<p>1 5</p>
+<p>4 5</p>
+<p>6 7</p>
+<p>8 9</p>
+</td>
+<td>
+<p>Caso #1: 297 laranja(s)</p>
+<p>Caso #2: 3910 laranja(s)</p>
+<p>Caso #3: 1 laranja(s)</p>
+<p>Caso #4: 314 laranja(s)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Translation reviewed by Gustavo Jaruga</p>
+</div>

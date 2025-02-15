@@ -1,0 +1,88 @@
+<div class="problem">
+<div class="description">
+<p>VÃ´ Giuseppe ganhou de presente um cortador profissional de pizza, daqueles do tipo carretilha e, para comemorar, assou uma pizza retangular gigante para seus netos! Ele sempre dividiu suas pizzas em pedaÃ§os fazendo cortes ao longo de linhas contÃ­nuas, nÃ£o necessariamente retilÃ­neas, de dois tipos: algumas comeÃ§am na borda esquerda da pizza, seguem monotonicamente para a direita e terminam na borda direita; outras comeÃ§am na borda inferior, seguem monotonicamente para cima e terminam na borda superior. Mas VÃ´ Giuseppe sempre seguia uma propriedade: dois cortes do mesmo tipo nunca podiam se interceptar. Veja um exemplo com 4 cortes, dois de cada tipo, na parte esquerda da figura, que dividem a pizza em 9 pedaÃ§os.</p>
+<p> <img alt="BR" src="https://resources.beecrowd.com/gallery/images/contests/pizza_sbc_2878.png"/></p>
+<p>Acontece que VÃ´ Giuseppe simplesmente ama geometria, topologia, combinatÃ³ria e coisas assim; por isso, resolveu mostrar para as crianÃ§as que poderia obter mais pedaÃ§os, com o mesmo nÃºmero de cortes, se cruzamentos de cortes de mesmo tipo fossem permitidos. A parte direita da figura mostra, por exemplo, que se os dois cortes do tipo dos que vÃ£o da esquerda para a direita puderem se interceptar, a pizza serÃ¡ dividida em 10 pedaÃ§os. VÃ´ Giuseppe descartou a propriedade, mas nÃ£o vai fazer cortes aleatÃ³rios. AlÃ©m de serem de um dos dois tipos, eles vÃ£o obedecer Ã s seguintes restriÃ§Ãµes:</p>
+<p>â¢ Dois cortes tÃªm no mÃ¡ximo um ponto de interseÃ§Ã£o e, se tiverem, Ã© porque os cortes se cruzam naquele ponto;</p>
+<p>â¢ TrÃªs cortes nÃ£o se interceptam num mesmo ponto;</p>
+<p>â¢ Dois cortes nÃ£o se interceptam na borda da pizza;</p>
+<p>â¢ Um corte nÃ£o intercepta um canto da pizza.</p>
+<p>Dados os pontos de comeÃ§o e tÃ©rmino de cada corte, seu programa deve computar o nÃºmero de pedaÃ§os resultantes dos cortes do VÃ´ Giuseppe.</p>
+</div>
+<h2>Entrada</h2>
+<div class="input">
+<p>
+                    A primeira linha da entrada contÃ©m dois inteiros <strong>X</strong> e <strong>Y</strong> , (1 â¤ <strong>X</strong>, <strong>Y</strong> â¤ 10<sup>9</sup> ), representando as coordenadas (X, Y ) do canto superior direito da pizza. O canto inferior esquerdo tem sempre coordenadas (0, 0). A segunda linha contÃ©m dois inteiros <strong>H</strong> e <strong>V</strong> , (1 â¤ <strong>H</strong>, <strong>V</strong> â¤ 10ââââââââââââââ<sup>5</sup> ), indicando, respectivamente, o nÃºmero de cortes que vÃ£o da esquerda para a direita, e o nÃºmero de cortes que vÃ£o de baixo para cima. Cada uma das <strong>H</strong> linhas seguintes contÃ©m dois inteiros <strong>Y1</strong> e <strong>Y2</strong> definindo as ordenadas de encontro dos lados verticais da pizza com um corte que vai do lado esquerdo, na ordenada <strong>Y1</strong>, para o lado direito, na ordenada <strong>Y2</strong>. Cada uma das <strong>V</strong> linhas seguintes contÃ©m dois inteiros <strong>X1</strong> e <strong>X2</strong> definindo as
+                    abscissas de encontro dos lados horizontais da pizza com um corte que vai do lado inferior, na abscissa <strong>X1</strong>, para o lado superior, na abscissa <strong>X2</strong>.
+                </p>
+</div>
+<h2>SaÃ­da</h2>
+<div class="output">
+<p>Imprima uma linha contendo um inteiro representando o nÃºmero de pedaÃ§os resultantes.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Exemplos de Entrada</td>
+<td>Exemplos de SaÃ­da</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>3 4</p>
+<p>3 2</p>
+<p>1 2</p>
+<p>2 1</p>
+<p>3 3</p>
+<p>1 1</p>
+<p>2 2</p>
+</td>
+<td>
+<p>13</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>5 5</p>
+<p>3 3</p>
+<p>2 1</p>
+<p>3 2</p>
+<p>1 3</p>
+<p>3 4</p>
+<p>4 3</p>
+<p>2 2</p>
+</td>
+<td>
+<p>19</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>10000 10000</p>
+<p>1 2</p>
+<p>321 3455</p>
+<p>10 2347</p>
+<p>543 8765</p>
+</td>
+<td>
+<p>6</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Maratona de ProgramaÃ§Ã£o da SBC 2018</p>
+</div>

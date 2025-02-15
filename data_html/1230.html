@@ -1,0 +1,75 @@
+<div class="problem">
+<div class="description">
+<p>Given a positive integer <em>n</em>, denote by [<em>n</em>] the real interval {<em>x</em> : 0 â¤ <em>x</em> â¤ <em>n</em>}. A function <em>f</em> : [<em>n</em>] â R. Values of <em>f</em> are provided on a subset <em>S</em> of [<em>n</em>], thereby partially specifying <em>f</em>.</p>
+<p>The set <em>S</em> satisï¬es the following properties:</p>
+<p>1. The points in S are all integers.</p>
+<p>2. The extremes 0 and <em>n</em> of [<em>n</em>] are both in <em>S</em>.</p>
+<p>The function <em>f</em> satisï¬es the following properties:</p>
+<p>1. The values of <em>f</em> in the integral points of [n] are integers.</p>
+<p>2. For every integral point <em>x</em> in [<em>n</em>] \ <em>S</em> (ie, the integral points of [n] are not in S), the function f is monotonic in the interval [x â 1, x + 1]. In other words, at least one of the inequalities <em>f</em>(<em>x</em> â 1) â¤ <em>f</em>(<em>x</em>) â¤ <em>f</em>(<em>x</em> + 1) and <em>f</em>(<em>x</em> â 1) â¥ <em>f</em>(<em>x</em>) â¥ <em>f</em>(<em>x</em> + 1) is satisï¬ed.</p>
+<p>3. For each non-integral point <em>x</em> in [<em>n</em>], the value of <em>f</em>(<em>x</em>) is given by the linear interpolation of <em>f</em>(â<em>x</em>â) and f(â<em>x</em>â), ie, <em>f</em>(<em>x</em>) = (<em>x</em> â â<em>x</em>â)<em>f</em>(â<em>x</em>â) + (â<em>x</em>â â <em>x</em>)<em>f</em>(â<em>x</em>â).</p>
+<p>
+                    We still have the freedom of specifying the values of f in the integral points of [<em>n</em>] \ <em>S</em> (note however that <em>S</em> can contain all the integral points of [<em>n</em>]). We would like to use this ï¬exibility to make <sub><img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1230.png" style="font-size: 10px; width: 22px; height: 24px"/></sub><em>f</em>(<em>x</em>)dx = <em>y</em>, i.e., the area under <em>f</em>(x) between the extremes 0 and <em>n</em> equal to <em>y</em>, a given value. Your problem then is to decide whether this is possible or not.
+                </p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input contains several test cases. The ï¬rst line of a test case contains three integers, <strong>N</strong> (1 â¤ <strong>N</strong> â¤ 10<sup>6</sup>), <strong>M</strong> and <strong>Y</strong> (0 â¤ <strong>Y</strong> â¤ 10<sup>9</sup>), respectively the amplitude of the interval, the size of <em>S</em> and the value of <strong>y</strong>. Each of the following <strong>M</strong> lines describes function <em>f </em>at a point of <em>S</em>, containing two integers <strong>X</strong> (0 â¤ <strong>X</strong> â¤ <strong>N</strong>, â<strong>X</strong> â <strong>S</strong>) and <strong>F</strong> (0 â¤ <strong>F</strong> â¤ 10<sup>6</sup>), representing <em>f</em><em>(X)</em> = <strong>F</strong>. The values of <strong>X</strong> are not necessarily in ascending order.</p>
+<p>
+                    Note.: <font size="1"> </font><sub><img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1230.png" style="width: 22px; height: 24px"/></sub> <em>f(x)dx </em>â¤ 10<sup>9 </sup>for any assignment of values to <em>f</em>(<em>x</em>) para <em>x</em> â [<em>n</em>] \ <strong>S</strong> satisfying the stated constraints.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>
+                    For each test case, determine whether there is a value assignment to <em>f</em><em>(x)</em> for each integral point x â [n] \ <em>S</em> such that <sub><img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1230.png" style="font-size: 10px; width: 22px; height: 24px"/></sub><em>f</em>(<em>x</em>)<em>dx</em> = <em>y</em>, i.e. the area under <em>f</em><em>(x)</em> between the ends 0 and <em>n</em> is equal to <em>y</em>. If not, your program should print a line containing only the character âNâ. If the assignments are possible, your program should print a line containing the character âSâ, followed by values of <em>f</em><em>(x)</em> for the integral points <em>x</em> in [n] \ <em>S</em>, in increasing order of the values of x. The initial character and following values, if any, should be separated by a blank space. If more than one solution is possible, then print the lexicographically smallest solution.
+                </p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                5 6 10<br/>
+                                0 2<br/>
+                                1 2<br/>
+                                5 2<br/>
+                                2 2<br/>
+                                3 2<br/>
+                                4 2<br/>
+                                5 2 10<br/>
+                                0 0<br/>
+                                5 10<br/>
+                                2 2 5<br/>
+                                0 1<br/>
+                                2 2<br/>
+                                10 3 18<br/>
+                                0 2<br/>
+                                6 4<br/>
+                                10 0<br/>
+                                2 2 1<br/>
+                                0 0<br/>
+                                2 1
+                            </p>
+</td>
+<td>
+<p>
+                                S<br/>
+                                S 0 0 0 5<br/>
+                                N<br/>
+                                S 2 2 2 2 2 1 1 1<br/>
+                                N
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Maratona de ProgramaÃ§Ã£o da SBC 2012</p>
+</div>

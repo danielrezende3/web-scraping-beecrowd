@@ -1,0 +1,85 @@
+<div class="problem">
+<div class="description">
+<p>Strike Boy, as the name suggests, is a boy fanatic for all types of computer games. He is going on vacation in a paradise island where computers are not allowed. He had a great time playing with games on his cell phone, but now the battery is dead and since there is no electricity on the island, he stopped playing. Strike Boy then decided to invent a new hobby, using the keypad of his cell phone. In this new game, for two players, one chooses two integers <em>S</em> and <em>D</em>. The opposing player must then find a sequence of terms such that:</p>
+<ul>
+<li>Each term of the sequence is a number with <em> D </em> decimal digits, except for the last term, which can have between 1 and <em>D</em> digits;</li>
+<li>The sum of all terms of the sequence is equal to <em> S </em>;</li>
+<li>The digits used to form a term correspond to the keys of a standard cell phone keyboard ('0 'to '9');</li>
+<li>Each digit is used at most once in the sequence;</li>
+<li>The first term of a sequence can begin with any digit, but the order of the digits of the sequence when read from left to right, is such that the next key always corresponds to a key that is immediately adjacent to the previously used key (vertically, horizontally or diagonally).</li>
+</ul>
+<p>For example, if <em> S </em> = 230 and <em> D </em> = 3, there are only two possible solutions obeying the rules of the game : [074, 156] and [085, 142, 3]. The sequence [230] is not a solution because the '3 'key is not a neighbor of the key '0 '.</p>
+<p style="text-align: center"><img alt="" src="https://resources.beecrowd.com/gallery/images/novos/Tecle%20%26%20Some.png" style="width: 426px; height: 120px"/></p>
+<p>Left picture: Keyboard illustrating the keys used to form the sequence [074, 156]</p>
+<p>Right picture: Keyboard illustrating the keys used to form the sequence [085, 142, 3]</p>
+<p>Help Strike Boy to check if his oponnent's answers are correct: write a program that, given <em> S </em> and <em> D </em>, print all possible solutions .</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input contains several test cases. Each test consist in just one line, containing two integers <strong>S</strong> and <strong>D</strong>, separated by an empty space, representing the desired sum and the number of digits of each term (0 â¤ <strong>S</strong> â¤ 10.000.000.000 and 1 â¤ <strong>D</strong> â¤ 10). The end of the input is specified by <strong>S</strong> = <strong>D</strong> = â1.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case, your program must write one answer. The first line of an answer must contain an identifier of the test case, in the format '#i', where 'i' is initially 1 and is incremented for each test case. Then, if a solution for the problem exists, your program must display the list of the possible sequences of terms. If more than one sequence is possible, they must appear in ascending lexicographic order. Each sequence of terms must be printed in one line, with its terms separated by an empty space. If there is no solution, your program must print one line containing the word 'impossible'.</p>
+<p>
+<em>Definition:</em> consider the sequences <em>Sa</em> = a<sub>1</sub>a<sub>2 </sub>... a<em><sub>m</sub></em> and <em>S<sub>b</sub></em> = b<sub>1</sub>b<sub>2</sub> ... b<em><sub>n</sub></em>. <em>S<sub>a</sub></em> preceeds <em>S<sub>b</sub></em> lexicographically if and only if S<sub>b</sub> is non-empty and one of the following conditions is true:
+                </p>
+<ul>
+<li>S<sub>a</sub> is an empty sequence;</li>
+<li>a<sub>1</sub> &lt; b<sub>1</sub>;</li>
+<li>a<sub>1</sub> = b<sub>1</sub> and the sequence a<sub>2</sub>a<sub>3</sub> ... a<sub>m</sub> preceeds sequence b<sub>2</sub>b<sub>3</sub> ... b<sub>n</sub>.</li>
+</ul>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                7 1<br/>
+                                10 2<br/>
+                                230 3<br/>
+                                6311 4<br/>
+                                2 2<br/>
+                                -1 -1
+                            </p>
+</td>
+<td>
+<p>
+                                #1<br/>
+                                0 7<br/>
+                                1 2 4<br/>
+                                1 4 2<br/>
+                                2 1 4<br/>
+                                2 4 1<br/>
+                                2 5<br/>
+                                4 1 2<br/>
+                                4 2 1<br/>
+                                5 2<br/>
+                                7<br/>
+                                7 0<br/>
+                                #2<br/>
+                                impossible<br/>
+                                #3<br/>
+                                074 156<br/>
+                                085 142 3<br/>
+                                #4<br/>
+                                0896 5412 3<br/>
+                                0986 5321 4<br/>
+                                0986 5324 1<br/>
+                                0987 5324<br/>
+                                #5<br/>
+                                2
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">ACM/ICPC South America/Brazil Regional Contest 2005.</p>
+</div>

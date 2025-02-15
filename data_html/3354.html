@@ -1,0 +1,55 @@
+<div class="problem">
+<div class="description">
+<p>JoÃ£ozinho is a very smart artist and is now moving to a new city in southern Brazil for a new challenge in his career. However, as he is a successful artist, he has many papers with his drawings and has organized these papers into thousands, millions, maybe even a billion boxes identified by numbers, within a certain range [<strong>I</strong>,<strong>F</strong>], where, for each integer in the range, there is a box with that number. JoÃ£ozinho is also very organized and the amount of paper in each box is exactly the same as the box number. For example, box number "40" has exactly 40 papers in it, while box number "256" has exactly 256 papers in it, and so on.</p>
+<p>Now, JoÃ£ozinho's problem is to prepare the move, placing the boxes inside trucks, which are identified by a number. The trucks are big enough to carry as many boxes as you like, as long as the box number is a multiple of the number that identifies the truck.</p>
+<p>JoÃ£ozinho is very busy and asked for your help in order to know the maximum amount of paper he can take to his new city, that is, the sum of the amounts of paper that are inside the boxes that JoÃ£ozinho can place inside of the trucks.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input consists of several test cases. The first line of each test case has three integers <strong>I</strong>, <strong>F</strong> and <strong>N</strong> (1 â¤ <strong>I</strong> â¤ <strong>F</strong> â¤ 10<sup>9</sup> and 1 â¤ <strong>N</strong> â¤ 20) which represent the initial box identifier, the final box identifier and the amount of trucks. The next line contains <strong>N</strong> integers 1 â¤ <strong>n<sub>i</sub></strong> â¤ 10<sup>9</sup> indicating the identifier of each truck. The end of the input is indicated by <strong>I</strong> = <strong>F</strong> = <strong>N</strong> = 0
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case, print a line containing the sum of the amounts of paper that are inside the boxes that JoÃ£ozinho can place inside the trucks. Print the result module 1300031.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                1 10 1<br/>
+                                1<br/>
+                                1 9 4<br/>
+                                3<br/>
+                                2<br/>
+                                6<br/>
+                                5<br/>
+                                1 1000 3<br/>
+                                2<br/>
+                                3<br/>
+                                5<br/>
+                                0 0 0
+                            </p>
+</td>
+<td>
+<p>
+                                55<br/>
+                                37<br/>
+                                367832
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer">1<sup>st</sup> Brazilian South Region Programming Contest</p>
+</div>

@@ -1,0 +1,56 @@
+<div class="problem">
+<div class="description">
+<p>Maria loves sports and she is very excited about the Olympic Games Rio 2016. She was so excited that se bought a lot of tickets for the games, but unfortunately due to the distance between her house and the competition's arenas, that can be very large, she may not be able to watch all the games.</p>
+<p>Maria knows you love programming challenges as much as she loves sports, so she asked you to make a program that given the position of the arenas of each game and how much time is left until the match begins, tells which games she will be able to watch if she leaves right now from her current position and go to the arena (she has to get there before the game starts).</p>
+<p>Maria is at a certain position (x, y) and moves with velocity of 1 meter per minute (despite of the excitement Maria walks slowly so she can pass by the maximum number of pokestops), the distance of the locations, also in meters, is the Euclidian Distance between the positions, and the time left to the beginning of the game is also in minutes.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line of the input consists of Maria's position, <strong>x</strong> and <strong>y</strong> (0 â¤ <strong>x</strong>, <strong>y</strong> â¤ 1000), and the number <strong>n</strong> (1 â¤ <strong>n</strong> â¤ 10â¶) that represents the number of tickets Maria bought.</p>
+<p>The next <strong>n</strong> lines consits of 3 number, <strong>xi, yi, ti</strong>, respectly the position <strong>x</strong> of game <strong>i</strong>, the position <strong>y</strong> of game <strong>i</strong>, and the time left to the beginning of the game <strong>i</strong>. (0 â¤ <strong>xi</strong>, <strong>yi</strong> â¤ 1000 e 1 â¤ <strong>ti</strong> â¤ 1000000).</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>The output is just one line that contains the sorted indexes of the games Maria will be able to watch. If Maria will not be able to watch any game just print "-1" (without the quotation marks)</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>0 0 3</p>
+<p>0 1 1</p>
+<p>1 0 2</p>
+<p>0 1 2</p>
+</td>
+<td>
+<p>2 3</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>0 0 3</p>
+<p>4 5 10</p>
+<p>2 3 3</p>
+<p>10 10 20</p>
+</td>
+<td>
+<p>1 3</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Aquecimento para a OBI 2016 - Fase 2</p>
+</div>

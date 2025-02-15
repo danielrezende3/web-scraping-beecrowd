@@ -1,0 +1,42 @@
+<div class="problem">
+<div class="description">
+<p>There are <em>n</em> bowls, numbered from 1 to <em>n</em>. Initially, bowl <em>i</em> contains <em>m</em><sub>i</sub> marbles. One game step consists of removing one marble from a bowl. When removing a marble from bowl <em>i</em> (<em>i</em> &gt; 1), one marble is added to each of the first <em>i</em>-1 bowls; if a marble is removed from bowl 1, no new marble is added. The game is finished after each bowl is empty.</p>
+<p>Your job is to determine how many game steps are needed to finish the game. You may assume that the supply of marbles is sufficient, and each bowl is large enough, so that each possible game step can be executed.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input contains several test cases. Each test case consists of one line containing one integer <strong>n</strong> (1 â¤ <strong>n</strong> â¤ 50), the number of bowls in the game. The following line contains <strong>n</strong> integers <strong>m<sub>i</sub></strong> (1 â¤ <strong>i</strong> â¤ <strong>n</strong>, 0 â¤ <strong>m<sub>i</sub></strong> â¤ 1000), where <strong>m<sub>i</sub></strong> gives the number of marbles in bowl <strong>i</strong> at the beginning of the game.
+                </p>
+<p>The last test case is followed by a line containing 0.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case, print one line with the number of game steps needed to finish the game. You may assume that this number fits into a signed 64-bit integer (in C/C++ you can use the data type "long long", in JAVA the data type "long").</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>10</p>
+<p>3 3 3 3 3 3 3 3 3 3</p>
+<p>5</p>
+<p>1 2 3 4 5</p>
+<p>0</p>
+</td>
+<td>
+<p>3069</p>
+<p>129</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Univeristy of Ulm Local Contest 2008/2009</p>
+</div>

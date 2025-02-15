@@ -1,0 +1,54 @@
+<div class="problem">
+<div class="description">
+<p>Flavius Josephus once was trapped in a cave together with his comrade soldiers surrounded by Romans. All of Josephus' fellow soldiers preferred not to surrender but to commit suicide. So they all formed a circle and agreed on a number <em>K</em>. Every <em>K-th</em> person in the circle would then commit suicide. However, Josephus had different priorities and didn't want to die just yet. According to the legend he managed to find the safe spot in the circle where he would be the last one to commit suicide. He surrendered to the Romans and became a citizen of Rome a few years later.</p>
+<p>It is a lesser known fact that the souls of Josephus and his comrades were all born again in modern times. Obviously Josephus and his reborn fellow soldiers wanted to avoid a similar fiasco in the future. Thus they asked a consulting company to work out a better decision scheme. The company came up with the following scheme:</p>
+<ul>
+<li>For the sake of tradition all soldiers should stand in a circle. This way a number between 0 and <em>N-1</em> is assigned to each soldier, where <em>N</em> is the number of soldiers.</li>
+<li>As changing numbers in the old scheme turned out to be horribly inefficient, the number assigned to a soldier will not change throughout the game.</li>
+<li>The consulting company will provide two numbers <em>A</em> and <em>B</em> which will be used to calculate the number of the next soldier as follows: Let <em>X</em> be the number of the current soldier, then the number of the next soldier is the remainder of <em>AÂ·X<sup>2</sup>&lt; + B mod N</em>.</li>
+<li>We start with the soldier with number 0 and each soldier calculates the number of the next soldier according to the formula above.</li>
+<li>As everyone deserves a second chance a soldier will commit suicide once his number is calculated for the second time.</li>
+<li>In the event that the number of a soldier is calculated for the third time the game will end and all remaining soldiers will surrender.</li>
+</ul>
+<p>You are to write a program that given the number of soldiers <em>N</em> and the constants <em>A</em> and <em>B</em> determines the number of survivors.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input file consists of several test cases. Each test case consists of a single line containing the three integers <strong>N</strong> (2 â¤ <strong>N</strong> â¤ 10<sup>9</sup>), <strong>A</strong> and <strong>B</strong> (0 â¤ <strong>A</strong>, <strong>B</strong> &lt; <strong>N</strong>) separated by white space. You may safely assume that the first soldier dies after no more than one million (10<sup>6</sup>) steps. The input is terminated by a single number 0 which should not be processed.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case output a single line containing the number of soldiers that survive.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>2 1 1</p>
+<p>5 1 1</p>
+<p>10 3 7</p>
+<p>101 9 2</p>
+<p>698253463 1 181945480</p>
+<p>1000000000 999999999 999999999</p>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+<p>2</p>
+<p>4</p>
+<p>96</p>
+<p>698177783</p>
+<p>999999994</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Univeristy of Ulm Local Contest 2006/2007</p>
+</div>

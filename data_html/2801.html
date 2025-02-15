@@ -1,0 +1,75 @@
+<div class="problem">
+<div class="description">
+<p>A cipher process consists in change each symbol of a message to another symbol from the same alphabet used in the original message, in the way to has one by one correspondence to each other. It means that two different symbols can not be replaced by the same symbol.</p>
+<p>An Affine cipher consists in suppose some symbols of a <strong>T</strong> size alphabet as numbers of an interval [0..<strong>T</strong>-1]. Two positive numbers <strong>A</strong> and <strong>B</strong> are chosen. To cipher a symbol is necessary to multiply its position value on the alphabet by <strong>A</strong> and the number <strong>B</strong> needs to be added to the result of this multiplication. In the end, the result will be the position of the symbol that will replace the original in the sequence. If this new position does not correspond to a valid position inside the size of the alphabet, it supposes that the alphabet will be repeated many times on the right, in the way to have all estimated positions.</p>
+<p>For example, suppose an alphabet which its size is 7 and <strong>A</strong>=4 and <strong>B</strong>=2. To cipher any symbol from this alphabet is necessary to extend the alphabet to the right by 3 times, as shown below:</p>
+<p style="text-align: center"><img alt="" src="https://resources.beecrowd.com/gallery/images/contests/UOJ_360_H.png" style="width: 680px"/></p>
+<p>In this cipher, the symbol 6 is ciphered to the symbol 5 because <strong>A</strong> x 6 + <strong>B</strong>=26 and the symbol in position 26 is 5.</p>
+<p>Need to be noted that not all Affine cipher is valid. A poorly made cipher can not produce a one-by-one correspondence between symbols, not guaranteeing that the decipher could be made in a unique way.</p>
+<p>Your task is, given the parameters <strong>A</strong> and <strong>B</strong> and the alphabet size, decipher a message with <strong>N</strong> symbols or show that it not possible to do so.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The first line of the input consists in an integer number <strong>N</strong> (1 â¤ <strong>N</strong> â¤ 10<sup>5</sup>) that corresponds to the message size. The second line consists of <strong>N</strong> integer numbers <strong>M<sub>i</sub></strong> (0 â¤ <strong>M<sub>i</sub></strong> &lt; <strong>T</strong>) that correspond to the message itself. The third line contains three integers: <strong>T</strong> (1 â¤ <strong>T</strong> â¤ 10<sup>9</sup>) that corresponds to the alphabet size; and <strong>A</strong> (1 â¤ <strong>A</strong> â¤ 10<sup>9</sup>) and <strong>B</strong> (1 â¤ <strong>B</strong> â¤ 10<sup>9</sup>) as specified before.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>The output consists in a single line containing the deciphered message, with its symbols separated by a single blank space, if will be possible to decipher each symbol of the alphabet in a single mode. Otherwise, print the message "DECIFRAGEM AMBIGUA" (ambiguous decipher).</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>7</p>
+<p>2 6 3 0 4 1 5</p>
+<p>7 4 2</p>
+</td>
+<td>
+<p>0 1 2 3 4 5 6</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>3</p>
+<p>6 79 44</p>
+<p>108 73 41</p>
+</td>
+<td>
+<p>1 2 3</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>3</p>
+<p>73 60 49</p>
+<p>119 25 48</p>
+</td>
+<td>
+<p>1 10 100</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">II Maratona de ProgramaÃ§Ã£o do Norte</p>
+</div>

@@ -1,0 +1,51 @@
+<div class="problem">
+<div class="description">
+<p>Lukas is to hold a presentation on useful mathematical tricks. E.g., to take the square root of a number you just need to remove the first half of the number. To convince his audience he uses the well tested method of proof by example: â 25 = 5 and â 5776 = 76 so the method obviously works. To multiply a number by <strong>X </strong>= 2.6 all you have to do is move the first digit to the end of the number, 135Ã2.6 = 351 and 270270Ã2.6 = 702702.</p>
+<p>Lukas wants to demonstrate that this last method works for any <strong>X</strong>. To do this he will ask his audience for values of <strong>X </strong>and then show them example multiplications for which the method works. Lukas has noticed that he can not just pick arbitrary numbers for his examples, so now he wants your help. Can you write a program that given <strong>X </strong>gives a list of integers for which multiplying by <strong>X </strong>is equivalent to moving the first digit to the end of the number? Lukas does not like very large numbers so do not list any numbers with more than 8 digits.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input is a single decimal number <strong>X </strong>(1 â¤ <strong>X </strong>&lt; 1000) with at most 4 digits after the decimal point.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Output a list of all positive integers less than 10â¸ for which Lukasâ second trick works. Write the numbers in ascending order, one number per line. If the list is empty, output instead âNo solutionâ.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>2.6</p>
+</td>
+<td>
+<p>135</p>
+<p>270</p>
+<p>135135</p>
+<p>270270</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>3.1416</p>
+</td>
+<td>
+<p>No solution</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Nordic Collegiate Programming Contest 2013</p>
+</div>

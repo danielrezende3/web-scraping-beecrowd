@@ -1,0 +1,55 @@
+<div class="problem">
+<div class="description">
+<p>Complex numbers are not only complex, but also complicated. So you would better try to solve another problem...</p>
+<p>We have a complex number, <b>a</b>+<b>b</b>*<b>i</b>, where <b>i</b> is the square root of -1. We want to make it simple (I mean, real), by raising it to a natural power. For example, complex number 2+2*<b>i</b>, can be made simple by raising it to 4:</p>
+<p>(2+2*<b>i</b>)<sup>4</sup> = -64</p>
+<p>
+                    You have to compute the smallest natural number, <b>N</b>, (zero is not included) such that (<b>a</b>+<b>b</b>*<b>i</b>)<sup><b>N</b></sup> is a real number. Besides, we require that the absolute value of (<b>a</b>+<b>b</b>*<b>i</b>)<sup><b>N</b></sup> is not bigger than 2<sup>30</sup>.
+                </p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line of the input contains an integer <b>M</b>, indicating the number of test cases.</p>
+<p>For each test case, there is a line with two integers <b>A</b> and <b>B</b>. <b>A</b> is the real part of the complex number, and <b>B</b> is the imaginary part.</p>
+<p>You can assume that -10000 â¤ <b>A</b> â¤ 10000, and -10000 â¤ <b>B</b> â¤ 10000.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>
+                    For each test case, the output should consist of a single positive natural number <b>N</b> in one line, indicating the power such that (<b>A</b>+<b>B</b>*<b>i</b>)<sup><b>N</b></sup> is real and its absolute value is not greater than 2<sup>30</sup>. If there is no solution, you have to output "TOO COMPLICATED".
+                </p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                5<br/>
+                                817 0<br/>
+                                2 2<br/>
+                                0 -1<br/>
+                                18 92<br/>
+                                -7 7
+                            </p>
+</td>
+<td>
+<p>
+                                1<br/>
+                                4<br/>
+                                2<br/>
+                                TOO COMPLICATED<br/>
+                                4
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Olimpiadas Murcianas de ProgramaciÃ³n 2009.</p>
+</div>

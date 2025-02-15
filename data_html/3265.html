@@ -1,0 +1,58 @@
+<div class="problem">
+<div class="description">
+<p>Marek loves dancing and he has danced a lot in the last couple of years. He has actually danced so much that he became too good in all of the traditional dances like swing, salsa, ballroom and hip-hop and now all partners he dances with can not keep up with him. Therefore he started to invent his own dances and even tries to convince other people to dance these new dances with him.</p>
+<p>Marek got really excited when he heard about the coming wedding of his best friend Miroslav. For a whole month he worked on a special dance for the wedding. The dance was performed by <strong>N </strong>people and there were <strong>N </strong>marks on the floor. There was an arrow from each mark to another mark and every mark had exactly one incoming arrow. The arrow could be also pointing back to the same mark.</p>
+<p>At the wedding, every person first picked a mark on the floor and no 2 persons picked the same one. Then Marek played some music and every 10 seconds there was a loud signal when all dancers had to move along the arrow on the floor to another mark. The placement of the marks was such that everybody could follow the arrow to the next mark in 10 seconds without any trouble. If an arrow was pointing back to the same mark, the person at the mark just stayed there and maybe did some improvized dance moves on the spot.</p>
+<p>A year has passed since Miroslavâs wedding and another wedding is coming up. Marek would like to do a similar dance at this wedding as well. He lost all the drawings he had, but luckily he found two photos from exactly when the dance started and when it ended. Marek also remembers that the signal was triggered <strong>K </strong>times during the time the song was played, so people moved <strong>K </strong>times along the arrows.</p>
+<p>Given the two photos, can you help Marek reconstruct the arrows on the floor? On the two photos it can be seen for every person to which position he or she moved. Marek therefore numbered the people in the first photo from 1 to <strong>N </strong>and then wrote the number of the person whose place they took in the second photo.</p>
+<p>Marekâs time is running out, so he is interested in any placement of arrows that could produce the two photos.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The first line of the input contains two integers <strong>N </strong>and <strong>K</strong>, 2 â¤ <strong>N </strong>â¤ 10 000, 1 â¤ <strong>K </strong>â¤ 10â¹. The second line of the input contains <strong>N </strong>space separated integers <strong>A</strong>1, . . . , <strong>AN</strong> , denoting that dancer number <em><strong>i</strong></em> ended at the place of dancer number <strong>A<em>i</em></strong> . You may assume that 1 â¤ <strong>A<em>i</em></strong> â¤ <strong>N</strong> for all <em><strong>i</strong></em> and every number between 1 and <strong>N</strong> inclusive appears exactly once in the sequence.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>
+                    If it is impossible to find a placement of arrows such that the dance performed <strong>K</strong> times would produce the two photos, print âImpossibleâ. Otherwise print <strong>N</strong> numbers on a line, the <em><strong>i</strong></em>-th number denoting to which person the arrow leads from person number <strong><em>i</em></strong>.
+                </p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>6 2</p>
+<p>3 4 5 6 1 2</p>
+</td>
+<td>
+<p>5 6 1 2 3 4</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>4 2</p>
+<p>3 4 1 2</p>
+</td>
+<td>
+<p>2 3 4 1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Nordic Collegiate Programming Contest 2013</p>
+</div>

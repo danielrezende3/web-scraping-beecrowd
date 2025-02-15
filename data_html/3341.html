@@ -1,0 +1,75 @@
+<div class="problem">
+<div class="description">
+<p>
+                    JoÃ£ozinho is a pro-player of the mug game. He is used to making huge bets and making astronomical profits.<br/>
+                    Of course, it is not so easy to have astronomical profits in such a simple game, for this reason JoÃ£ozinho usually challenges himself with a branch of the mug game.
+                </p>
+<p>Inside the cup are placed two dice with <strong>D1</strong> and <strong>D2</strong> sides. JoÃ£ozinho chooses a <strong>V</strong> value to bet and then rolls the dice. If the sum of the faces of the dice equals <strong>V</strong>, JoÃ£ozinho wins a lot of money, otherwise he loses.</p>
+<p>JoÃ£ozinho's dice are not conventional dice, they have random values and can have sides with the same value. Furthermore, the data is not necessarily the same.</p>
+<p>To aid his bet, he asked for your help in figuring out how many different ways there are for the sum of the dice sides to add up to exactly <strong>V</strong>.</p>
+<p>JoÃ£ozinho intends to consult you <strong>Q</strong> times to test several possible results.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>In the first line, 3 integers are passed, <strong>D1</strong>, <strong>D2</strong> and <strong>Q</strong>, representing the number of sides of the first dice. The number of sides of the second dice and the number of queries that JoÃ£ozinho will make.</p>
+<p>In the next line there will be <strong>D1</strong> integer values between <strong>0</strong> and <strong>10âµ</strong> (<strong>both included</strong>) representing the values on the sides of die 1.</p>
+<p>In the subsequent line there will be <strong>D2</strong> integer values between <strong>0</strong> and <strong>10âµ</strong> (<strong>both included</strong>) representing the values on the sides of die 2.</p>
+<p>And in the last <strong>Q</strong> lines there will be an integer per line, the number that JoÃ£ozinho wants to consult.</p>
+<p>The restrictions for the values are as follows:</p>
+<ul>
+<li><span class="math-tex">\(1 \leq \textbf{Q} \leq 10^5\)</span></li>
+<li><span class="math-tex">\(1 \leq \textbf{L} \leq \textbf{R} \leq 10^6\)</span></li>
+<li><span class="math-tex">\(1 \leq \textbf{K} \leq 10^6\)</span></li>
+</ul>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each JoÃ£ozinho's query, it is necessary to print an integer representing the number of existing combinations whose sum of the data faces gives exactly <strong>V</strong>.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>3 3 4</p>
+<p>0 1 1</p>
+<p>0 2 1</p>
+<p>1</p>
+<p>0</p>
+<p>2</p>
+<p>3</p>
+</td>
+<td>
+<p>3</p>
+<p>1</p>
+<p>3</p>
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>2 2 1</p>
+<p>1 2</p>
+<p>4 5</p>
+<p>6</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Maratona BRUTE Codecon JetBrains 2021</p>
+</div>

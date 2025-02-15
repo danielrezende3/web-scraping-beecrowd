@@ -1,0 +1,59 @@
+<div class="problem">
+<div class="description">
+<p>Horace likes to play writing natural numbers in the blackboard in his bedroom. One of his favourite games consists in first writing a number n, then the sum of all the different prime numbers that divide n, and so on until the number written on the board becomes a prime number. For example, if Horace begins writing the number n = 90, because 90 = 2 Ã 3<sup>2</sup> Ã 5 the next number to be written will be 2 + 3 + 5 = 10; then, as 10 = 2 Ã 5 Horace will write the number 2 + 5 = 7; finally, because 7 is a prime number the game will end here.</p>
+<p>Formally, in this game each natural number n &gt;= 2 defines a sequence whose first element is n, and each new element is the sum of all the prime numbers that divide the previous element in the sequence. The order of the game is the position of the first prime number in the sequence, and coincides with the total number of numbers written on the blackboard one the game has ended. In the example from the previous paragraph, with n = 90 the order of the game is K = 3, because the numbers that are written will be 90, 10 and 7.</p>
+<p>Now, not all games are equally entertaining to Horace, and in this case he prefers to begin by writing a number n such that the order of the corresponding game is a particular value K. Horace would like to know how many different values of n between A and B inclusive satisfy this condition, but because he does not know how to code he needs someone to do this calculation for him. Can you help him?</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line contains an integer P which indicates the number of questions Horace wants to ask you (1 â¤ P â¤ 10<sup>5</sup>). Each of the next P lines describes a question using three integer numbers A, B and K, which mean that Horace would like to know how many different values of n satisfy that A â¤ n â¤ B and the order of the game beginning with n is K (2 â¤ A â¤ B â¤ 10<sup>6</sup> and 1 â¤ K â¤ 10<sup>6</sup>).</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>You should print P lines, each one containing an integer number with the answer to one of the questions made by Horace, in the order in which they appear in the input.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>1</p>
+<p>90 90 3</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>5</p>
+<p>2 9 1</p>
+<p>2 9 2</p>
+<p>800 810 4</p>
+<p>999999 1000000 2</p>
+<p>100000 1000000 1000000</p>
+</td>
+<td>
+<p>4</p>
+<p>4</p>
+<p>5</p>
+<p>2</p>
+<p>0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Torneo Argentino de ProgramaciÃ³n â ACMâICPC 2013</p>
+</div>

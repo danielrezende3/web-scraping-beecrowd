@@ -1,0 +1,51 @@
+<div class="problem">
+<div class="description">
+<p>
+                    To play the "fraction game" corresponding to a given list <em>f<sub>1</sub>, f<sub>2</sub>, ..., f<sub>k</sub></em> of fractions and starting integer N, you repeatedly multiply the integer you have at any stage (initially N) by the earliest f<sub>i</sub> in the list for which the answer is integral. Whenever there is no such f<sub>i</sub>, the game stops.
+                </p>
+<p>
+                    Formally, we define a sequence by <em>S<sub>0</sub>=N</em>, and <em>S<sub>j+1</sub>=f<sub>i</sub>S<sub>j</sub></em>, if for 1 â¤ I â¤ k, the number <em>f<sub>i</sub>S<sub>j</sub></em> is an integer but the numbers <em>f<sub>1</sub>S<sub>j</sub>, ..., f<sub>i-1</sub>S<sub>j</sub></em> are not.
+                </p>
+<p>For example, if we have the list of eight fractions f<sub>1</sub>=170/39, f<sub>2</sub>=19/13, f<sub>3</sub>=13/17, f<sub>4</sub>=69/95, f<sub>5</sub>=19/23, f<sub>6</sub>=1/19, f<sub>7</sub>=13/7, f<sub>8</sub>=1/3, and start with N=21, we produce the (finite) sequence (21,39,170,130,190,138,114,6,2). In general, the sequence may be infinite.</p>
+<p>Given a fraction list and a starting integer calculate a part of the defined sequence. Actually, we are interested only in the powers of 2 that appear in the sequence.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input contains several test cases. Every test case starts with three integers <strong>m, N, k</strong>. You may assume that 1 â¤ <strong>m</strong> â¤ 40, 1 â¤ <strong>N</strong> â¤ 1000, and 1 â¤ <strong>k</strong> â¤ 100. Then follow k fractions <strong>f<sub>1</sub>, â¦, f<sub>k</sub></strong>. For each fraction, first its numerator is given, followed by its denominator. You may assume that both are positive integers less than 1000 and their greatest common divisor is 1. The last test case is followed by a zero.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>
+                    For each test case output on a line <strong>m</strong> numbers <strong>e<sub>1</sub>, ..., e<sub>m</sub></strong>, separated by one space character, such that <strong>2<sup>e</sup>1, ..., 2<sup>e</sup>k</strong> are the first <strong>m</strong> numbers in the defined sequence that are powers of 2. You may assume that there are at least <strong>m</strong> powers of 2 among the first 7654321 elements of the sequence.
+                </p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                1 21 8 170 39 19 13 13 17 69 95 19 23 1 19 13 7 1 3<br/>
+                                20 2 14 17 91 78 85 19 51 23 38 29 33 77 29 95 23 77 19 1 17 11 13 13 11 15 2 1 7 55 1<br/>
+                                0
+                            </p>
+</td>
+<td>
+<p>
+                                1<br/>
+                                1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Univeristy of Ulm Local Contest 2004/2005</p>
+</div>

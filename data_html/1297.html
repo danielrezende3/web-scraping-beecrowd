@@ -1,0 +1,62 @@
+<div class="problem">
+<div class="description">
+<p>Arsenic &amp; Cyanide Mining (ACM) is a corporation that has recently decided to start developing its mines in the lands near your hometown. As a member of the citizen's regulatory committee for ACM's operations, your task is to control how much the corporation can mine from those lands, so that you get to keep the jobs and other benefits without sacrificing the environment and the health of the local residents.</p>
+<p>The ACM has plans to mine several rectangular patches of land. A patch of land has width W, can be dug up to a maximum depth D, and has a at surface which we consider to be at depth 0. The minerals in a patch are organized in three layers, which may vary in their depth along the width of the patch, but always have the same profile along its whole length. This is why the ACM is only interested in the profile along the width of each patch, and has performed exploratory work in order to precisely determine its shape.</p>
+<p>âAs a result, they discovered that the two interfaces between the three layers of minerals can be represented by two functions y<sub>1</sub>(x) and y<sub>2</sub>(x), where the first describes the boundary between the top layer and the middle layer, and the second describes the boundary between the middle layer and the bottom layer. These functions are always such that</p>
+<br/>
+<p class="center">-D &lt; y<sub>2</sub>(x) &lt; y<sub>1</sub>(x) &lt; 0 for 0 â¤ x â¤ W ,</p>
+<br/>
+<p>so that the layers' boundaries never touch each other. Besides, each function has the form y<sub>i</sub>(x) = p<sub>i</sub>(x)/q<sub>i</sub>(x), where</p>
+<p class="center"><img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1297_a_en.png" style="width: 396px; height: 62px"/>â</p>
+<br/>
+<p>for i = 1; 2 and a certain integer K. The figure below shows the profiles of two patches of land in the way the ACM represents them. The patch on the left has width W = 6 and depth D = 9, while the patch on the right has W = 8 and D = 10. The boundaries of the layers of each patch are described by the functions defined below them.</p>
+<br/>
+<p class="center"><img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1297_b_en.png" style="width: 595px; height: 382px"/>â</p>
+<br/>
+<p>The ACM will dig everything in a patch of land up to a certain digging depth d, and then sell all the minerals thus obtained to make a profit. However, the minerals in the top and the bottom layers are essentially worthless, so the profit of the whole operation comes exclusively from those minerals in the middle layer. In fact, the profit is proportional to the area A of the middle layer in the profile that is at depth at most d. Given the description of a patch of land and an integer A, you would like to know the digging depth d you should allow the ACM to dig the patch so that they get an area of minerals from the middle layer in the profile of exactly A. In the figure above you can see the answer for the two test cases in the sample input. For the patch on the left, in order to get an area A = 14 the digging depth must be d = 4.00000, while for the patch on the right an area A = 14 requires a digging depth d = 5.51389.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    Each test case is described using 5 lines. The first line contains four integers <strong>W</strong>, <strong>D</strong>, <strong>A</strong> and <strong>K</strong>, where <strong>W</strong> is the width of the patch of land the ACM wants to mine (1 â¤ <strong>W</strong> â¤ 8), <strong>D</strong> is its depth (1 â¤ <strong>D</strong> â¤ 10), <strong>A</strong> is the area of the middle layer in the profile that the ACM must get (1 â¤ <strong>A</strong> â¤ <strong>W</strong> x <strong>D</strong>), and <strong>K</strong> allows the definition of the interfaces y<sub>1</sub>(x) and y<sub>2</sub>(x) as explained above (0 â¤ <strong>K</strong> â¤ 8). Each of the other lines contains <strong>K</strong> + 1 integers between -108 and 108, inclusive. The second line contains the coeffificients of p<sub>1</sub>(x) from <strong>P</strong><sub>1,0</sub> to <strong>P</strong><sub>1,K</sub>. The third line contains the coeficients of q<sub>1</sub>(x) from <strong>Q</strong><sub>1,0</sub> to <strong>Q</strong><sub>1,K</sub>. The fourth line contains the coeficients of p<sub>2</sub>(x) from <strong>P</strong><sub>2,0</sub> to <strong>P</strong><sub>2,K</sub>. The fifth line contains the coeficients of q<sub>2</sub>(x) from <strong>Q</strong><sub>2,0</sub> to <strong>Q</strong><sub>2,<strong>K</strong></sub>. Within each test case <strong>A</strong> is strictly less than the total area of the middle layer in the profile, and there exists a single value d such that a digging depth d yields an area of minerals from the middle layer in the profile of exactly <strong>A</strong>. Besides, q<sub>1</sub>(x) 6= 0, q<sub>2</sub>(x) 6= 0 and -<strong>D</strong> &lt; y<sub>2</sub>(x) &lt; y<sub>1</sub>(x) &lt; 0, for 0 â¤ x â¤ <strong>W</strong>.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case output a line with a rational number representing the depth <strong>d</strong> that the ACM should be allowed to dig the patch of land so that they get an area of minerals from the middle layer in the profile of exactly <strong>A</strong>. The result must be output as a rational number with exactly five digits after the decimal point, rounded if necessary.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                6 9 4 1<br/>
+                                -10 1<br/>
+                                2 0<br/>
+                                -16 1<br/>
+                                2 0<br/>
+                                8 10 14 4<br/>
+                                -1392 864 -216 24 -1<br/>
+                                1312 -864 216 -24 1<br/>
+                                -73 36 -54 36 -9<br/>
+                                17 -4 6 -4 1
+                            </p>
+</td>
+<td>
+<p>
+                                4.00000<br/>
+                                5.51389
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">ACM/ICPC South America Contest 2012.</p>
+</div>

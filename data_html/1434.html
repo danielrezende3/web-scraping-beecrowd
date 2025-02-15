@@ -1,0 +1,88 @@
+<div class="problem">
+<div class="description">
+<p>In ancient times, patrollers were used to ensure that all the cities of the Roman Empire were under control. A patrollerâs job consisted in continuously visiting the cities of the empire, trying to minimise the interval between two visits to each city. The Military Society (MS) wants to simulate the behavior of one such patroller to see how eï¬ective they were. </p>
+<p>Each cycle of the simulation corresponds to one time unit. The Instantaneous City Idleness (ICI) for a city <b>X</b> after <b>T</b> cycles of the simulation is the number of cycles elapsed since the last visit of the patroller to the city <b>X</b> (i.e. the number of time units the city <b>X</b> remained unvisited). All of the cities have initial Instantaneous City Idleness equal to zero at the start of the simulation. The Instantaneous Empire Idleness (IEI) after each given cycle is the sum of the Instantaneous City Idleness of all cities after that given cycle. Finally, the Empire Idleness (EI) for an <b>N</b>-cycle simulation is the sum of the Instantaneous Empire Idleness after each of the <b>N</b> cycles of simulation.</p>
+<p>After visiting a city <b>X</b>, the patroller always chooses to visit the neighbour city <b>Y</b> with the highest Instantaneous City Idleness (if more than one city has the highest idleness, the one with the lowest identiï¬er is chosen). Cities <b>X</b> and <b>Y</b> are neighbour if there is a road linking the two cities directly, without going through any intermediate city. In the beginning of the simulation, the patroller is located in one of the cities, and is given a map of the Roman Empire containing a description of all the roads in the empire, indicating the length (in kilometers) and which two cities each road connects. A road between cities <b>X</b> and <b>Y</b> can be used both to go from <b>X</b> to <b>Y</b> and from <b>Y</b> to <b>X</b>.</p>
+<p>Assuming that a patroller travels one kilometer in one time unit (one simulation cycle) and that the time to visit a city is negligible (equal to zero), MS asks you to determine the Empire Idleness after an <b>N</b>-cycle simulation.</p>
+<p>For clarity, consider the example of an empire which contains 3 cities (1, 2 and 3) and two roads of length 1 km. The first road connects cities 1 and 2, while the second road connects cities 2 and 3. Below you ï¬nd a trace of a 3-cycle simulation for such a scenario, considering that the patroller starts at city 1.</p>
+<p>
+                    Start of the simulation<br/>
+                    Patroller at: 1<br/>
+                    ICI1 = 0, ICI2 = 0, ICI3 = 0<br/>
+                    IEI = 0<br/>
+                    EI = 0
+                </p>
+<p>
+                    After cycle 1<br/>
+                    Patroller at: 2<br/>
+                    ICI1 = 1, ICI2 = 0, ICI3 = 1<br/>
+                    IEI = 2<br/>
+                    EI = 2
+                </p>
+<p>
+                    After cycle 2<br/>
+                    Patroller at: 1<br/>
+                    ICI1 = 0, ICI2 = 1, ICI3 = 2<br/>
+                    IEI = 3<br/>
+                    EI = 5
+                </p>
+<p>
+                    After cycle 3<br/>
+                    Patroller at: 2<br/>
+                    ICI1 = 1, ICI2 = 0, ICI3 = 3<br/>
+                    IEI = 4<br/>
+                    EI = 9
+                </p>
+<p>Therefore, for such a scenario, after 3 simulation cycles the Empire Idleness is 9.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The input consists of several test cases. The ï¬rst line of a test case contains four integers <b>C</b>, <b>R</b>, <b>N</b>, and <b>S</b>, indicating respectively the quantity of cities in the empire (2 â¤ <b>C</b> â¤ 1000), the number of roads (1 â¤ <b>R</b> â¤ <b>C</b>(<b>C</b> â 1)/2), the number of cycles to be simulated (1 â¤ <b>N</b> â¤ 1000) and the identiï¬er of the starting city of the patroller (1 â¤ <b>S</b> â¤ <b>C</b>). Each city is identiï¬ed by a distinct integer from 1 to <b>C</b>. Each of the following <b>R</b> lines contains three integers <b>X</b>, <b>Y</b> and <b>D</b> describing a road; <b>X</b> and <b>Y</b> represent cities (1 â¤ <b>X</b> â  <b>Y</b> â¤ <b>C</b>) and <b>D</b> represents the distance (1 â¤ <b>D</b> â¤ 1000), in kilometers, of the road that connects <b>X</b> and <b>Y</b> directly, without passing through any other city. Each pair of cities <b>X</b> and <b>Y</b> will appear at most once in a road description. You can assume that it is always possible to travel from any
+                    city to any other city in the empire using the roads available. The end of input is indicated by <b>C</b> = <b>R</b> = <b>N</b> = <b>S</b> = 0. 
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case in the input, your program must produce one line containing the Empire Idleness after the <b>N</b>-cycle simulation.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                2 1 1 1<br/>
+                                1 2 2<br/>
+                                2 1 2 1<br/>
+                                1 2 2<br/>
+                                2 1 3 1<br/>
+                                1 2 2<br/>
+                                2 1 4 1<br/>
+                                1 2 2<br/>
+                                3 2 3 1<br/>
+                                1 2 1<br/>
+                                2 3 1<br/>
+                                0 0 0 0
+                            </p>
+</td>
+<td>
+<p>
+                                2<br/>
+                                4<br/>
+                                8<br/>
+                                10<br/>
+                                9
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">ACM/ICPC South America/Brazil Regional Contest 2004.</p>
+</div>

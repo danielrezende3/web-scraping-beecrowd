@@ -1,0 +1,77 @@
+<div class="problem">
+<div class="description">
+<p>Some computer science courses are too much theorical and sometimes boring. In an attempt to raise the students' interest in some topics, the Artificial Intelligence professor, always when possible, propose a challenging contemplating the topics seen in class that day.</p>
+<p>Today's lecture was about genetic algorithms and the professor explained the following procedure:</p>
+<p>From 2 individuals (two sequences of N bits: x<sub>0</sub>x<sub>1</sub>...x<sub>N-1</sub>) A and B, we choose a cut position Y ( 1 â¤ Y &lt; N) and the crossover process happens, creating 2 new individuals: the first one is the concatenation of bits x<sub>0</sub>...x<sub>Y-1</sub> from individual A followed by bits x<sub>Y</sub>..x<sub>N-1</sub> from individual B, the second one is the concatenation of bits x<sub>0</sub>...x<sub>Y-1</sub> from individual B followed by bits x<sub>Y</sub>..x<sub>N-1</sub> from individual A.</p>
+<p>The following image shows the result of a crossover with Y = 5.</p>
+<p class="center"><img alt="" src="https://resources.beecrowd.com/gallery/images/contests/C_01.png" style="height: 215px; text-align: justify; width: 400px"/></p>
+<p>After the crossover, each bit from the brand-new individuals may suffer mutation (change its value) according to a specified mutation probability <strong>P</strong>.</p>
+<p>The challenge's statement left by the professor was the following:</p>
+<p>"Write a program that takes as input 3 individuals, the cutting position and the mutation probability. The program must calculate the probability of obtaining the third individual as a result of a crossover between the other two."</p>
+<p></p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line of input contains an integer <strong>T </strong>(1 â¤<strong> T</strong> â¤ 50), the number of test cases.</p>
+<p>Each test case takes 5 lines.</p>
+<p>The first line contains an integer <strong>N</strong> (2 â¤ <strong>N</strong> â¤ 8), the number of bits in each individual.</p>
+<p>The second line contains an integer <strong>Y</strong> (1 â¤ <strong>Y</strong> &lt; <strong>N</strong>) followed by a floating-point number <strong>P </strong>(0 â¤<strong> P</strong> â¤ 1), the cut position and the mutation probability, respectively.</p>
+<p>The third line contains the first individual to be crossedover.</p>
+<p>The fourth line contains the second individual to be crossedover.</p>
+<p>The fifth line contains the individual that will be compared to the possible crossover results.</p>
+<p></p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case output a single line containing the answer with 7 digits after the decimal point.</p>
+<p></p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Sample</td>
+<td>Output Sample</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                4<br/>
+                                3<br/>
+                                2 0<br/>
+                                111<br/>
+                                111<br/>
+                                111<br/>
+                                2<br/>
+                                1 0.5<br/>
+                                11<br/>
+                                11<br/>
+                                10<br/>
+                                4<br/>
+                                2 0.1<br/>
+                                1010<br/>
+                                0001<br/>
+                                1111<br/>
+                                2<br/>
+                                1 0.1<br/>
+                                11<br/>
+                                11<br/>
+                                11
+                            </p>
+</td>
+<td>
+<p>
+                                1.0000000<br/>
+                                0.4375000<br/>
+                                0.0089927<br/>
+                                0.9639000
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer">Contest Peixoto 2014</p>
+</div>

@@ -1,0 +1,48 @@
+<div class="problem">
+<div class="description">
+<p>Pinkie Pie is feeling lucky. She is going to the local lottery office to place a bet and test her luck.</p>
+<p>The lottery ticket consists of a matrix of N rows by M columns. The cells are numbered from 0 to N*M-1 in such a way that the number located at the r-th row and c-th column (0-indexed) is r * M + c. A bet consists of choosing K distinct numbers among those displayed.</p>
+<p class="center"><img alt="" src="https://resources.beecrowd.com/gallery/images/contests/20_3_en.png" style="height: 255px; width: 458px"/></p>
+<p>Pinkie senses that the winning numbers will be close to each other, so she decides to choose numbers that are all either in the same row or in the same column. Pinkie also thinks that prime numbers bring bad luck. She will disregard any bet that contains at least one prime number.</p>
+<p>Twilight was passing by and noticed Pinkieâs incapableness of making a decision. Willing to put her math skills to the test, she decided to count, while Pinkie makes up her mind, how many different bets can Pinkie Pie place. Two bets are considered different if there is at least one element present in one bet and not present in the other.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>There are several tests cases. Each test case consists of a single line containing three integers <strong>N</strong>, <strong>M</strong> and <strong>K</strong> (<strong>1</strong> â¤ <strong>N</strong>, <strong>M</strong> â¤ <strong>50</strong>; <strong>1</strong> â¤ <strong>K</strong> â¤ <strong>10</strong>). The last test case is followed by a line containing three zeroes.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case, print a single line containing the number of different bets Pinkie Pie can place, such that every chosen number is either in the same row or same column, and no prime number is chosen. A prime number is a natural number greater than <strong>1</strong> that has no positive divisors other than <strong>1</strong> and itself.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                2 3 4<br/>
+                                3 4 3<br/>
+                                3 6 3<br/>
+                                25 14 8<br/>
+                                0 0 0<br/>
+</p>
+</td>
+<td>
+<p>
+                                0<br/>
+                                2<br/>
+                                11<br/>
+                                7988161<br/>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Contest Road to Fortaleza III 2014</p>
+</div>

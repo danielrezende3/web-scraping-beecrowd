@@ -1,0 +1,47 @@
+<div class="problem">
+<div class="description">
+<p>In mathematics, a Delaunay triangulation for a set of points P on the plane is a DT (P) where no point in P is inside the circumference formed by any triangle in DT (P). The Delaunay triangulation maximizes the smallest angle of all triangles in the triangulation; this tends to avoid triangles with very small internal angles.</p>
+<p>The triangulation was invented by Boris Delaunay in 1934 for a set of points on a line there is no Delaunay triangulation (the concept of triangulation is broken for this case). For four or more points on the same circle (ie, the vertices of a rectangle) the Delaunay triangulation is not unique: each of the two possibilities of triangulation that divides the quadrilateral into two triangles satisfy the "Delaunay condition", ie that the circumferences of all triangles have hollow interiors. Whereas the circles are spheres, the notion of Delaunay triangulation extends to three dimensions. Generalizations are possible for different metrics of Euclidean. However, in these cases it can not guarantee the existence or uniqueness of the Delaunay triangulation.</p>
+<p>The Mad Doctor da Silva, for his doctorate, he decided to check the statement on the Delaunay triangulation previously said was true. Analyzed settings perfect polygons, as shown.</p>
+<p style="text-align: center"><img alt="" src="https://resources.beecrowd.com/gallery/images/novos/delaunay_fig1.jpg"/></p>
+<p>It is true and found that the amount of arches that create the Delaunay triangulation for the same number of points was always the same. For example, to 3 is always three points, 4 points is always 5, 5 is always points 6 points 7 and 9 and is always so forth.</p>
+<p>He then decided to create a real number (X) determined by the ratio of the amount of arch (I) with the number of points (L) which is:</p>
+<p style="text-align: center"><img alt="" src="https://resources.beecrowd.com/gallery/images/novos/delaunay_formula.jpg"/></p>
+<p>Help the Doctor doing a program that calculates the value of the real number X.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input consists of a test set containing a single row with an integer value <strong>L</strong> (3 â¤ <strong>L</strong> â¤ 10<sup>80</sup>). The input ends when <strong>L</strong> = 0.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For the input your program must produce one actual outcome <strong>X</strong> with accuracy of six decimal places. Use double variables.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>6</p>
+<p>0</p>
+</td>
+<td>
+<p>0.000000</p>
+<p>0.250000</p>
+<p>0.400000</p>
+<p>0.500000</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">XIV Contest Algar Telecom 1620</p>
+</div>

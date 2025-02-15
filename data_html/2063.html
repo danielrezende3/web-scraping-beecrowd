@@ -1,0 +1,74 @@
+<div class="problem">
+<div class="description">
+<p>Diglett is a PokÃ©mon type of land that is digging underground tunnels and is almost never seen. It appears on the surface through a hole in the ground time to time, where you can view only his head.</p>
+<p style="text-align: center"><img alt="Digglets" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_2063.png"/></p>
+<p>The tunnels built by them are unidirectional and always connect an origin hole to a destination hole, for example: if there is a tunnel connecting the hole <strong>A</strong> to the hole <strong>B</strong>, then it is possible to go from <strong>A</strong> to <strong>B</strong> and not the opposite. Each Diglett has its own hole, which indicates that there <strong>N</strong> holes will be <strong>N</strong> Digletts. Each hole has exactly two tunnels: the first tunnel, which runs from it to another hole and the second tunnel, which comes to him from another hole.</p>
+<p>The Digletts are walking from hole to hole every moment of time, for example: consider a hole <strong>A</strong> that has a tunnel that connects to a hole <strong>B</strong>, if one Diglett in the hole <strong>A</strong> at time <strong>T</strong>, then the next moment of time <strong>T</strong>+1 it will be in the hole <strong>B</strong>. When a Diglett arrives at his hole, it appears immediately on the surface. When not in his hole, it just remains underground and waiting for the next moment of time to walk the tunnel and go to another hole. It is guaranteed that each Diglett always returns to its hole in a moment of time.</p>
+<p>Xisto is a PokÃ©mom Master and is looking to capture the greatest amount of Digletts with only a pokeball, this in turn is able to capture all visible Digletts in a given area. He needs your help to know what is the shortest time in which all Digletts will appear on the surface at the same time, so he could throw the pokeball and catch them all.</p>
+<p>
+<em><strong>Note</strong>: At time zero Digletts are all in their respective hole and does not appear on the surface.</em>
+</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>
+                    The first row contains an integer <strong>N </strong>(2 â¤ <strong>N </strong>â¤ 100) representing the amount of holes. The next line contains <strong>N </strong>integers <strong>B<sub>i</sub></strong> (1 â¤ <strong>B<sub>i</sub> </strong>â¤ <strong>N</strong>), where the <em><strong>i</strong>-th</em> integer representing the<strong> </strong><em><strong>i</strong>-th</em> hole, and indicates a unidirectional tunnel <em><strong>i-</strong>th</em> hole to <strong>B<sub>i</sub></strong> hole.
+                </p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Print the shortest time in which all Digletts will appear together on the surface.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>2</p>
+<p>2 1</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>4</p>
+<p>4 3 2 1</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>6</p>
+<p>2 1 5 3 6 4</p>
+</td>
+<td>
+<p>4</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<p class="footer">Aquecimento para a OBI 2016</p>
+</div>

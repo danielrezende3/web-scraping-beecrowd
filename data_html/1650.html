@@ -1,0 +1,46 @@
+<div class="problem">
+<div class="description">
+<p>You are visiting the Centre Pompidou which contains a lot of modern paintings. In particular you notice one painting which consists solely of black and white squares, arranged in rows and columns like in a chess board (no two adjacent squares have the same colour).</p>
+<p>Since you are bored, you wonder how many 8 Ã 8 chess boards are embedded within this painting. The bottom right corner of a chess board must always be white.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input contains several test cases. Each test case consists of one line with three integers <strong>n</strong>, <strong>m</strong> and <strong>c</strong>. (8 â¤ <strong>n</strong>, <strong>m</strong> â¤ 40000), where <strong>n</strong> is the number of rows of the painting, and <strong>m</strong> is the number of columns of the painting. <strong>c</strong> is always 0 or 1, where 0 indicates that the bottom right corner of the painting is black, and 1 indicates that this corner is white.</p>
+<p>The last test case is followed by a line containing three zeros.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>For each test case, print the number of chess boards embedded within the given painting.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Sample Input</td>
+<td>Sample Output</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>
+                                8 8 0<br/>
+                                8 8 1<br/>
+                                9 9 1<br/>
+                                40000 39999 0<br/>
+                                0 0 0
+                            </p>
+</td>
+<td>
+<p>
+                                0<br/>
+                                1<br/>
+                                2<br/>
+                                799700028
+                            </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Univeristy of Ulm Local Contest 2007/2008</p>
+</div>

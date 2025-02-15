@@ -1,0 +1,76 @@
+<div class="problem">
+<div class="description">
+<p>
+                    Alice and Bob are two friends who live in planet Earth 2.0, built after the destruction of planet Earth 1.0 by the Vogons. In Earth 2.0 everything is upgraded. Human beings, for example, do not have only 10 fingers in the hands, but 10 million: 5 million in each hand. The traditional game âOdds and Evensâ, very played in Earth 1.0, has also been upgraded. Alice and Bob play âOdds and Evens 2.0â all the time. In this version of the game, the players are supposed to show at the same time using the hands an integer between 0 and 10 million. If the numbers shown by both players are equal, we have a tie. Otherwise, the players alternate writing down numbers in a piece of paper. Let <strong>A</strong> be the integer shown by Alice in the beginning of the match and let <strong>B</strong> be the integer shown by Bob, each number written down must be a product of |<strong>A</strong> - <strong>B</strong>| factors, with all factors being prime numbers, not necessarily distinct, belonging to the
+                    interval defined by the integers <strong>A</strong> and <strong>B</strong>. Besides, a number is never allowed to be written down more than once. Loses the match the player who happens not to be able of writing down a new number when it is his or her turn to play. As Bob is a gentleman, Alice is always the first to play. Note that if there are no prime numbers in the interval defined by the integers <strong>A</strong> and <strong>B</strong>, Alice cannot write down any number in her first turn, and Bob wins the match.
+                </p>
+<p>For example, if <strong>A</strong> = 2 and <strong>B</strong> = 5, there are only 10 numbers which can be written down in the paper, which are:</p>
+<p style="text-align: center">8 = 2 Ã 2 Ã 2</p>
+<p style="text-align: center">12 = 2 Ã 2 Ã 3</p>
+<p style="text-align: center">20 = 2 Ã 2 Ã 5</p>
+<p style="text-align: center">18 = 2 Ã 3 Ã 3</p>
+<p style="text-align: center">30 = 2 Ã 3 Ã 5</p>
+<p style="text-align: center">50 = 2 Ã 5 Ã 5</p>
+<p style="text-align: center">27 = 3 Ã 3 Ã 3</p>
+<p style="text-align: center">45 = 3 Ã 3 Ã 5</p>
+<p style="text-align: center">75 = 3 Ã 5 Ã 5</p>
+<p style="text-align: center">125 = 5 Ã 5 Ã 5</p>
+<p>This way, if both Alice and Bob play optimally, Bob wins the match in this case.</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The input consists of two integers <strong>A</strong> and <strong>B</strong> (0 â¤ <strong>A</strong>, <strong>B</strong> â¤ 10<sup>7</sup>), which represent respectively the numbers shown by Alice and Bob in the beginning of the match, as explained previously.</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>Your program shall output a single line containing singly the match winner's name, assuming that both players play optimally. If the match ties, the output line shall contain singly the symbol <strong>?</strong>.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>5 2</p>
+</td>
+<td>
+<p>Bob</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>0 0</p>
+</td>
+<td>
+<p>?</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="both"></div>
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<td class="division">
+<p>1 100</p>
+</td>
+<td>
+<p>Alice</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Contest Oficial de Aquecimento da OlimpÃ­ada Brasileira de InformÃ¡tica-Fase 2, 2015</p>
+</div>

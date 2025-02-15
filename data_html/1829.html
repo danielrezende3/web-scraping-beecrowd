@@ -1,0 +1,53 @@
+<div class="problem">
+<div class="description">
+<p>Lucas and Pedro are high school friends. They were really impressed after a math class that introduced factorial numbers:</p>
+<p style="text-align: center"><img alt="" src="https://resources.beecrowd.com/gallery/images/problems/UOJ_1829.png"/></p>
+                where <i>n</i> is a natural number and 0! = 1. They have a question: what is the operation that produces the biggest number, factorial or exponential?
+                <p></p>
+<p>Trying to find out the answer, both proposed the Biggest Number Game. In this game, two players call, at same time, as fast as they can, an operation that results in a big number. The player that calls the operation that results in the biggest number is the winner. Beto, friend of both, was the judge: he wrote down the operations. Lucas only called exponentials and Pedro only called factorials.</p>
+<p>At the end of game, none of the three friends could tell who was the winner. Write a program that helps them to decide who won each round and who was the champion (the player that won most rounds).</p>
+</div>
+<h2>Input</h2>
+<div class="input">
+<p>The first line contains an integer <b>N</b> (<b>N</b> â¤ 1.000), indicating the number of rounds played.</p>
+<p>Each round is described by two lines: the first contains Lucas's exponential, in the form <b>a</b>^<b>b</b> (2 â¤ <b>a, b</b> â¤ 10.000); the second contains Pedro's factorial, in the form <b>n</b>! (2 â¤ <b>n</b> â¤ 10.000). The numbers <b>a, b, n</b> are integers and the expression <b>a</b>^<b>b</b> means "<b>a</b> raised to the <b>b</b>-th power".</p>
+</div>
+<h2>Output</h2>
+<div class="output">
+<p>The first line of the output must be the message "Campeao: <b>C</b>!", where <b>C</b> is the champion, or the message "A competicao terminou empatada!", if the game was a tie.</p>
+<p>After the initial message, for each round played must be printed the message "Rodada #<b>r</b>: <b>V</b> foi o vencedor", where <b>r</b> is the round number (the couting starts on one) and <b>V</b> is the winner of the round <b>r</b>.</p>
+<p>Any printed message must be followed by a newline character.</p>
+</div>
+<div class="both"></div>
+<table>
+<thead>
+<tr>
+<td>Input Samples</td>
+<td>Output Samples</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>4</p>
+<p>99^99</p>
+<p>100!</p>
+<p>57^199</p>
+<p>874!</p>
+<p>123^488</p>
+<p>123!</p>
+<p>7601^5684</p>
+<p>7449!</p>
+</td>
+<td>
+<p>A competicao terminou empatada!</p>
+<p>Rodada #1: Lucas foi o vencedor</p>
+<p>Rodada #2: Pedro foi o vencedor</p>
+<p>Rodada #3: Lucas foi o vencedor</p>
+<p>Rodada #4: Pedro foi o vencedor</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="footer">Translation reviewed by Gustavo Jaruga</p>
+</div>
