@@ -6,15 +6,15 @@ import docling
 import pandas as pd
 from bs4 import BeautifulSoup
 
+COOKIE = ""
+
 HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3",
     "DNT": "1",
     "Sec-GPC": "1",
     "Connection": "keep-alive",
-    "Cookie": (
-        "cf_clearance=OZs8v49MXSuB3L9CvUoVMuA4L40X41Djp9kJvC2BDN8-1733926360-1.2.1.1-dxoXqeY6oOqEHv4iZa0om1Z5hXKJ.1tZl6pm_CgSP_IGLE2xR7Gyj4ScH3upeY6Nz6J1NB7U_AAzdXYI1ida.AUrPmm0ueqdo.MM_4TAvgSQelXVS00.VfqXXpzIUi3a1j5MDLjuw26GXe.ZLGhGx9iIz3bjY8xY924jqpCoMQeomMInMTZWJ_5Xnz.uTBlVwgFxfT4360wbslFmQHgKwtbrtY.eMGx8rF6Femc.mwpQFfC9e65Mp3MxrehSPds8Wu58Rkv50ASAqVIjPaPuuU5rKsvFKrcOeGJS9z8kp8L0sCb_2ZbzI422wc2Apds66wkekmK4dLhyzD5AvgP6vOJRQyXZOH5.zlOmdpR1iVgqC.Xpl0v9XvOo4anXIfmHm00e6L2B19lIVwsoXoiD4w; popup=view; cookieBubble=true; judge=eklfipkrceppiqmku98vk5jcol; csrfToken=79wDuZpMm9r%2FHmuvs5XO3jgwM2YyMjZiM2Y5MDRjZTU3MjIzMTYwNzM2NDI2MDkwYmE3OGIxZjc%3D"
-    ),
+    "Cookie": COOKIE,
     "Upgrade-Insecure-Requests": "1",
     "Sec-Fetch-Dest": "document",
     "Sec-Fetch-Mode": "navigate",
