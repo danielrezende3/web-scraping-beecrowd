@@ -2,6 +2,7 @@ import cloudscraper
 from bs4 import BeautifulSoup
 import csv
 
+COOKIE = ""
 # Define custom headers from your cURL command
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
@@ -11,9 +12,7 @@ HEADERS = {
     "Sec-GPC": "1",
     "Connection": "keep-alive",
     # You can update the Cookie if needed, but cloudscraper often handles this automatically.
-    "Cookie": (
-        "cf_clearance=OZs8v49MXSuB3L9CvUoVMuA4L40X41Djp9kJvC2BDN8-1733926360-1.2.1.1-dxoXqeY6oOqEHv4iZa0om1Z5hXKJ.1tZl6pm_CgSP_IGLE2xR7Gyj4ScH3upeY6Nz6J1NB7U_AAzdXYI1ida.AUrPmm0ueqdo.MM_4TAvgSQelXVS00.VfqXXpzIUi3a1j5MDLjuw26GXe.ZLGhGx9iIz3bjY8xY924jqpCoMQeomMInMTZWJ_5Xnz.uTBlVwgFxfT4360wbslFmQHgKwtbrtY.eMGx8rF6Femc.mwpQFfC9e65Mp3MxrehSPds8Wu58Rkv50ASAqVIjPaPuuU5rKsvFKrcOeGJS9z8kp8L0sCb_2ZbzI422wc2Apds66wkekmK4dLhyzD5AvgP6vOJRQyXZOH5.zlOmdpR1iVgqC.Xpl0v9XvOo4anXIfmHm00e6L2B19lIVwsoXoiD4w; popup=view; cookieBubble=true; judge=eklfipkrceppiqmku98vk5jcol; csrfToken=79wDuZpMm9r^%^2FHmuvs5XO3jgwM2YyMjZiM2Y5MDRjZTU3MjIzMTYwNzM2NDI2MDkwYmE3OGIxZjc^%^3D"
-    ),
+    "Cookie": (COOKIE),
     "Upgrade-Insecure-Requests": "1",
     "Sec-Fetch-Dest": "document",
     "Sec-Fetch-Mode": "navigate",
@@ -36,7 +35,7 @@ def fetch_page(page: int) -> str:
         return response.text
     else:
         print(f"Failed to fetch page {page}: Status code {response.status_code}")
-        return None
+        return ""
 
 
 def parse_problems_from_html(html: str) -> list:
@@ -132,10 +131,11 @@ def main():
     # Loop through pages 1 to 11
     for page in range(1, 12):
         html = fetch_page(page)
-        if html:
+        if html != "":
             problems = parse_problems_from_html(html)
             all_problems.extend(problems)
-
+        else:
+            print(f"Failed to fetch page {page}")
     # Write all the scraped data to a CSV file
     write_csv(csv_filename, csv_header, all_problems)
 

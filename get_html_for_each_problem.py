@@ -1,8 +1,6 @@
 import csv
-from docling.document_converter import DocumentConverter
 
 import cloudscraper
-import docling
 import pandas as pd
 from bs4 import BeautifulSoup
 
